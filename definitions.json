@@ -1,0 +1,959 @@
+{
+  "Primitives": {
+    "00000000-0000-0000-0000-000000000000": {
+      "name": "Unit",
+      "description": "Unit (nothing, none, null, ...)."
+    },
+
+    "f03716ef-6c9e-4201-bf19-e0cabc6c6a9a": {
+      "name": "DurableMap",
+      "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types."
+    },
+
+    "a81a39b0-8f61-4efc-b0ce-27e2c5d3199d": {
+      "name": "Guid",
+      "description": "Globally unique identifier (GUID, 16 bytes). https://tools.ietf.org/html/rfc4122."
+    },
+    "8b5659cd-8fea-46fd-a9f2-52c31bdaf6b3": {
+      "name": "Guid[]",
+      "description": "Array of globally unique identifiers (GUID, 16 bytes). https://tools.ietf.org/html/rfc4122."
+    },
+
+    "47a73639-7ff3-423a-9562-2561d0f51949": {
+      "name": "Int8",
+      "description": "Signed 8-bit integer. 2-complement."
+    },
+    "1e36f786-1c8d-4c1a-b5dd-6f83bfd65287": {
+      "name": "Int8[]",
+      "description": "Array of signed 8-bit integers. 2-complement."
+    },
+
+    "83c0db28-feb4-4643-af3a-269377f137b5": {
+      "name": "UInt8",
+      "description": "Unsigned 8-bit integer."
+    },
+    "e1e6a823-d328-461d-bd01-924120b74d5c": {
+      "name": "UInt8[]",
+      "description": "Array of unsigned 8-bit integers."
+    },
+
+    "4c3f7ded-2037-4f3d-baa9-3a76ef3a1fda": {
+      "name": "Int16",
+      "description": "Signed 16-bit integer. 2-complement."
+    },
+    "80b7028e-e7c8-442c-8ae3-517bb2df645f": {
+      "name": "Int16[]",
+      "description": "Array of signed 16-bit integers. 2-complement."
+    },
+
+    "8b1bc0ed-64aa-4c4c-992e-dca6b1491dd0": {
+      "name": "UInt16",
+      "description": "Unsigned 16-bit integer."
+    },
+    "0b8a61ac-672f-4247-a8c5-2cf8f23a1eb5": {
+      "name": "UInt16[]",
+      "description": "Array of unsigned 16-bit integers."
+    },
+
+    "5ce108a4-a578-4edb-841d-068393ed93bf": {
+      "name": "Int32",
+      "description": "Signed 32-bit integer. 2-complement."
+    },
+    "1cfa6f68-5b56-44a7-b4b5-bd675bc910ab": {
+      "name": "Int32[]",
+      "description": "Array of signed 32-bit integers. 2-complement."
+    },
+
+    "a77758f8-24c4-4d87-95f1-91a6eab9df01": {
+      "name": "UInt32",
+      "description": "Unsigned 32-bit integer."
+    },
+    "4c896235-d378-4860-9b01-581138e565d3": {
+      "name": "UInt32[]",
+      "description": "Array of unsigned 32-bit integers."
+    },
+
+    "f0909b36-d3c4-4b86-8320-e0ad418226e5": {
+      "name": "Int64",
+      "description": "Signed 64-bit integer. 2-complement."
+    },
+    "39761157-4817-4dbf-9eda-33fad1c0a852": {
+      "name": "Int64[]",
+      "description": "Array of signed 64-bit integers. 2-complement."
+    },
+
+    "1e29371c-e977-402e-8cd6-9d52a77ce1d6": {
+      "name": "UInt64",
+      "description": "Unsigned 64-bit integer."
+    },
+    "56a89a90-5dde-441c-8d80-d2dca7f6717e": {
+      "name": "UInt64[]",
+      "description": "Array of unsigned 64-bit integers."
+    },
+
+    "7891b070-5249-479f-81b8-d8bca5127211": {
+      "name": "Float16",
+      "description": "Floating point value (half precision, 16-bit). https://en.wikipedia.org/wiki/IEEE_754."
+    },
+    "fb1d889e-b7bb-41f4-b047-1f6838cd5fdd": {
+      "name": "Float16[]",
+      "description": "Array of floating point values (half precision, 16-bit). https://en.wikipedia.org/wiki/IEEE_754."
+    },
+
+    "23fb286f-663b-4c71-9923-7e51c500f4ed": {
+      "name": "Float32",
+      "description": "Floating point value (single precision, 32-bit). https://en.wikipedia.org/wiki/IEEE_754."
+    },
+    "a687a789-1b63-49e9-a2e4-8099aa7879e9": {
+      "name": "Float32[]",
+      "description": "Array of floating point values (single precision, 32-bit). https://en.wikipedia.org/wiki/IEEE_754."
+    },
+
+    "c58c9b83-c2de-4153-a588-39c808aed50b": {
+      "name": "Float64",
+      "description": "Floating point value (double precision, 64-bit). https://en.wikipedia.org/wiki/IEEE_754."
+    },
+    "ba60cc30-2d56-45d8-a051-6b895b51bb3f": {
+      "name": "Float64[]",
+      "description": "Array of floating point values (double precision, 64-bit). https://en.wikipedia.org/wiki/IEEE_754."
+    },
+
+    "5d343235-21f6-41e4-992e-93541db26502": {
+      "name": "Float128",
+      "description": "Floating point value (quadruple precision, 128-bit). https://en.wikipedia.org/wiki/IEEE_754."
+    },
+    "6477a574-ffb0-4717-9f00-5fb9aff409ce": {
+      "name": "Float128[]",
+      "description": "Array of floating point values (quadruple precision, 128-bit). https://en.wikipedia.org/wiki/IEEE_754."
+    },
+
+    "917c15af-0e2d-4265-a732-7b2f147f4b94": {
+      "name": "StringUTF8",
+      "description": "String. UTF8 encoding. Serialized as UInt32 length followed by length number of bytes (UInt8).",
+      "layout": {
+        "Length": "UInt32",
+        "Value": "UInt8[]"
+      }
+    },
+    "852888ff-4168-4f4b-a10a-b582d1735c74": {
+      "name": "StringUTF8[]",
+      "description": "Array of strings. UTF8 encoding."
+    }
+  },
+
+  "Aardvark": {
+    "1193e05b-4c04-409b-b47b-f9f4fbce7fb2": {
+      "name": "V2i",
+      "description": "A 2-dim vector of 32-bit integers.",
+      "layout": {
+        "X": "Int32",
+        "Y": "Int32"
+      }
+    },
+    "a684e893-16fa-42e5-a534-843dbec575e8": {
+      "name": "V2i[]"
+    },
+
+    "5573a69d-4df9-4d91-8e3e-aa8204d8ec13": {
+      "name": "V2l",
+      "description": "A 2-dim vector of 64-bit integers.",
+      "layout": {
+        "X": "Int64",
+        "Y": "Int64"
+      }
+    },
+    "f5045bd5-08d1-4084-b717-932b55dcdc5b": {
+      "name": "V2l[]"
+    },
+
+    "4f5d8782-3c9a-4913-bf0f-423269a24b1e": {
+      "name": "V2f",
+      "description": "A 2-dim vector of 32-bit floats.",
+      "layout": {
+        "X": "Float32",
+        "Y": "Float32"
+      }
+    },
+    "40d91f9d-ccb3-44fb-83d0-c3ff20189b2d": {
+      "name": "V2f[]"
+    },
+
+    "0f70ed18-574f-4431-a2c1-9987e4a7653c": {
+      "name": "V2d",
+      "description": "A 2-dim vector of 64-bit floats.",
+      "layout": {
+        "X": "Float64",
+        "Y": "Float64"
+      }
+    },
+    "17037869-687f-45f1-bd43-09a46a669547": {
+      "name": "V2d[]"
+    },
+
+    "876c952e-1749-4d2f-922f-75d1acd2d870": {
+      "name": "V3i",
+      "description": "A 3-dim vector of 32-bit integers.",
+      "layout": {
+        "X": "Int32",
+        "Y": "Int32",
+        "Z": "Int32"
+      }
+    },
+    "e9b3bee6-d6c4-46cb-9b74-be54530d03cd": {
+      "name": "V3i[]"
+    },
+
+    "baff1328-3149-4812-901b-23d9b3ba3a29": {
+      "name": "V3l",
+      "description": "A 3-dim vector of 64-bit integers.",
+      "layout": {
+        "X": "Int64",
+        "Y": "Int64",
+        "Z": "Int64"
+      }
+    },
+    "229703bb-c382-4b5a-b333-30a029e77f83": {
+      "name": "V3l[]"
+    },
+
+    "ad8adcb6-8cf1-474e-99da-851343858935": {
+      "name": "V3f",
+      "description": "A 3-dim vector of 32-bit floats.",
+      "layout": {
+        "X": "Float32",
+        "Y": "Float32",
+        "Z": "Float32"
+      }
+    },
+    "f14f7607-3ddd-4e52-9ff3-c877c2242021": {
+      "name": "V3f[]"
+    },
+
+    "7a0be234-ab45-464d-b706-87157aba4361": {
+      "name": "V3d",
+      "description": "A 3-dim vector of 64-bit floats.",
+      "layout": {
+        "X": "Float64",
+        "Y": "Float64",
+        "Z": "Float64"
+      }
+    },
+    "2cce99b6-e823-4b34-8615-f7ab88746554": {
+      "name": "V3d[]"
+    },
+
+    "244a0ae8-c234-4024-821b-d5b3ad28701d": {
+      "name": "V4i",
+      "description": "A 4-dim vector of 32-bit integers.",
+      "layout": {
+        "X": "Int32",
+        "Y": "Int32",
+        "Z": "Int32",
+        "W": "Int32"
+      }
+    },
+    "4e5839a1-0b5b-4407-a55c-cfa5fecf757c": {
+      "name": "V4i[]"
+    },
+
+    "04f77262-b56a-44d5-af79-c1679493acff": {
+      "name": "V4l",
+      "description": "A 4-dim vector of 64-bit integers.",
+      "layout": {
+        "X": "Int64",
+        "Y": "Int64",
+        "Z": "Int64",
+        "W": "Int64"
+      }
+    },
+    "8aecdd7e-acf1-41aa-9d02-f954b43d6c62": {
+      "name": "V4l[]"
+    },
+
+    "969daa40-9ea2-4bce-8189-f416d65a9c3e": {
+      "name": "V4f",
+      "description": "A 4-dim vector of 32-bit float.",
+      "layout": {
+        "X": "Float32",
+        "Y": "Float32",
+        "Z": "Float32",
+        "W": "Float32"
+      }
+    },
+    "be5a8fda-4a6a-46e8-9654-356721d03f17": {
+      "name": "V4f[]"
+    },
+
+    "b2dd492b-aaf8-4dfa-bcc2-833af6cbd637": {
+      "name": "V4d",
+      "description": "A 4-dim vector of 64-bit float.",
+      "layout": {
+        "X": "Float64",
+        "Y": "Float64",
+        "Z": "Float64",
+        "W": "Float64"
+      }
+    },
+    "800184a5-c207-4b4a-88a0-60d9281ecdc1": {
+      "name": "V4d[]"
+    },
+
+    "4f01ceee-2595-4c2d-859d-4f14df35a048": {
+      "name": "M22f",
+      "description": "A 2x2 matrix of Float32.",
+      "layout": {
+        "M00": "Float32",
+        "M01": "Float32",
+        "M10": "Float32",
+        "M11": "Float32"
+      }
+    },
+    "480269a5-304c-401a-848b-64e2392ddd3e": {
+      "name": "M22f[]"
+    },
+
+    "f16842ef-531c-4782-92f2-385bf5fd42ab": {
+      "name": "M22d",
+      "description": "A 2x2 matrix of Float64.",
+      "layout": {
+        "M00": "Float64",
+        "M01": "Float64",
+        "M10": "Float64",
+        "M11": "Float64"
+      }
+    },
+    "2e6b3a90-3e45-4e5c-8770-e351640f5d47": {
+      "name": "M22d[]"
+    },
+
+    "587a4a05-db34-4b2a-aa67-5cfe5c4d82cc": {
+      "name": "M33f",
+      "description": "A 3x3 matrix of Float32.",
+      "layout": {
+        "M00": "Float32",
+        "M01": "Float32",
+        "M02": "Float32",
+        "M10": "Float32",
+        "M11": "Float32",
+        "M12": "Float32",
+        "M20": "Float32",
+        "M21": "Float32",
+        "M22": "Float32"
+      }
+    },
+    "95be083c-6f03-4279-872f-624f044599c6": {
+      "name": "M33f[]"
+    },
+
+    "ccd797e3-0ca4-4191-840d-53751e021972": {
+      "name": "M33d",
+      "description": "A 3x3 matrix of Float64.",
+      "layout": {
+        "M00": "Float64",
+        "M01": "Float64",
+        "M02": "Float64",
+        "M10": "Float64",
+        "M11": "Float64",
+        "M12": "Float64",
+        "M20": "Float64",
+        "M21": "Float64",
+        "M22": "Float64"
+      }
+    },
+    "378429d5-2517-46bb-b90d-b7bc34a86466": {
+      "name": "M33d[]"
+    },
+
+    "652a5421-e262-4da8-ae38-78df761a365e": {
+      "name": "M44f",
+      "description": "A 4x4 matrix of Float32.",
+      "layout": {
+        "M00": "Float32",
+        "M01": "Float32",
+        "M02": "Float32",
+        "M03": "Float32",
+        "M10": "Float32",
+        "M11": "Float32",
+        "M12": "Float32",
+        "M13": "Float32",
+        "M20": "Float32",
+        "M21": "Float32",
+        "M22": "Float32",
+        "M23": "Float32",
+        "M30": "Float32",
+        "M31": "Float32",
+        "M32": "Float32",
+        "M33": "Float32"
+      }
+    },
+    "cf53c4e6-f3ca-4be5-a449-0434ae455b85": {
+      "name": "M44f[]"
+    },
+
+    "b9498622-db77-4d4c-b78c-62522ccf9252": {
+      "name": "M44d",
+      "description": "A 4x4 matrix of Float64.",
+      "layout": {
+        "M00": "Float64",
+        "M01": "Float64",
+        "M02": "Float64",
+        "M03": "Float64",
+        "M10": "Float64",
+        "M11": "Float64",
+        "M12": "Float64",
+        "M13": "Float64",
+        "M20": "Float64",
+        "M21": "Float64",
+        "M22": "Float64",
+        "M23": "Float64",
+        "M30": "Float64",
+        "M31": "Float64",
+        "M32": "Float64",
+        "M33": "Float64"
+      }
+    },
+    "f07abd79-60a6-429a-94f1-11eb6c319db2": {
+      "name": "M44d[]"
+    },
+
+    "db31d0e0-2c56-48da-a769-5a2c1abad38c": {
+      "name": "Range1b",
+      "description": "An 1-dim range with limits [Min, Max] of UInt8.",
+      "layout": {
+        "Min": "UInt8",
+        "Max": "UInt8"
+      }
+    },
+    "b720aba1-6b8a-4431-8bea-8b2dad497358": {
+      "name": "Range1b[]"
+    },
+
+    "59e5322f-1677-47e4-b991-3e87e43ac005": {
+      "name": "Range1sb",
+      "description": "An 1-dim range with limits [Min, Max] of Int8.",
+      "layout": {
+        "Min": "Int8",
+        "Max": "Int8"
+      }
+    },
+    "6b769f32-b462-4a8a-a9eb-d908f650dae2": {
+      "name": "Range1sb[]"
+    },
+
+    "ed0450e7-2a14-4fe6-b3ac-f4a8ee314fad": {
+      "name": "Range1s",
+      "description": "An 1-dim range with limits [Min, Max] of Int16.",
+      "layout": {
+        "Min": "Int16",
+        "Max": "Int16"
+      }
+    },
+    "f8ce22da-f877-45a9-9f69-129473d22809": {
+      "name": "Range1s[]"
+    },
+
+    "7809e939-1d9b-4033-9b7e-7459a2e53b73": {
+      "name": "Range1us",
+      "description": "An 1-dim range with limits [Min, Max] of UInt16.",
+      "layout": {
+        "Min": "UInt16",
+        "Max": "UInt16"
+      }
+    },
+    "9aad8600-41f0-4f83-a431-de44c4031e9a": {
+      "name": "Range1us[]"
+    },
+
+    "06fad1c2-33a1-4962-92af-19a7c84560a9": {
+      "name": "Range1i",
+      "description": "An 1-dim range with limits [Min, Max] of Int32.",
+      "layout": {
+        "Min": "Int32",
+        "Max": "Int32"
+      }
+    },
+    "4c1a43f6-23ba-49aa-9cbf-b308d8524850": {
+      "name": "Range1i[]"
+    },
+
+    "7ff2c8c9-9c4d-4fb2-a750-f07338ebe0b5": {
+      "name": "Range1ui",
+      "description": "An 1-dim range with limits [Min, Max] of UInt32.",
+      "layout": {
+        "Min": "UInt32",
+        "Max": "UInt32"
+      }
+    },
+    "a9688eae-5f72-48e3-be92-c214dcf106ca": {
+      "name": "Range1ui[]"
+    },
+
+    "03ac4568-a97b-4ca6-b005-587cd9afde75": {
+      "name": "Range1l",
+      "description": "An 1-dim range with limits [Min, Max] of Int64",
+      "layout": {
+        "Min": "Int64",
+        "Max": "Int64"
+      }
+    },
+    "85f5ed95-0b6a-4ea9-a4f1-38055a93781f": {
+      "name": "Range1l[]"
+    },
+
+    "b7e36341-3dbb-47a0-b5c7-2d199f8d909b": {
+      "name": "Range1ul",
+      "description": "An 1-dim range with limits [Min, Max] of UInt64",
+      "layout": {
+        "Min": "UInt64",
+        "Max": "UInt64"
+      }
+    },
+    "7b733797-ee9a-4432-bfd4-4d428e3710d9": {
+      "name": "Range1ul[]"
+    },
+
+    "f5b3c83b-a294-4f40-90aa-4abd7c627e95": {
+      "name": "Range1f",
+      "description": "An 1-dim range with limits [Min, Max] of Float32",
+      "layout": {
+        "Min": "Float32",
+        "Max": "Float32"
+      }
+    },
+    "7406e3c8-c5b0-465f-afa9-9104b2387462": {
+      "name": "Range1f[]"
+    },
+
+    "b82bff3c-d075-4d16-85d5-0be5b31a9465": {
+      "name": "Range1d",
+      "description": "An 1-dim range with limits [Min, Max] of Float64",
+      "layout": {
+        "Min": "Float64",
+        "Max": "Float64"
+      }
+    },
+    "91420eb9-069d-47da-9911-058e12c6ad43": {
+      "name": "Range1d[]"
+    },
+
+    "0edba5a6-1cec-401f-8d98-78bb4b3319e5": {
+      "name": "Box2i",
+      "description": "An 2-dim axis-aligned box with limits [Min, Max] of V2i.",
+      "layout": {
+        "Min": "V2i",
+        "Max": "V2i"
+      }
+    },
+    "16afc42c-d4fd-4988-bd38-a039608ce612": {
+      "name": "Box2i[]"
+    },
+
+    "380422d0-0428-47a6-aeb3-3ab328e21bef": {
+      "name": "Box2l",
+      "description": "An 2-dim axis-aligned box with limits [Min, Max] of V2l.",
+      "layout": {
+        "Min": "V2l",
+        "Max": "V2l"
+      }
+    },
+    "062de2a5-1bdc-4b62-8a58-50d2f002676f": {
+      "name": "Box2l[]"
+    },
+
+    "414d504d-f350-439b-a73a-4fcc38aafa89": {
+      "name": "Box2f",
+      "description": "An 2-dim axis-aligned box with limits [Min, Max] of V2f.",
+      "layout": {
+        "Min": "V2f",
+        "Max": "V2f"
+      }
+    },
+    "8a515f76-89cb-45e5-9c3e-81afecab0dad": {
+      "name": "Box2f[]"
+    },
+
+    "2fb054de-db29-4c1c-bc97-5a0cce4bc291": {
+      "name": "Box2d",
+      "description": "An 2-dim axis-aligned box with limits [Min, Max] of V2d.",
+      "layout": {
+        "Min": "V2d",
+        "Max": "V2d"
+      }
+    },
+    "e2f9e9a9-c78f-436c-89e3-da69efefb9ec": {
+      "name": "Box2d[]"
+    },
+
+    "c1301768-a349-489d-907e-a8967166cd7c": {
+      "name": "Box3i",
+      "description": "An 3-dim axis-aligned box with limits [Min, Max] of V3i.",
+      "layout": {
+        "Min": "V3i",
+        "Max": "V3i"
+      }
+    },
+    "c5bfc96a-fcf7-47d9-9c29-b403734403c4": {
+      "name": "Box3i[]"
+    },
+
+    "b22529e1-926a-4312-bb5c-3bc63700e4ac": {
+      "name": "Box3l",
+      "description": "An 3-dim axis-aligned box with limits [Min, Max] of V3l.",
+      "layout": {
+        "Min": "V3l",
+        "Max": "V3l"
+      }
+    },
+    "0d57063d-cf07-4830-b678-ce7ad7b0e6a1": {
+      "name": "Box3l[]"
+    },
+
+    "416721ca-6df1-4ada-b7ad-1da7256f490d": {
+      "name": "Box3f",
+      "description": "An 3-dim axis-aligned box with limits [Min, Max] of V3f.",
+      "layout": {
+        "Min": "V3f",
+        "Max": "V3f"
+      }
+    },
+    "82b363ce-f626-4ac3-bd69-038874f4b661": {
+      "name": "Box3f[]"
+    },
+
+    "5926f1ce-37fb-4022-a6e5-536b22ad79ea": {
+      "name": "Box3d",
+      "description": "An 3-dim axis-aligned box with limits [Min, Max] of V3d.",
+      "layout": {
+        "Min": "V3d",
+        "Max": "V3d"
+      }
+    },
+    "59e43b45-5221-4127-8da9-0b28c07a5b22": {
+      "name": "Box3d[]"
+    },
+
+    "bb9da8cb-c9d6-43dd-95d6-f569c82d9af6": {
+      "name": "Cell",
+      "description": "A 2^Exponent sized cube positioned at (X,Y,Z) * 2^Exponent.",
+      "layout": {
+        "X": "Int64",
+        "Y": "Int64",
+        "Z": "Int64",
+        "Exponent": "Int32"
+      }
+    },
+    "2732639f-20b2-46dc-8d54-007a2ef2d2ea": {
+      "name": "Cell[]"
+    },
+
+    "73656667-ea6a-468f-962c-64cd4e24f409": {
+      "name": "C3b",
+      "description": "A color with channels BGR of UInt8.",
+      "layout": {
+        "B": "UInt8",
+        "G": "UInt8",
+        "R": "UInt8"
+      }
+    },
+    "41dde1c8-2b63-4a18-90c8-8f0c67c685b7": {
+      "name": "C3b[]"
+    },
+
+    "e606b2fc-5a95-420e-8ddc-66a65e7e31f0": {
+      "name": "C3us",
+      "description": "A color with channels RGB of UInt16.",
+      "layout": {
+        "R": "UInt16",
+        "G": "UInt16",
+        "B": "UInt16"
+      }
+    },
+    "4225db2b-dcb6-458b-bc14-ba5d9e7ab557": {
+      "name": "C3us[]"
+    },
+
+    "0314f5c3-28b8-4523-8a2f-1b75d01d055b": {
+      "name": "C3ui",
+      "description": "A color with channels RGB of UInt32.",
+      "layout": {
+        "R": "UInt32",
+        "G": "UInt32",
+        "B": "UInt32"
+      }
+    },
+    "394e46b5-ac4d-44ca-8c48-88b12a974d7c": {
+      "name": "C3ui[]"
+    },
+
+    "76873abb-5cd1-46a9-90f6-92db62731bcf": {
+      "name": "C3f",
+      "description": "A color with channels RGB of Float32.",
+      "layout": {
+        "R": "Float32",
+        "G": "Float32",
+        "B": "Float32"
+      }
+    },
+    "e0ffeee7-96a5-4705-9589-2f1bac139068": {
+      "name": "C3f[]"
+    },
+
+    "b87f7505-d164-45e1-bcde-72304e924abe": {
+      "name": "C3d",
+      "description": "A color with channels RGB of Float64.",
+      "layout": {
+        "R": "Float64",
+        "G": "Float64",
+        "B": "Float64"
+      }
+    },
+    "47eab504-ace3-47d4-8ad7-e5ed8599c01a": {
+      "name": "C3d[]"
+    },
+
+    "3f34792b-e03d-4d21-a4a6-4890d5f3f67f": {
+      "name": "C4b",
+      "description": "A color with channels BGRA of UInt8.",
+      "layout": {
+        "B": "UInt8",
+        "G": "UInt8",
+        "R": "UInt8",
+        "A": "UInt8"
+      }
+    },
+    "06318db7-1518-43eb-97c4-ba13c83fc64b": {
+      "name": "C4b[]"
+    },
+
+    "85917bcd-00e9-4402-abc7-38c973c96ecc": {
+      "name": "C4us",
+      "description": "A color with channels BGRA of UInt16.",
+      "layout": {
+        "R": "UInt16",
+        "G": "UInt16",
+        "B": "UInt16",
+        "A": "UInt16"
+      }
+    },
+    "f3944349-d463-486b-be25-8bc1764f1323": {
+      "name": "C4us[]"
+    },
+
+    "7018167d-2316-4ff0-a239-0ebf95c32adf": {
+      "name": "C4ui",
+      "description": "A color with channels BGRA of UInt32.",
+      "layout": {
+        "R": "UInt32",
+        "G": "UInt32",
+        "B": "UInt32",
+        "A": "UInt32"
+      }
+    },
+    "1afb8c51-a29a-4919-8c32-a62ade22a857": {
+      "name": "C4ui[]"
+    },
+
+    "e09cfff1-b186-42e8-9b3d-6a4325117ba4": {
+      "name": "C4f",
+      "description": "A color with channels BGRA of Float32.",
+      "layout": {
+        "R": "Float32",
+        "G": "Float32",
+        "B": "Float32",
+        "A": "Float32"
+      }
+    },
+    "4b9b675b-a575-47f0-9b7e-0f49b9904dc5": {
+      "name": "C4f[]"
+    },
+
+    "fe74ea05-4b9a-4723-a075-eec853c9cc19": {
+      "name": "C4d",
+      "description": "A color with channels BGRA of Float64.",
+      "layout": {
+        "R": "Float64",
+        "G": "Float64",
+        "B": "Float64",
+        "A": "Float64"
+      }
+    },
+    "75e7b36b-fb9e-4b9e-b92c-728c69b6feae": {
+      "name": "C4d[]"
+    }
+  },
+
+  "Octree": {
+    "e0883944-1d81-4ff5-845f-0b96075880b7": {
+      "name": "Octree.Node",
+      "description": "Octree. An octree node. DurableMap.",
+      "type": "DurableMap"
+    },
+
+    "708b4b8e-286b-4658-82ac-dd8ea98d1b1c": {
+      "name": "Octree.Tree",
+      "description": "Octree. An octree node followed by all other nodes in depth first order. DurableMap.",
+      "type": "DurableMap"
+    },
+
+    "1100ffd5-7789-4872-9ef2-67d45be0c489": {
+      "name": "Octree.NodeId",
+      "description": "Octree. Node's unique id.",
+      "type": "Guid"
+    },
+
+    "eb44f9b0-3247-4426-b458-1b6e9880d466": {
+      "name": "Octree.Subnodes.Guids",
+      "description": "Octree. Subnodes as array of guids. Array length is 8 for inner nodes (where Guid.Empty means no subnode) and no array for leaf nodes.",
+      "type": "Guid[]"
+    },
+
+    "7912c862-74b4-4f44-a8cd-d11ea1da9304": {
+      "name": "Octree.BoundingBoxExactGlobal",
+      "description": "Octree. Exact bounding box of this node's positions. Global space. Box3d.",
+      "type": "Box3d"
+    },
+
+    "aadbb622-1cf6-42e0-86df-be79d28d6757": {
+      "name": "Octree.BoundingBoxExactLocal",
+      "description": "Octree. Exact bounding box of this node's positions. Local space. Box3f.",
+      "type": "Box3f"
+    },
+
+    "9f8121e4-83af-40e3-aed9-5fd908a140ee": {
+      "name": "Octree.Cell",
+      "description": "Octree. Cell's index. Global space. Cell.",
+      "type": "Cell"
+    },
+
+    "172e1f20-0ffc-4d9c-9b3d-903fca41abe3": {
+      "name": "Octree.PointCountCell",
+      "description": "Octree. Number of points in this cell. Int32.",
+      "type": "Int32"
+    },
+
+    "71e80c00-06b6-4e84-a0f7-dbababd2613c": {
+      "name": "Octree.PointCountTreeLeafs",
+      "description": "Octree. Total number of points in this tree's leaf nodes. Int64.",
+      "type": "Int64"
+    },
+
+    "39c21132-4570-4624-afae-6304851567d7": {
+      "name": "Octree.AveragePointDistance",
+      "description": "Octree. Average distance of each point to its nearest neighbour.",
+      "type": "Float32"
+    },
+
+    "94cac234-b6ea-443a-b196-c7dd8e5def0d": {
+      "name": "Octree.AveragePointDistanceStdDev",
+      "description": "Octree. Standard deviation of average distances of each point to its nearest neighbour.",
+      "type": "Float32"
+    },
+
+    "42edbdd6-a29e-4dfd-9836-050ab7fa4e31": {
+      "name": "Octree.MinTreeDepth",
+      "description": "Octree. Min depth of this tree. A leaf node has depth 0. Int32.",
+      "type": "Int32"
+    },
+
+    "d6f54b9e-e907-46c5-9106-d26cd453dc97": {
+      "name": "Octree.MaxTreeDepth",
+      "description": "Octree. Max depth of this tree. A leaf node has depth 0. Int32.",
+      "type": "Int32"
+    },
+
+    "61ef7c1e-6aeb-45cd-85ed-ad0ed2584553": {
+      "name": "Octree.PositionsGlobal3d",
+      "description": "Octree. Per-point positions in global space. V3d[].",
+      "type": "V3d[]"
+    },
+
+    "2040882e-75b8-4fef-9965-1ffef92f4fd3": {
+      "name": "Octree.PositionsGlobal3d.Centroid",
+      "description": "Octree. Centroid of positions (global space). V3d.",
+      "type": "V3d"
+    },
+
+    "03a45262-6764-459d-9e2d-73bf6338d3a6": {
+      "name": "Octree.PositionsGlobal3d.DistToCentroid.Average",
+      "description": "Octree. Average point distance to centroid (global space). Float64.",
+      "type": "Float64"
+    },
+    "61d5ad06-37d3-4df2-a999-6599efc2ae83": {
+      "name": "Octree.PositionsGlobal3d.DistToCentroid.StdDev",
+      "description": "Octree. Stdandard deviation of average point distance to centroid (global space). Float64.",
+      "type": "Float64"
+    },
+
+    "05eb38fa-1b6a-4576-820b-780163199db9": {
+      "name": "Octree.PositionsLocal3f",
+      "description": "Octree. Per-point positions in local cell space (as offsets from cell's center). V3f[].",
+      "type": "V3f[]"
+    },
+
+    "bd6cc4ab-6a41-49b3-aca2-ca4f21510609": {
+      "name": "Octree.PositionsLocal3f.Centroid",
+      "description": "Octree. Centroid of positions (local space). V3f.",
+      "type": "V3f"
+    },
+
+    "1b7e74c5-b2ba-46fd-a7db-c08734da3b75": {
+      "name": "Octree.PositionsLocal3f.DistToCentroid.Average",
+      "description": "Octree. Average point distance to centroid (local space). Float32.",
+      "type": "Float32"
+    },
+
+    "c927d42b-02d8-480e-be93-0660eefd62a5": {
+      "name": "Octree.PositionsLocal3f.DistToCentroid.StdDev",
+      "description": "Octree. Stdandard deviation of average point distance to centroid (local space). Float32.",
+      "type": "Float32"
+    },
+
+    "712d0a0c-a8d0-42d1-bfc7-77eac2e4a755": {
+      "name": "Octree.Normals3f",
+      "description": "Octree. Per-point normals (V3f[]).",
+      "type": "V3f[]"
+    },
+
+    "aaf4872c-0964-4351-9530-8a3e2be94a6e": {
+      "name": "Octree.Normals3sb",
+      "description": "Octree. Per-point normals (X:int8, Y:int8, Z:int8), where [-128,+127] is mapped to [-1.0,+1.0].",
+      "type": "Int8[]"
+    },
+
+    "144770e4-70ea-4dd2-91a5-91f48672e87e": {
+      "name": "Octree.Normals.Oct16",
+      "description": "Octree. Per-point normals encoded as 16bits per normal according to format oct16 decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
+      "type": "Int16[]"
+    },
+
+    "5fdf162c-bd21-4688-aa5c-91dd0a550c44": {
+      "name": "Octree.Normals.Oct16P",
+      "description": "Octree. Per-point normals encoded as 16bits per normal according to format oct16P decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
+      "type": "Int16[]"
+    },
+
+    "61cb1fa8-b2e2-41ae-8022-5787b44ee058": {
+      "name": "Octree.Colors3b",
+      "description": "Octree. Per-point colors. C3b[].",
+      "type": "C3b[]"
+    },
+
+    "bf36c54b-f199-4138-a32f-c089cf527dad": {
+      "name": "Octree.Colors.RGB565",
+      "description": "Octree. Per-point colors in RGB565 format, where bits 0 to 4 are the blue value, 5 to 10 are green, and 11-15 are red. UInt16[].",
+      "type": "UInt16[]"
+    },
+
+    "361027fd-ac58-4de8-89ee-98695f8c5520": {
+      "name": "Octree.Intensities1i",
+      "description": "Octree. Per-point intensities. Int32[].",
+      "type": "Int32[]"
+    },
+
+    "c533bd54-9aff-40e1-a2bb-c69c9778fecb": {
+      "name": "Octree.KdTreeIndexArray",
+      "description": "Octree. Kd-tree index array. Int32[], where pivot is stored at index n/2 recursively.",
+      "type": "Int32[]"
+    }
+  }
+}

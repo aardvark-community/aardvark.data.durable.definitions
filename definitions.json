@@ -908,10 +908,22 @@
       "type": "Float32"
     },
 
+    "f3d3264d-abb4-47c5-963b-39d1a1728fa9": {
+      "name": "Octree.PositionsLocal3f.Reference",
+      "description": "Octree. Reference to per-point positions in local cell space (as offsets from cell's center). Guid.",
+      "type": "Guid"
+    },
+
     "712d0a0c-a8d0-42d1-bfc7-77eac2e4a755": {
       "name": "Octree.Normals3f",
       "description": "Octree. Per-point normals (V3f[]).",
       "type": "V3f[]"
+    },	
+    
+    "0fb38f30-08fb-402f-bc10-a7c54d92fb26": {
+      "name": "Octree.Normals3f.Reference",
+      "description": "Octree. Reference to per-point normals (Guid).",
+      "type": "Guid"
     },
 
     "aaf4872c-0964-4351-9530-8a3e2be94a6e": {
@@ -920,10 +932,22 @@
       "type": "Int8[]"
     },
 
+    "eb245ac4-a207-4428-87ea-2e715b9f01ef": {
+      "name": "Octree.Normals3sb.Reference",
+      "description": "Octree. Reference to per-point normals (X:int8, Y:int8, Z:int8), where [-128,+127] is mapped to [-1.0,+1.0].",
+      "type": "Guid"
+    },
+
     "144770e4-70ea-4dd2-91a5-91f48672e87e": {
       "name": "Octree.Normals.Oct16",
       "description": "Octree. Per-point normals encoded as 16bits per normal according to format oct16 decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
       "type": "Int16[]"
+    },
+
+    "7a397f13-b0dd-4925-89a2-066ef5426be3": {
+      "name": "Octree.Normals.Oct16.Reference",
+      "description": "Octree. Reference to per-point normals encoded as 16bits per normal according to format oct16 decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
+      "type": "Guid"
     },
 
     "5fdf162c-bd21-4688-aa5c-91dd0a550c44": {
@@ -932,10 +956,22 @@
       "type": "Int16[]"
     },
 
+    "eec0ba91-bdcf-469a-b2f2-9c46009b04e6": {
+      "name": "Octree.Normals.Oct16P.Reference",
+      "description": "Octree. Reference to per-point normals encoded as 16bits per normal according to format oct16P decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
+      "type": "Guid"
+    },
+
     "61cb1fa8-b2e2-41ae-8022-5787b44ee058": {
       "name": "Octree.Colors3b",
       "description": "Octree. Per-point colors. C3b[].",
       "type": "C3b[]"
+    },
+
+    "b8a664d9-c77d-4ea6-a196-6d82602356a2": {
+      "name": "Octree.Colors3b.Reference",
+      "description": "Octree. Reference to per-point colors. Guid.",
+      "type": "Guid"
     },
 
     "bf36c54b-f199-4138-a32f-c089cf527dad": {
@@ -944,16 +980,34 @@
       "type": "UInt16[]"
     },
 
+    "9557c438-16b0-49c7-979d-8de5dc8829b4": {
+      "name": "Octree.Colors.RGB565.Reference",
+      "description": "Octree. Reference to per-point colors in RGB565 format, where bits 0 to 4 are the blue value, 5 to 10 are green, and 11-15 are red. Guid.",
+      "type": "Guid"
+    },
+
     "361027fd-ac58-4de8-89ee-98695f8c5520": {
       "name": "Octree.Intensities1i",
       "description": "Octree. Per-point intensities. Int32[].",
       "type": "Int32[]"
     },
 
+    "4e6842a2-3c3a-4b4e-a773-06ba138ad86e": {
+      "name": "Octree.Intensities1i.Reference",
+      "description": "Octree. Reference to per-point intensities. Guid.",
+      "type": "Guid"
+    },
+
     "c533bd54-9aff-40e1-a2bb-c69c9778fecb": {
       "name": "Octree.KdTreeIndexArray",
       "description": "Octree. Kd-tree index array. Int32[], where pivot is stored at index n/2 recursively.",
       "type": "Int32[]"
+    },
+
+    "fc2b48cb-ab79-4579-92a3-0a421c8d9112": {
+      "name": "Octree.KdTreeIndexArray.Reference",
+      "description": "Octree. Reference to kd-tree index array. Int32[], where pivot is stored at index n/2 recursively.",
+      "type": "Guid"
     }
   }
 }

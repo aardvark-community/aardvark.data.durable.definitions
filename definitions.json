@@ -779,6 +779,26 @@
     },
     "75e7b36b-fb9e-4b9e-b92c-728c69b6feae": {
       "name": "C4d[]"
+    },
+
+    "023ebe21-d8c2-4ccd-9c6d-326ead4a0ee9": {
+      "name": "PointRkdTreeFData",
+      "description": "Aardvark.Geometry.PointRkdTreeFData.",
+      "layout": {
+        "PermArray": "Int64[]",
+        "AxisArray": "Int32[]",
+        "RadiusArray": "Float32[]"
+      }
+    },
+
+    "e6445682-46e8-4598-9757-22757e6110ca": {
+      "name": "PointRkdTreeDData",
+      "description": "Aardvark.Geometry.PointRkdTreeDData.",
+      "layout": {
+        "PermArray": "Int64[]",
+        "AxisArray": "Int32[]",
+        "RadiusArray": "Float64[]"
+      }
     }
   },
 
@@ -918,8 +938,8 @@
       "name": "Octree.Normals3f",
       "description": "Octree. Per-point normals (V3f[]).",
       "type": "V3f[]"
-    },	
-    
+    },
+
     "0fb38f30-08fb-402f-bc10-a7c54d92fb26": {
       "name": "Octree.Normals3f.Reference",
       "description": "Octree. Reference to per-point normals (Guid).",
@@ -1007,6 +1027,18 @@
     "fc2b48cb-ab79-4579-92a3-0a421c8d9112": {
       "name": "Octree.KdTreeIndexArray.Reference",
       "description": "Octree. Reference to kd-tree index array. Int32[], where pivot is stored at index n/2 recursively.",
+      "type": "Guid"
+    },
+
+    "d48d006e-9840-433c-afdb-c5fc5b14be54": {
+      "name": "Octree.PointRkdTreeFData.Reference",
+      "description": "Octree. Reference to Aardvark.Geometry.PointRkdTreeFData.",
+      "type": "Guid"
+    },
+
+    "05cf0cac-4f8f-41bc-ac50-1b291297f892": {
+      "name": "Octree.PointRkdTreeDData.Reference",
+      "description": "Octree. Reference to Aardvark.Geometry.PointRkdTreeDData.",
       "type": "Guid"
     }
   }

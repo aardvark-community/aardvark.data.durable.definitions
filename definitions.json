@@ -809,12 +809,6 @@
       "type": "DurableMap"
     },
 
-    "da963994-0883-4697-868c-4719131fb146": {
-      "name": "Octree.FilteredNode",
-      "description": "Octree. A filtered octree node. DurableMap.",
-      "type": "DurableMap"
-    },
-
     "708b4b8e-286b-4658-82ac-dd8ea98d1b1c": {
       "name": "Octree.Tree",
       "description": "Octree. An octree node followed by all other nodes in depth first order. DurableMap.",
@@ -906,7 +900,7 @@
     },
     "61d5ad06-37d3-4df2-a999-6599efc2ae83": {
       "name": "Octree.PositionsGlobal3d.DistToCentroid.StdDev",
-      "description": "Octree. Stdandard deviation of average point distance to centroid (global space). Float64.",
+      "description": "Octree. Standard deviation of average point distance to centroid (global space). Float64.",
       "type": "Float64"
     },
 
@@ -930,7 +924,7 @@
 
     "c927d42b-02d8-480e-be93-0660eefd62a5": {
       "name": "Octree.PositionsLocal3f.DistToCentroid.StdDev",
-      "description": "Octree. Stdandard deviation of average point distance to centroid (local space). Float32.",
+      "description": "Octree. Standard deviation of average point distance to centroid (local space). Float32.",
       "type": "Float32"
     },
 

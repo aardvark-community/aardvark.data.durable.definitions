@@ -809,6 +809,12 @@
       "type": "DurableMap"
     },
 
+    "da963994-0883-4697-868c-4719131fb146": {
+      "name": "Octree.FilteredNode",
+      "description": "Octree. A filtered octree node. DurableMap.",
+      "type": "DurableMap"
+    },
+
     "708b4b8e-286b-4658-82ac-dd8ea98d1b1c": {
       "name": "Octree.Tree",
       "description": "Octree. An octree node followed by all other nodes in depth first order. DurableMap.",
@@ -994,6 +1000,18 @@
       "type": "Guid"
     },
 
+    "c91dfea3-243d-4272-9dba-b572931dba23": {
+      "name": "Octree.Colors4b",
+      "description": "Octree. Per-point colors. C4b[].",
+      "type": "C3b[]"
+    },
+
+    "cb2bdeae-2085-442b-90bc-990b892fdb61": {
+      "name": "Octree.Colors4b.Reference",
+      "description": "Octree. Reference to per-point colors. Guid.",
+      "type": "Guid"
+    },
+
     "bf36c54b-f199-4138-a32f-c089cf527dad": {
       "name": "Octree.Colors.RGB565",
       "description": "Octree. Per-point colors in RGB565 format, where bits 0 to 4 are the blue value, 5 to 10 are green, and 11-15 are red. UInt16[].",
@@ -1018,6 +1036,30 @@
       "type": "Guid"
     },
 
+    "bf0975e4-43bd-4742-9e61-c7469d81805d": {
+      "name": "Octree.Classifications1b",
+      "description": "Octree. Per-point classifications. uint8[].",
+      "type": "UInt8[]"
+    },
+
+    "41d796a1-4f34-49a3-8669-1be4a0b17ac4": {
+      "name": "Octree.Classifications1b.Reference",
+      "description": "Octree. Reference to per-point uint8 classifications. Guid.",
+      "type": "Guid"
+    },
+
+    "33f675ea-09d4-4bf5-82d3-ec6be885de6d": {
+      "name": "Octree.Classifications1s",
+      "description": "Octree. Per-point classifications. uint16[].",
+      "type": "UInt16[]"
+    },
+
+    "093ace41-4ec6-4e3e-9881-1f10a082df44": {
+      "name": "Octree.Classifications1s.Reference",
+      "description": "Octree. Reference to per-point uint16 classifications. Guid.",
+      "type": "Guid"
+    },
+
     "c533bd54-9aff-40e1-a2bb-c69c9778fecb": {
       "name": "Octree.KdTreeIndexArray",
       "description": "Octree. Kd-tree index array. Int32[], where pivot is stored at index n/2 recursively.",
@@ -1030,10 +1072,22 @@
       "type": "Guid"
     },
 
+    "c90f303c-f9be-49d1-9188-51fde1e1e75d": {
+      "name": "Octree.PointRkdTreeFData",
+      "description": "Octree. Aardvark.Geometry.PointRkdTreeFData.",
+      "type": "PointRkdTreeFData"
+    },
+
     "d48d006e-9840-433c-afdb-c5fc5b14be54": {
       "name": "Octree.PointRkdTreeFData.Reference",
       "description": "Octree. Reference to Aardvark.Geometry.PointRkdTreeFData.",
       "type": "Guid"
+    },
+
+    "c00e3cc0-983c-4c51-801f-8c55ff337b2d": {
+      "name": "Octree.PointRkdTreeDData",
+      "description": "Octree. Aardvark.Geometry.PointRkdTreeDData.",
+      "type": "PointRkdTreeDData"
     },
 
     "05cf0cac-4f8f-41bc-ac50-1b291297f892": {

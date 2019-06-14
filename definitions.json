@@ -779,7 +779,28 @@
     },
     "75e7b36b-fb9e-4b9e-b92c-728c69b6feae": {
       "name": "C4d[]"
+    },
+
+    "c5e8c7d1-3b0f-4221-8ad8-443ff1994979": {
+      "name": "PointRkdTreeFData",
+      "description": "Data of an Aardvark.Geometry.PointRkdTreeF.",
+      "layout": {
+        "PermArray": "Int64[]",
+        "AxisArray": "Int32[]",
+        "RadiusArray": "Float32[]"
+      }
+    },
+
+    "ad480012-bcfc-4d0c-ae74-c6f629e7fa87": {
+      "name": "PointRkdTreeDData",
+      "description": "Data of an Aardvark.Geometry.PointRkdTreeD.",
+      "layout": {
+        "PermArray": "Int64[]",
+        "AxisArray": "Int32[]",
+        "RadiusArray": "Float64[]"
+      }
     }
+
   },
 
   "Octree": {
@@ -809,7 +830,7 @@
 
     "7912c862-74b4-4f44-a8cd-d11ea1da9304": {
       "name": "Octree.BoundingBoxExactGlobal",
-      "description": "Octree. Exact bounding box of this node's positions. Global space. Box3d.",
+      "description": "Octree. Exact bounding box of this tree's positions. Global space. Box3d.",
       "type": "Box3d"
     },
 
@@ -998,6 +1019,30 @@
       "type": "Guid"
     },
 
+    "d25cff0e-ea80-445b-ab72-d0a5a1013818": {
+      "name": "Octree.Classifications1b",
+      "description": "Octree. Per-point classifications. UInt8[].",
+      "type": "UInt8[]"
+    },
+
+    "9056806d-eb49-4c09-83cd-0fec099b016e": {
+      "name": "Octree.Classifications1b.Reference",
+      "description": "Octree. Reference to per-point classifications (uint8).",
+      "type": "Guid"
+    },
+
+    "b1619ade-79be-4554-894e-3f7e46240119": {
+      "name": "Octree.Classifications1s",
+      "description": "Octree. Per-point classifications. UInt16[].",
+      "type": "UInt16[]"
+    },
+
+    "3142284a-d7e0-45f9-8044-44800df1daac": {
+      "name": "Octree.Classifications1s.Reference",
+      "description": "Octree. Reference to per-point classifications (uint16).",
+      "type": "Guid"
+    },
+
     "c533bd54-9aff-40e1-a2bb-c69c9778fecb": {
       "name": "Octree.KdTreeIndexArray",
       "description": "Octree. Kd-tree index array. Int32[], where pivot is stored at index n/2 recursively.",
@@ -1007,6 +1052,18 @@
     "fc2b48cb-ab79-4579-92a3-0a421c8d9112": {
       "name": "Octree.KdTreeIndexArray.Reference",
       "description": "Octree. Reference to kd-tree index array. Int32[], where pivot is stored at index n/2 recursively.",
+      "type": "Guid"
+    },
+
+    "d48d006e-9840-433c-afdb-c5fc5b14be54": {
+      "name": "Octree.PointRkdTreeFData.Reference",
+      "description": "Octree. Reference to Aardvark.Geometry.PointRkdTreeFData.",
+      "type": "Guid"
+    },
+
+    "05cf0cac-4f8f-41bc-ac50-1b291297f892": {
+      "name": "Octree.PointRkdTreeDData.Reference",
+      "description": "Octree. Reference to Aardvark.Geometry.PointRkdTreeDData.",
       "type": "Guid"
     }
   }

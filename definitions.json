@@ -901,7 +901,7 @@
     },
     "61d5ad06-37d3-4df2-a999-6599efc2ae83": {
       "name": "Octree.PositionsGlobal3d.DistToCentroid.StdDev",
-      "description": "Octree. Stdandard deviation of average point distance to centroid (global space). Float64.",
+      "description": "Octree. Standard deviation of average point distance to centroid (global space). Float64.",
       "type": "Float64"
     },
 
@@ -925,7 +925,7 @@
 
     "c927d42b-02d8-480e-be93-0660eefd62a5": {
       "name": "Octree.PositionsLocal3f.DistToCentroid.StdDev",
-      "description": "Octree. Stdandard deviation of average point distance to centroid (local space). Float32.",
+      "description": "Octree. Standard deviation of average point distance to centroid (local space). Float32.",
       "type": "Float32"
     },
 
@@ -939,8 +939,8 @@
       "name": "Octree.Normals3f",
       "description": "Octree. Per-point normals (V3f[]).",
       "type": "V3f[]"
-    },	
-    
+    },
+
     "0fb38f30-08fb-402f-bc10-a7c54d92fb26": {
       "name": "Octree.Normals3f.Reference",
       "description": "Octree. Reference to per-point normals (Guid).",
@@ -995,6 +995,18 @@
       "type": "Guid"
     },
 
+    "c91dfea3-243d-4272-9dba-b572931dba23": {
+      "name": "Octree.Colors4b",
+      "description": "Octree. Per-point colors. C4b[].",
+      "type": "C3b[]"
+    },
+
+    "cb2bdeae-2085-442b-90bc-990b892fdb61": {
+      "name": "Octree.Colors4b.Reference",
+      "description": "Octree. Reference to per-point colors. Guid.",
+      "type": "Guid"
+    },
+
     "bf36c54b-f199-4138-a32f-c089cf527dad": {
       "name": "Octree.Colors.RGB565",
       "description": "Octree. Per-point colors in RGB565 format, where bits 0 to 4 are the blue value, 5 to 10 are green, and 11-15 are red. UInt16[].",
@@ -1027,7 +1039,7 @@
 
     "9056806d-eb49-4c09-83cd-0fec099b016e": {
       "name": "Octree.Classifications1b.Reference",
-      "description": "Octree. Reference to per-point classifications (uint8).",
+      "description": "Octree. Reference to per-point classifications (UInt8[]).",
       "type": "Guid"
     },
 
@@ -1039,7 +1051,7 @@
 
     "3142284a-d7e0-45f9-8044-44800df1daac": {
       "name": "Octree.Classifications1s.Reference",
-      "description": "Octree. Reference to per-point classifications (uint16).",
+      "description": "Octree. Reference to per-point classifications (UInt16[]).",
       "type": "Guid"
     },
 
@@ -1055,10 +1067,22 @@
       "type": "Guid"
     },
 
+    "c90f303c-f9be-49d1-9188-51fde1e1e75d": {
+      "name": "Octree.PointRkdTreeFData",
+      "description": "Octree. Aardvark.Geometry.PointRkdTreeFData.",
+      "type": "PointRkdTreeFData"
+    },
+
     "d48d006e-9840-433c-afdb-c5fc5b14be54": {
       "name": "Octree.PointRkdTreeFData.Reference",
       "description": "Octree. Reference to Aardvark.Geometry.PointRkdTreeFData.",
       "type": "Guid"
+    },
+
+    "c00e3cc0-983c-4c51-801f-8c55ff337b2d": {
+      "name": "Octree.PointRkdTreeDData",
+      "description": "Octree. Aardvark.Geometry.PointRkdTreeDData.",
+      "type": "PointRkdTreeDData"
     },
 
     "05cf0cac-4f8f-41bc-ac50-1b291297f892": {

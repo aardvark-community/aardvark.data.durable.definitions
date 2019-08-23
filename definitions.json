@@ -858,6 +858,12 @@
       "type": "Int64"
     },
 
+    "6bef7603-47fa-405f-a330-a1ac1b09c475": {
+      "name": "Octree.PointCountTreeLeafs",
+      "description": "Octree. Total number of points in this tree's leaf nodes. Float64. Backwards compatibility.",
+      "type": "Float64"
+    },
+
     "39c21132-4570-4624-afae-6304851567d7": {
       "name": "Octree.AveragePointDistance",
       "description": "Octree. Average distance of each point to its nearest neighbour.",

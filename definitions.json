@@ -859,7 +859,7 @@
     },
 
     "6bef7603-47fa-405f-a330-a1ac1b09c475": {
-      "name": "Octree.PointCountTreeLeafs",
+      "name": "Octree.PointCountTreeLeafs.Float64",
       "description": "Octree. Total number of points in this tree's leaf nodes. Float64. Backwards compatibility.",
       "type": "Float64"
     },

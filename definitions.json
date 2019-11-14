@@ -816,6 +816,12 @@
       "type": "DurableMap"
     },
 
+    "7c1151c8-9d5f-406d-9c03-9778f657806b": {
+      "name": "Octree.NodeFormat",
+      "description": "Octree. Node format specifier.",
+      "type": "Guid"
+    },
+
     "1100ffd5-7789-4872-9ef2-67d45be0c489": {
       "name": "Octree.NodeId",
       "description": "Octree. Node's unique id.",
@@ -844,6 +850,18 @@
       "name": "Octree.Cell",
       "description": "Octree. Cell's index. Global space. Cell.",
       "type": "Cell"
+    },
+
+    "5f904be4-09fb-4b16-ad9d-460c3ae63248": {
+      "name": "Octree.NodeCountTotal",
+      "description": "Octree. Number of nodes in this tree (including inner nodes). Int64.",
+      "type": "Int64"
+    },
+
+    "8d50e820-69b0-4923-969d-e10aedecdfc2": {
+      "name": "Octree.NodeCountLeafs",
+      "description": "Octree. Number of leaf nodes in this tree. Int64.",
+      "type": "Int64"
     },
 
     "172e1f20-0ffc-4d9c-9b3d-903fca41abe3": {

@@ -1079,6 +1079,30 @@
       "type": "Guid"
     },
 
+    "c8db5f0a-1ddf-47ab-8266-f8e929cf98c5": {
+      "name": "Octree.Velocities3f",
+      "description": "Octree. Per-point velocities (V3f[]).",
+      "type": "V3f[]"
+    },
+
+    "390115cc-5928-4526-8c28-37e709bf31d2": {
+      "name": "Octree.Velocities3f.Reference",
+      "description": "Octree. Reference to per-point velocities (Guid).",
+      "type": "Guid"
+    },
+
+    "3f8a922d-3458-427f-8237-a189e338bf77": {
+      "name": "Octree.Velocities3d",
+      "description": "Octree. Per-point velocities (V3d[]).",
+      "type": "V3d[]"
+    },
+
+    "f7d97f68-e1e1-4b1b-9133-42689b6fb65b": {
+      "name": "Octree.Velocities3d.Reference",
+      "description": "Octree. Reference to per-point velocities (Guid).",
+      "type": "Guid"
+    },
+
     "c533bd54-9aff-40e1-a2bb-c69c9778fecb": {
       "name": "Octree.KdTreeIndexArray",
       "description": "Octree. Kd-tree index array. Int32[], where pivot is stored at index n/2 recursively.",

@@ -7,7 +7,17 @@
 
     "f03716ef-6c9e-4201-bf19-e0cabc6c6a9a": {
       "name": "DurableMap",
-      "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types."
+      "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types. (<0::key><16::data>)*."
+    },
+
+    "0ca48518-96b9-424f-b146-046ac3c8ed10": {
+      "name": "DurableMapAligned16",
+      "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types. Entries are 16-byte aligned."
+    },
+
+    "7d8fc4c0-d727-4171-bc91-78f92f0c1aa4": {
+      "name": "GZipped",
+      "description": "A gzipped element."
     },
 
     "a81a39b0-8f61-4efc-b0ce-27e2c5d3199d": {

@@ -7,7 +7,7 @@
 
     "f03716ef-6c9e-4201-bf19-e0cabc6c6a9a": {
       "name": "DurableMap",
-      "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types. (<0::key><16::data>)*."
+      "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types."
     },
 
     "0ca48518-96b9-424f-b146-046ac3c8ed10": {

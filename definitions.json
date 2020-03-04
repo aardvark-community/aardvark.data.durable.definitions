@@ -813,6 +813,105 @@
 
   },
 
+  "Generic": {
+    "40db0cd8-f4fc-4139-a7f0-ba5144b27e11": {
+      "name": "Generic.Positions3f",
+      "description": "Generic positions. V3f[].",
+      "type": "V3f[]"
+    },
+    "7218415c-dd2e-42e9-bc2f-566353978559": {
+      "name": "Generic.Positions3d",
+      "description": "Generic positions. V3d[].",
+      "type": "V3d[]"
+    },
+
+    "3e8f21d0-b653-4665-811b-4a6fa9f343cb": {
+      "name": "Generic.Normals3f",
+      "description": "Generic normals. V3f[].",
+      "type": "V3f[]"
+    },
+    "d1707d33-18af-45ed-9bce-870b0fe30310": {
+      "name": "Generic.Normals3sb",
+      "description": "Generic normals (X:int8, Y:int8, Z:int8), where [-128,+127] is mapped to [-1.0,+1.0].",
+      "type": "Int8[]"
+    },
+    "e801cbc2-c1b7-49cd-9bdf-5f212562575c": {
+      "name": "Generic.Normals.Oct16",
+      "description": "Octree. Per-point normals encoded as 16bits per normal according to format oct16 decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
+      "type": "Int16[]"
+    },
+    "e855b0f0-63c7-49ac-810e-aa48dd65349a": {
+      "name": "Generic.Normals.Oct16P",
+      "description": "Octree. Per-point normals encoded as 16bits per normal according to format oct16P decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
+      "type": "Int16[]"
+    },
+
+    "9f7dacb5-3d0e-4623-8ae2-aad072f12cab": {
+      "name": "Generic.Colors3b",
+      "description": "Generic colors. C3b[].",
+      "type": "C3b[]"
+    },
+    "b18a2463-a821-4ae7-a259-9a7739257286": {
+      "name": "Generic.Colors4b",
+      "description": "Generic colors. C4b[].",
+      "type": "C3b[]"
+    },
+    "125f054f-003f-459b-8415-e6150992bb5f": {
+      "name": "Generic.Colors.RGB565",
+      "description": "Generic colors in RGB565 format, where bits 0 to 4 are the blue value, 5 to 10 are green, and 11-15 are red. UInt16[].",
+      "type": "UInt16[]"
+    },
+
+    "eec1c41a-8f76-4d09-9ddc-bb7755a2f4b8": {
+      "name": "Generic.Intensities1i",
+      "description": "Generic intensities. Int32[].",
+      "type": "Int32[]"
+    },
+    "e337e43b-ea72-4c96-8712-3684cb5d4b73": {
+      "name": "Generic.Intensities1f",
+      "description": "Generic intensities. Float32[].",
+      "type": "Float32[]"
+    },
+
+    "61a27f4d-b6c8-4ce1-8390-07fe3caee09b": {
+      "name": "Generic.Classifications1b",
+      "description": "Generic classifications. UInt8[].",
+      "type": "UInt8[]"
+    },
+    "e7d38eab-5b7f-4469-98a2-a940d5ee8852": {
+      "name": "Generic.Classifications1s",
+      "description": "Generic classifications. UInt16[].",
+      "type": "UInt16[]"
+    },
+    "fe0b56b8-bf84-4e6e-ab9e-33cd63ae187d": {
+      "name": "Generic.Classifications1i",
+      "description": "Generic classifications. Int32[].",
+      "type": "Int32[]"
+    },
+
+    "8916a1b8-59a3-4bc6-ab17-d91abd6a4ee3": {
+      "name": "Generic.Velocities3f",
+      "description": "Generic velocities (V3f[]).",
+      "type": "V3f[]"
+    },
+    "14528fc1-a5b6-4cbb-9cab-489f962cff6c": {
+      "name": "Generic.Velocities3d",
+      "description": "Generic velocities (V3d[]).",
+      "type": "V3d[]"
+    },
+
+    "e912f821-fba2-4177-9419-007930582a4e": {
+      "name": "Generic.Densities1f",
+      "description": "Generic densities (float32[]).",
+      "type": "Float32[]"
+    },
+    "5f8fa111-eb42-4a45-8f7a-c1cd45e200be": {
+      "name": "Generic.Densities1d",
+      "description": "Generic densities (float64[]).",
+      "type": "Float64[]"
+    }
+  },
+
   "Octree": {
     "e0883944-1d81-4ff5-845f-0b96075880b7": {
       "name": "Octree.Node",
@@ -1115,6 +1214,17 @@
       "type": "Guid"
     },
 
+    "ebe476d9-32e8-4d47-982e-35703c3a6b4c": {
+      "name": "Octree.Intensities1f",
+      "description": "Octree. Per-point intensities. Float32[].",
+      "type": "Float32[]"
+    },
+    "85509d76-d44c-4839-8c36-52abb2c35679": {
+      "name": "Octree.Intensities1f.Reference",
+      "description": "Octree. Reference to per-point intensities. Guid.",
+      "type": "Guid"
+    },
+
     "d25cff0e-ea80-445b-ab72-d0a5a1013818": {
       "name": "Octree.Classifications1b",
       "description": "Octree. Per-point classifications. UInt8[].",
@@ -1134,6 +1244,17 @@
     "3142284a-d7e0-45f9-8044-44800df1daac": {
       "name": "Octree.Classifications1s.Reference",
       "description": "Octree. Reference to per-point classifications (UInt16[]).",
+      "type": "Guid"
+    },
+
+    "826cc58d-ed89-4d56-b389-e4b581c71706": {
+      "name": "Octree.Classifications1i",
+      "description": "Octree. Per-point classifications. Int32[].",
+      "type": "Int32[]"
+    },
+    "045cc89b-73de-4170-bb55-e108853e9779": {
+      "name": "Octree.Classifications1i.Reference",
+      "description": "Octree. Reference to per-point classifications (Guid -> Int32[]).",
       "type": "Guid"
     },
 
@@ -1178,7 +1299,7 @@
 
     "fc2b48cb-ab79-4579-92a3-0a421c8d9112": {
       "name": "Octree.KdTreeIndexArray.Reference",
-      "description": "Octree. Reference to kd-tree index array. Int32[], where pivot is stored at index n/2 recursively.",
+      "description": "Octree. Reference to kd-tree index array. Guid -> Int32[].",
       "type": "Guid"
     },
 

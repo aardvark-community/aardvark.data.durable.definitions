@@ -1221,12 +1221,33 @@
     },
     "85509d76-d44c-4839-8c36-52abb2c35679": {
       "name": "Octree.Intensities1f.Reference",
-      "description": "Octree. Reference to per-point intensities. Guid.",
+      "description": "Octree. Reference to Octree.Intensities1f. Guid.",
       "type": "Guid"
     },
     "2cb2501c-fc7e-450b-9926-fcb75677f08d": {
       "name": "Octree.Intensities1f.Range",
-      "description": "Octree. Per-point intensities range. Range1f[].",
+      "description": "Octree. Intensities range for Octree.Intensities[.Reference]. Range1f[].",
+      "type": "Range1f"
+    },
+    
+    "6753a6e1-9633-4997-b403-661578191f8c": {
+      "name": "Octree.IntensitiesWithOffset1f",
+      "description": "Octree. Per-point intensities with offset stored as Octree.IntensitiesWithOffset1f.Offset. Float32[].",
+      "type": "Float32[]"
+    },
+    "d2874881-99a6-4eed-aa15-0d34b03e150e": {
+      "name": "Octree.IntensitiesWithOffset1f.Reference",
+      "description": "Octree. Reference to Octree.IntensitiesWithOffset1f. Guid.",
+      "type": "Guid"
+    },
+    "5b237e1d-743e-435e-9daa-b9884d7a4419": {
+      "name": "Octree.IntensitiesWithOffset1f.Offset",
+      "description": "Octree. The offset for Octree.IntensitiesWithOffset1f[.Reference]. Float64.",
+      "type": "Float64"
+    },
+    "435d8a84-c195-456c-b87b-ded2e5930134": {
+      "name": "Octree.IntensitiesWithOffset1f.Range",
+      "description": "Octree. Intensities range for Octree.IntensitiesWithOffset1f[.Reference]. Range1f.",
       "type": "Range1f"
     },
 

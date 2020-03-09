@@ -5,6 +5,17 @@
       "description": "Unit (nothing, none, null, ...)."
     },
 
+    "f924fd35-ae59-4b0e-a05b-e9c85536c52c": {
+      "name": "DurableDefinition",
+      "description": "A durable definition stored inline. [Id:Guid][Name:StringUTF8][Description:StringUTF8][Type:StringUTF8].",
+      "layout": {
+        "Id": "Guid",
+        "Name": "StringUTF8",
+        "Description": "StringUTF8",
+        "Type": "StringUTF8"
+      }
+    },
+
     "f03716ef-6c9e-4201-bf19-e0cabc6c6a9a": {
       "name": "DurableMap",
       "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types."
@@ -103,38 +114,107 @@
 
     "7891b070-5249-479f-81b8-d8bca5127211": {
       "name": "Float16",
-      "description": "Floating point value (half precision, 16-bit). https://en.wikipedia.org/wiki/IEEE_754."
+      "description": "Floating point value (IEEE 754, half precision, 16-bit). https://en.wikipedia.org/wiki/IEEE_754."
     },
     "fb1d889e-b7bb-41f4-b047-1f6838cd5fdd": {
       "name": "Float16[]",
-      "description": "Array of floating point values (half precision, 16-bit). https://en.wikipedia.org/wiki/IEEE_754."
+      "description": "Array of floating point values (IEEE 754, half precision, 16-bit). https://en.wikipedia.org/wiki/IEEE_754."
     },
 
     "23fb286f-663b-4c71-9923-7e51c500f4ed": {
       "name": "Float32",
-      "description": "Floating point value (single precision, 32-bit). https://en.wikipedia.org/wiki/IEEE_754."
+      "description": "Floating point value (IEEE 754, single precision, 32-bit). https://en.wikipedia.org/wiki/IEEE_754."
     },
     "a687a789-1b63-49e9-a2e4-8099aa7879e9": {
       "name": "Float32[]",
-      "description": "Array of floating point values (single precision, 32-bit). https://en.wikipedia.org/wiki/IEEE_754."
+      "description": "Array of floating point values (IEEE 754, single precision, 32-bit). https://en.wikipedia.org/wiki/IEEE_754."
     },
 
     "c58c9b83-c2de-4153-a588-39c808aed50b": {
       "name": "Float64",
-      "description": "Floating point value (double precision, 64-bit). https://en.wikipedia.org/wiki/IEEE_754."
+      "description": "Floating point value (IEEE 754, double precision, 64-bit). https://en.wikipedia.org/wiki/IEEE_754."
     },
     "ba60cc30-2d56-45d8-a051-6b895b51bb3f": {
       "name": "Float64[]",
-      "description": "Array of floating point values (double precision, 64-bit). https://en.wikipedia.org/wiki/IEEE_754."
+      "description": "Array of floating point values (IEEE 754, double precision, 64-bit). https://en.wikipedia.org/wiki/IEEE_754."
     },
 
     "5d343235-21f6-41e4-992e-93541db26502": {
       "name": "Float128",
-      "description": "Floating point value (quadruple precision, 128-bit). https://en.wikipedia.org/wiki/IEEE_754."
+      "description": "Floating point value (IEEE 754, quadruple precision, 128-bit). https://en.wikipedia.org/wiki/IEEE_754."
     },
     "6477a574-ffb0-4717-9f00-5fb9aff409ce": {
       "name": "Float128[]",
-      "description": "Array of floating point values (quadruple precision, 128-bit). https://en.wikipedia.org/wiki/IEEE_754."
+      "description": "Array of floating point values (IEEE 754, quadruple precision, 128-bit). https://en.wikipedia.org/wiki/IEEE_754."
+    },
+
+    "4c7c4a8d-a4fb-43f5-82d8-34b8b171a05c": {
+      "name": "Float256",
+      "description": "Floating point value (IEEE 754, octuple precision, 256-bit). https://en.wikipedia.org/wiki/IEEE_754."
+    },
+    "acb4dd89-57f7-4229-9f1a-da017947843b": {
+      "name": "Float256[]",
+      "description": "Array of floating point values (IEEE 754, octuple precision, 256-bit). https://en.wikipedia.org/wiki/IEEE_754."
+    },
+
+    "4b970fc3-ce64-45d0-a602-0546b155760a": {
+      "name": "DecimalBID32",
+      "description": "Decimal floating point value (IEEE 754, 32-bit) encoded as binary integer decimal (BID). https://en.wikipedia.org/wiki/Decimal32_floating-point_format."
+    },
+    "349d24de-e84f-44dc-81cc-f110bc907062": {
+      "name": "DecimalBID32[]",
+      "description": "Array of decimal floating point values (IEEE 754, 32-bit) encoded as binary integer decimal (BID). https://en.wikipedia.org/wiki/Decimal32_floating-point_format."
+    },
+    "067151e9-eaee-498e-88f5-fba450dd6cca": {
+      "name": "DecimalDPD32",
+      "description": "Decimal floating point value (IEEE 754, 32-bit) encoded as densely packed decimal (DPD). https://en.wikipedia.org/wiki/Decimal32_floating-point_format."
+    },
+    "25d58ac1-cac8-4d67-a0af-65363c86e126": {
+      "name": "DecimalDPD32[]",
+      "description": "Array of decimal floating point values (IEEE 754, 32-bit) encoded as densely packed decimal (DPD). https://en.wikipedia.org/wiki/Decimal32_floating-point_format."
+    },
+
+    "8a4c6d2b-c4f4-4e5c-864f-fa2226fb0414": {
+      "name": "DecimalBID64",
+      "description": "Decimal floating point value (IEEE 754, 64-bit) encoded as binary integer decimal (BID). https://en.wikipedia.org/wiki/Decimal64_floating-point_format."
+    },
+    "dea7b2cd-231a-4796-bfb9-30cc9d874f0c": {
+      "name": "DecimalBID64[]",
+      "description": "Array of decimal floating point values (6IEEE 754, 4-bit) encoded as binary integer decimal (BID). https://en.wikipedia.org/wiki/Decimal64_floating-point_format."
+    },
+    "23f81713-bb19-4640-8e89-d91c5a31201e": {
+      "name": "DecimalDPD64",
+      "description": "Decimal floating point value (IEEE 754, 64-bit) encoded as densely packed decimal (DPD). https://en.wikipedia.org/wiki/Decimal64_floating-point_format."
+    },
+    "34cf3e10-c798-4011-9a5c-00c4c053d34c": {
+      "name": "DecimalDPD64[]",
+      "description": "Array of decimal floating point values (IEEE 754, 64-bit) encoded as densely packed decimal (DPD). https://en.wikipedia.org/wiki/Decimal64_floating-point_format."
+    },
+
+    "4911e3b9-8c72-4f82-a1fa-8d1a3a2d799d": {
+      "name": "DecimalBID128",
+      "description": "Decimal floating point value (IEEE 754, 128-bit) encoded as binary integer decimal (BID). https://en.wikipedia.org/wiki/Decimal128_floating-point_format."
+    },
+    "1a90ad03-b00f-4db5-928a-9a949c85c5e4": {
+      "name": "DecimalBID128[]",
+      "description": "Array of decimal floating point values (IEEE 754, 128-bit) encoded as binary integer decimal (BID). https://en.wikipedia.org/wiki/Decimal128_floating-point_format."
+    },
+    "d45469bd-f10c-4fb7-b26c-296c38286044": {
+      "name": "DecimalDPD128",
+      "description": "Decimal floating point value (IEEE 754, 128-bit) encoded as densely packed decimal (DPD). https://en.wikipedia.org/wiki/Decimal128_floating-point_format."
+    },
+    "c4e6665a-5387-4f71-b224-27775cffeaf5": {
+      "name": "DecimalDPD128[]",
+      "description": "Array of decimal floating point values (IEEE 754, 128-bit) encoded as densely packed decimal (DPD). https://en.wikipedia.org/wiki/Decimal128_floating-point_format."
+    },
+
+    "eada3477-f3a5-48a4-a05c-da2aa359e034": {
+      "name": "DecimalDotnet",
+      "description": "A .NET decimal value (System.Decimal, 128-bit). https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/types#the-decimal-type."
+    },
+    "b7327b1f-f349-4014-b244-aa328922e69f": {
+      "name": "DecimalDotnet[]",
+      "description": "Array of .NET decimal values (System.Decimal, 128-bit). https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/types#the-decimal-type."
     },
 
     "917c15af-0e2d-4265-a732-7b2f147f4b94": {
@@ -428,7 +508,7 @@
 
     "db31d0e0-2c56-48da-a769-5a2c1abad38c": {
       "name": "Range1b",
-      "description": "An 1-dim range with limits [Min, Max] of UInt8.",
+      "description": "A 1-dim range with limits [Min, Max] of UInt8.",
       "layout": {
         "Min": "UInt8",
         "Max": "UInt8"
@@ -440,7 +520,7 @@
 
     "59e5322f-1677-47e4-b991-3e87e43ac005": {
       "name": "Range1sb",
-      "description": "An 1-dim range with limits [Min, Max] of Int8.",
+      "description": "A 1-dim range with limits [Min, Max] of Int8.",
       "layout": {
         "Min": "Int8",
         "Max": "Int8"
@@ -452,7 +532,7 @@
 
     "ed0450e7-2a14-4fe6-b3ac-f4a8ee314fad": {
       "name": "Range1s",
-      "description": "An 1-dim range with limits [Min, Max] of Int16.",
+      "description": "A 1-dim range with limits [Min, Max] of Int16.",
       "layout": {
         "Min": "Int16",
         "Max": "Int16"
@@ -464,7 +544,7 @@
 
     "7809e939-1d9b-4033-9b7e-7459a2e53b73": {
       "name": "Range1us",
-      "description": "An 1-dim range with limits [Min, Max] of UInt16.",
+      "description": "A 1-dim range with limits [Min, Max] of UInt16.",
       "layout": {
         "Min": "UInt16",
         "Max": "UInt16"
@@ -476,7 +556,7 @@
 
     "06fad1c2-33a1-4962-92af-19a7c84560a9": {
       "name": "Range1i",
-      "description": "An 1-dim range with limits [Min, Max] of Int32.",
+      "description": "A 1-dim range with limits [Min, Max] of Int32.",
       "layout": {
         "Min": "Int32",
         "Max": "Int32"
@@ -488,7 +568,7 @@
 
     "7ff2c8c9-9c4d-4fb2-a750-f07338ebe0b5": {
       "name": "Range1ui",
-      "description": "An 1-dim range with limits [Min, Max] of UInt32.",
+      "description": "A 1-dim range with limits [Min, Max] of UInt32.",
       "layout": {
         "Min": "UInt32",
         "Max": "UInt32"
@@ -500,7 +580,7 @@
 
     "03ac4568-a97b-4ca6-b005-587cd9afde75": {
       "name": "Range1l",
-      "description": "An 1-dim range with limits [Min, Max] of Int64",
+      "description": "A 1-dim range with limits [Min, Max] of Int64",
       "layout": {
         "Min": "Int64",
         "Max": "Int64"
@@ -512,7 +592,7 @@
 
     "b7e36341-3dbb-47a0-b5c7-2d199f8d909b": {
       "name": "Range1ul",
-      "description": "An 1-dim range with limits [Min, Max] of UInt64",
+      "description": "A 1-dim range with limits [Min, Max] of UInt64",
       "layout": {
         "Min": "UInt64",
         "Max": "UInt64"
@@ -524,7 +604,7 @@
 
     "f5b3c83b-a294-4f40-90aa-4abd7c627e95": {
       "name": "Range1f",
-      "description": "An 1-dim range with limits [Min, Max] of Float32",
+      "description": "A 1-dim range with limits [Min, Max] of Float32",
       "layout": {
         "Min": "Float32",
         "Max": "Float32"
@@ -536,7 +616,7 @@
 
     "b82bff3c-d075-4d16-85d5-0be5b31a9465": {
       "name": "Range1d",
-      "description": "An 1-dim range with limits [Min, Max] of Float64",
+      "description": "A 1-dim range with limits [Min, Max] of Float64",
       "layout": {
         "Min": "Float64",
         "Max": "Float64"
@@ -548,7 +628,7 @@
 
     "0edba5a6-1cec-401f-8d98-78bb4b3319e5": {
       "name": "Box2i",
-      "description": "An 2-dim axis-aligned box with limits [Min, Max] of V2i.",
+      "description": "A 2-dim axis-aligned box with limits [Min, Max] of V2i.",
       "layout": {
         "Min": "V2i",
         "Max": "V2i"
@@ -560,7 +640,7 @@
 
     "380422d0-0428-47a6-aeb3-3ab328e21bef": {
       "name": "Box2l",
-      "description": "An 2-dim axis-aligned box with limits [Min, Max] of V2l.",
+      "description": "A 2-dim axis-aligned box with limits [Min, Max] of V2l.",
       "layout": {
         "Min": "V2l",
         "Max": "V2l"
@@ -572,7 +652,7 @@
 
     "414d504d-f350-439b-a73a-4fcc38aafa89": {
       "name": "Box2f",
-      "description": "An 2-dim axis-aligned box with limits [Min, Max] of V2f.",
+      "description": "A 2-dim axis-aligned box with limits [Min, Max] of V2f.",
       "layout": {
         "Min": "V2f",
         "Max": "V2f"
@@ -584,7 +664,7 @@
 
     "2fb054de-db29-4c1c-bc97-5a0cce4bc291": {
       "name": "Box2d",
-      "description": "An 2-dim axis-aligned box with limits [Min, Max] of V2d.",
+      "description": "A 2-dim axis-aligned box with limits [Min, Max] of V2d.",
       "layout": {
         "Min": "V2d",
         "Max": "V2d"
@@ -596,7 +676,7 @@
 
     "c1301768-a349-489d-907e-a8967166cd7c": {
       "name": "Box3i",
-      "description": "An 3-dim axis-aligned box with limits [Min, Max] of V3i.",
+      "description": "A 3-dim axis-aligned box with limits [Min, Max] of V3i.",
       "layout": {
         "Min": "V3i",
         "Max": "V3i"
@@ -608,7 +688,7 @@
 
     "b22529e1-926a-4312-bb5c-3bc63700e4ac": {
       "name": "Box3l",
-      "description": "An 3-dim axis-aligned box with limits [Min, Max] of V3l.",
+      "description": "A 3-dim axis-aligned box with limits [Min, Max] of V3l.",
       "layout": {
         "Min": "V3l",
         "Max": "V3l"
@@ -620,7 +700,7 @@
 
     "416721ca-6df1-4ada-b7ad-1da7256f490d": {
       "name": "Box3f",
-      "description": "An 3-dim axis-aligned box with limits [Min, Max] of V3f.",
+      "description": "A 3-dim axis-aligned box with limits [Min, Max] of V3f.",
       "layout": {
         "Min": "V3f",
         "Max": "V3f"
@@ -632,7 +712,7 @@
 
     "5926f1ce-37fb-4022-a6e5-536b22ad79ea": {
       "name": "Box3d",
-      "description": "An 3-dim axis-aligned box with limits [Min, Max] of V3d.",
+      "description": "A 3-dim axis-aligned box with limits [Min, Max] of V3d.",
       "layout": {
         "Min": "V3d",
         "Max": "V3d"

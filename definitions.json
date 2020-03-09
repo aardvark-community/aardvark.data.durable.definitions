@@ -1224,6 +1224,11 @@
       "description": "Octree. Reference to per-point intensities. Guid.",
       "type": "Guid"
     },
+    "2cb2501c-fc7e-450b-9926-fcb75677f08d": {
+      "name": "Octree.Intensities1f.Range",
+      "description": "Octree. Per-point intensities range. Range1f[].",
+      "type": "Range1f"
+    },
 
     "d25cff0e-ea80-445b-ab72-d0a5a1013818": {
       "name": "Octree.Classifications1b",

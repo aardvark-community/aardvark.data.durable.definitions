@@ -228,7 +228,62 @@
     "852888ff-4168-4f4b-a10a-b582d1735c74": {
       "name": "StringUTF8[]",
       "description": "Array of strings. UTF8 encoding."
+    },
+
+
+    "aab1d3e2-80f9-4f12-895c-81cd5fc5d096": {
+      "name": "Float32ArrayWithFloat64Offset",
+      "description": "Float64[] data stored as Int32[] plus Float64 offset."
+    },
+    "8061bb56-3076-4afd-865d-c9a7701d225a": {
+      "name": "Int32ArrayWithInt64Offset",
+      "description": "Int64[] data stored as Int32[] plus Int64 offset."
+    },
+    "f200bcb7-e462-4d42-88e8-d8bfcb10c265": {
+      "name": "Int16ArrayWithInt64Offset",
+      "description": "Int64[] data stored as Int16[] plus Int64 offset."
+    },
+    "46cc0b8e-c4e4-4626-940f-d2adc28c0c00": {
+      "name": "Int8ArrayWithInt64Offset",
+      "description": "Int64[] data stored as Int8[] plus Int64 offset."
+    },
+    "8daf811d-3d1c-4219-8f2e-22c6c49de6cd": {
+      "name": "Int16ArrayWithInt32Offset",
+      "description": "Int32[] data stored as Int16[] plus Int32 offset."
+    },
+    "fd4db85a-5b2c-4390-aeb3-9f2162034ebb": {
+      "name": "Int8ArrayWithInt32Offset",
+      "description": "Int32[] data stored as Int8[] plus Int32 offset."
+    },
+    "2a9f5350-02d3-45e7-84db-5ec55d105787": {
+      "name": "Int8ArrayWithInt16Offset",
+      "description": "Int16[] data stored as Int8[] plus Int16 offset."
+    },
+    "3f3d719a-5a3b-4a97-b9f6-a821c063374f": {
+      "name": "UInt32ArrayWithUInt64Offset",
+      "description": "UInt64[] data stored as UInt32[] plus UInt64 offset."
+    },
+    "f4387c8f-92de-4af7-96fe-5b1e0e3ff935": {
+      "name": "UInt16ArrayWithUInt64Offset",
+      "description": "UInt64[] data stored as UInt16[] plus UInt64 offset."
+    },
+    "166f9886-61a9-4d81-b072-b86bab4e3ba3": {
+      "name": "UInt8ArrayWithUInt64Offset",
+      "description": "UInt64[] data stored as UInt8[] plus UInt64 offset."
+    },
+    "2477f185-8c5b-4f5c-b3d0-21e63f361304": {
+      "name": "UInt16ArrayWithUInt32Offset",
+      "description": "UInt32[] data stored as UInt16[] plus UInt32 offset."
+    },
+    "92355e69-b783-45cd-bf6b-cd5fb978ea33": {
+      "name": "UInt8ArrayWithUInt32Offset",
+      "description": "UInt32[] data stored as UInt8[] plus UInt32 offset."
+    },
+    "625a813d-f2bd-4034-a69c-d967fef3da50": {
+      "name": "UInt8ArrayWithUInt16Offset",
+      "description": "UInt16[] data stored as UInt8[] plus UInt16 offset."
     }
+
   },
 
   "Aardvark": {
@@ -734,6 +789,19 @@
     },
     "2732639f-20b2-46dc-8d54-007a2ef2d2ea": {
       "name": "Cell[]"
+    },
+
+    "9d580e5d-a559-4c5e-9413-7675f1dfe93c": {
+      "name": "Cell2d",
+      "description": "A 2^Exponent sized square positioned at (X,Y) * 2^Exponent.",
+      "layout": {
+        "X": "Int64",
+        "Y": "Int64",
+        "Exponent": "Int32"
+      }
+    },
+    "5c23fd56-3736-4a95-ab74-52b26a711e0e": {
+      "name": "Cell2d[]"
     },
 
     "73656667-ea6a-468f-962c-64cd4e24f409": {

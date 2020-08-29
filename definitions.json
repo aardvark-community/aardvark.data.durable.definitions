@@ -21,6 +21,11 @@
       "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types."
     },
 
+    "6780296f-c30a-4eba-806f-d07d84c7a5bc": {
+      "name": "DurableMapAligned8",
+      "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types. Entries are 8-byte aligned."
+    },
+
     "0ca48518-96b9-424f-b146-046ac3c8ed10": {
       "name": "DurableMapAligned16",
       "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types. Entries are 16-byte aligned."

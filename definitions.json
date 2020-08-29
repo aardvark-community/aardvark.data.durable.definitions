@@ -779,7 +779,7 @@
 
     "bb9da8cb-c9d6-43dd-95d6-f569c82d9af6": {
       "name": "Cell",
-      "description": "A 2^Exponent sized cube positioned at (X,Y,Z) * 2^Exponent.",
+      "description": "A 2^Exponent sized cube positioned at (X,Y,Z) * 2^Exponent. Serialized to 28 bytes.",
       "layout": {
         "X": "Int64",
         "Y": "Int64",
@@ -787,21 +787,50 @@
         "Exponent": "Int32"
       }
     },
+    "8665c4d4-69c1-4b47-a493-ce452e075643": {
+      "name": "CellPadded32",
+      "description": "A 2^Exponent sized cube positioned at (X,Y,Z) * 2^Exponent. Serialized to 32 bytes (with 4 bytes of padding).",
+      "layout": {
+        "X": "Int64",
+        "Y": "Int64",
+        "Z": "Int64",
+        "Exponent": "Int32"
+      }
+    },
+    "9c2e3d4f-7a40-4266-a2dc-bfbde780260a": {
+      "name": "CellPadded32[]"
+    },
     "2732639f-20b2-46dc-8d54-007a2ef2d2ea": {
-      "name": "Cell[]"
+      "name": "Cell[]",
+      "type": "CellPadded32[]",
+      "description": "fix 2020-08-28: changed type from Cell[] to CellPadded32[], because it was always serialized this way."
     },
 
     "9d580e5d-a559-4c5e-9413-7675f1dfe93c": {
       "name": "Cell2d",
-      "description": "A 2^Exponent sized square positioned at (X,Y) * 2^Exponent.",
+      "description": "A 2^Exponent sized square positioned at (X,Y) * 2^Exponent. Serialized to 20 bytes.",
       "layout": {
         "X": "Int64",
         "Y": "Int64",
         "Exponent": "Int32"
       }
     },
+    "3b022668-faa8-47a9-b622-a7a26060c620": {
+      "name": "Cell2dPadded24",
+      "description": "A 2^Exponent sized square positioned at (X,Y) * 2^Exponent. Serialized to 24 bytes (with 4 bytes of padding).",
+      "layout": {
+        "X": "Int64",
+        "Y": "Int64",
+        "Exponent": "Int32"
+      }
+    },
+    "269f0837-a71f-4967-a323-96ccfabbb184": {
+      "name": "Cell2dPadded24[]"
+    },
     "5c23fd56-3736-4a95-ab74-52b26a711e0e": {
-      "name": "Cell2d[]"
+      "name": "Cell2d[]",
+      "type": "Cell2dPadded24[]",
+      "description": "fix 2020-08-28: changed type from Cell2d[] to Cell2dPadded24[], because it was always serialized this way."
     },
 
     "73656667-ea6a-468f-962c-64cd4e24f409": {

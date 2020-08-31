@@ -973,6 +973,114 @@
       "name": "C4d[]"
     },
 
+    "8f96c96e-7912-4d21-83d5-2e2b0e54ff99": {
+      "name": "CieLabf",
+      "description": "A color in CIELAB color space with channels L,a,b. (Float32).",
+      "layout": {
+        "L": "Float32",
+        "a": "Float32",
+        "b": "Float32"
+      }
+    },
+    "527572b6-70eb-416a-a91a-1750c19b419a": {
+      "name": "CieLabf[]"
+    },
+
+    "972c001e-a7a8-45ea-a234-f4788489d6e7": {
+      "name": "CieLuvf",
+      "description": "A color in CIELUV color space with channels L,u,v (Float32).",
+      "layout": {
+        "L": "Float32",
+        "u": "Float32",
+        "v": "Float32"
+      }
+    },
+    "edb50004-8a3f-4267-bb4a-30e060042b00": {
+      "name": "CieLuvf[]"
+    },
+
+    "055d4fae-6935-479d-9b8d-04ca1e5cf51d": {
+      "name": "CieXYZf",
+      "description": "A color in CIEXYZ color space with channels X,Y,Z (Float32).",
+      "layout": {
+        "X": "Float32",
+        "Y": "Float32",
+        "Z": "Float32"
+      }
+    },
+    "fb71984f-08ff-4e85-b3d8-015302f03f46": {
+      "name": "CieXYZf[]"
+    },
+
+    "ce20671f-b5da-4c32-9bd0-efff870cf6fd": {
+      "name": "CieYxyf",
+      "description": "A color in CIE Yxy color space with channels Y,x,y (Float32).",
+      "layout": {
+        "Y": "Float32",
+        "x": "Float32",
+        "y": "Float32"
+      }
+    },
+    "0b86f282-a051-41a5-848b-5ca82eab5e1d": {
+      "name": "CieYxyf[]"
+    },
+
+    "5f97105d-9d07-4149-86b5-0efc23b5be5b": {
+      "name": "CMYKf",
+      "description": "A color in CMYK color space with channels C,M,Y,K (Float32).",
+      "layout": {
+        "C": "Float32",
+        "M": "Float32",
+        "Y": "Float32",
+        "K": "Float32"
+      }
+    },
+    "af1055e0-b898-45aa-908c-87fbe6a54609": {
+      "name": "CMYKf[]"
+    },
+
+    "2cc70bfc-a983-4558-92ce-ab0abb3ffa0c": {
+      "name": "HSLf",
+      "description": "A color in HSL color space (hue, saturation, value) with channels H,S,L (Float32).",
+      "layout": {
+        "H": "Float32",
+        "S": "Float32",
+        "L": "Float32"
+      }
+    },
+    "c12d9316-b9ca-432a-b95b-d3638bff2f41": {
+      "name": "HSLf[]"
+    },
+
+    "7ab91015-ecf2-4dd2-9690-5ea33efcdbd9": {
+      "name": "HSVf",
+      "description": "A color in HSV color space (hue, saturation, lightness) with channels H,S,V (Float32).",
+      "layout": {
+        "H": "Float32",
+        "S": "Float32",
+        "V": "Float32"
+      }
+    },
+    "6a658149-2348-4fc4-b572-686555022ff0": {
+      "name": "HSVf[]"
+    },
+
+    "41e1befe-4d13-4ef5-a654-8b9b3b740a6f": {
+      "name": "Yuvf",
+      "description": "A color in Yuv color space with channels Y,u,v (Float32).",
+      "layout": {
+        "Y": "Float32",
+        "u": "Float32",
+        "v": "Float32"
+      }
+    },
+    "62c46940-8b06-484e-b447-f4e29b74a596": {
+      "name": "Yuvf[]"
+    },
+
+
+
+
     "c5e8c7d1-3b0f-4221-8ad8-443ff1994979": {
       "name": "PointRkdTreeFData",
       "description": "Data of an Aardvark.Geometry.PointRkdTreeF.",

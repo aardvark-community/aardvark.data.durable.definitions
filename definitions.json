@@ -1331,6 +1331,28 @@
     },
     "6778dd0c-4c92-4ae9-9925-a2ca2d8f554d": {
       "name": "Torus3d[]"
+    },
+
+    "ed49d9d5-398c-415f-9dd9-85bb9902cf97": {
+      "name": "Polygon2d",
+      "description": "A two-dimensional polygon.",
+      "layout": {
+        "Points": "Aardvark.V2dArray"
+      }
+    },
+    "2cd7815f-d8b9-488a-b506-adf02ce3b6da": {
+      "name": "Polygon2d[]"
+    },
+
+    "4da0c246-8d1d-44a0-ad7a-49522eee8d6e": {
+      "name": "Polygon3d",
+      "description": "A three-dimensional polygon.",
+      "layout": {
+        "Points": "Aardvark.V3dArray"
+      }
+    },
+    "7d1c8157-c0a7-49f7-9ed7-e99e0160daad": {
+      "name": "Polygon3d[]"
     }
 
   },

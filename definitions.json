@@ -690,8 +690,8 @@
       "name": "Box2i",
       "description": "A 2-dim axis-aligned box with limits [Min, Max] of V2i.",
       "layout": {
-        "Min": "V2i",
-        "Max": "V2i"
+        "Min": "Aardvark.V2i",
+        "Max": "Aardvark.V2i"
       }
     },
     "16afc42c-d4fd-4988-bd38-a039608ce612": {
@@ -702,8 +702,8 @@
       "name": "Box2l",
       "description": "A 2-dim axis-aligned box with limits [Min, Max] of V2l.",
       "layout": {
-        "Min": "V2l",
-        "Max": "V2l"
+        "Min": "Aardvark.V2l",
+        "Max": "Aardvark.V2l"
       }
     },
     "062de2a5-1bdc-4b62-8a58-50d2f002676f": {
@@ -714,8 +714,8 @@
       "name": "Box2f",
       "description": "A 2-dim axis-aligned box with limits [Min, Max] of V2f.",
       "layout": {
-        "Min": "V2f",
-        "Max": "V2f"
+        "Min": "Aardvark.V2f",
+        "Max": "Aardvark.V2f"
       }
     },
     "8a515f76-89cb-45e5-9c3e-81afecab0dad": {
@@ -726,8 +726,8 @@
       "name": "Box2d",
       "description": "A 2-dim axis-aligned box with limits [Min, Max] of V2d.",
       "layout": {
-        "Min": "V2d",
-        "Max": "V2d"
+        "Min": "Aardvark.V2d",
+        "Max": "Aardvark.V2d"
       }
     },
     "e2f9e9a9-c78f-436c-89e3-da69efefb9ec": {
@@ -738,8 +738,8 @@
       "name": "Box3i",
       "description": "A 3-dim axis-aligned box with limits [Min, Max] of V3i.",
       "layout": {
-        "Min": "V3i",
-        "Max": "V3i"
+        "Min": "Aardvark.V3i",
+        "Max": "Aardvark.V3i"
       }
     },
     "c5bfc96a-fcf7-47d9-9c29-b403734403c4": {
@@ -750,8 +750,8 @@
       "name": "Box3l",
       "description": "A 3-dim axis-aligned box with limits [Min, Max] of V3l.",
       "layout": {
-        "Min": "V3l",
-        "Max": "V3l"
+        "Min": "Aardvark.V3l",
+        "Max": "Aardvark.V3l"
       }
     },
     "0d57063d-cf07-4830-b678-ce7ad7b0e6a1": {
@@ -762,8 +762,8 @@
       "name": "Box3f",
       "description": "A 3-dim axis-aligned box with limits [Min, Max] of V3f.",
       "layout": {
-        "Min": "V3f",
-        "Max": "V3f"
+        "Min": "Aardvark.V3f",
+        "Max": "Aardvark.V3f"
       }
     },
     "82b363ce-f626-4ac3-bd69-038874f4b661": {
@@ -774,8 +774,8 @@
       "name": "Box3d",
       "description": "A 3-dim axis-aligned box with limits [Min, Max] of V3d.",
       "layout": {
-        "Min": "V3d",
-        "Max": "V3d"
+        "Min": "Aardvark.V3d",
+        "Max": "Aardvark.V3d"
       }
     },
     "59e43b45-5221-4127-8da9-0b28c07a5b22": {
@@ -987,7 +987,7 @@
     },
 
     "972c001e-a7a8-45ea-a234-f4788489d6e7": {
-      "name": "CieLuvf",
+      "name": "CIeLuvf",
       "description": "A color in CIELUV color space with channels L,u,v (Float32).",
       "layout": {
         "L": "Float32",
@@ -996,7 +996,7 @@
       }
     },
     "edb50004-8a3f-4267-bb4a-30e060042b00": {
-      "name": "CieLuvf[]"
+      "name": "CIeLuvf[]"
     },
 
     "055d4fae-6935-479d-9b8d-04ca1e5cf51d": {
@@ -1099,6 +1099,238 @@
         "AxisArray": "Int32[]",
         "RadiusArray": "Float64[]"
       }
+    },
+
+
+
+    "8b563d8b-6502-4b3f-a217-cacad6d779ea": {
+      "name": "Capsule3d",
+      "description": "A capsule in 3-space represented by two points and a radius.",
+      "layout": {
+        "P0": "Aardvark.V3d",
+        "P1": "Aardvark.V3d",
+        "Radius": "Float64"
+      }
+    },
+    "aa31738b-2cab-4843-b189-f9d31550438f": {
+      "name": "Capsule3d[]"
+    },
+
+
+    "32dffbbb-fd04-4e62-85ea-fc3ae8889c61": {
+      "name": "Circle2d",
+      "description": "A two dimensional circle represented by center and radius.",
+      "layout": {
+        "Center": "Aardvark.V2d",
+        "Radius": "Float64"
+      }
+    },
+    "6d7ce781-f3bb-4139-95ec-6cd885c36aee": {
+      "name": "Circle2d[]"
+    },
+
+    "91265f74-e53b-4154-a370-e94796078a24": {
+      "name": "Circle3d",
+      "description": "A circle in 3-space represented by its center, normal (normalized), and a radius.",
+      "layout": {
+        "Center": "Aardvark.V3d",
+        "Normal": "Aardvark.V3d",
+        "Radius": "Float64"
+      }
+    },
+    "0959298f-ca32-4b0f-9850-840fedd983ae": {
+      "name": "Circle3d[]"
+    },
+
+    "cfb67319-ecdd-4642-b043-b0e41ce741db": {
+      "name": "ObliqueCone3d",
+      "description": "An oblique cone in 3-space represented by its origin (apex) and base circle.",
+      "layout": {
+        "Origin": "Aardvark.V3d",
+        "Circle": "Aardvark.Circle3d"
+      }
+    },
+    "d0e95202-005d-4795-b71f-8b406cf04a43": {
+      "name": "ObliqueCone3d[]"
+    },
+
+    "b624ffb1-ef11-4776-b14a-4d34a5314230": {
+      "name": "Cone3d",
+      "description": "A cone in 3-space represented by its origin, axis of revolution (Direction), and the angle between axis and outer edge.",
+      "layout": {
+        "Origin": "Aardvark.V3d",
+        "Direction": "Aardvark.V3d",
+        "Angle": "Float64"
+      }
+    },
+    "38e3e52a-ac45-4697-83ea-86b580ff1596": {
+      "name": "Cone3d[]"
+    },
+
+    "6982d0a3-1cb4-4c9f-b479-6ebd3926bf7b": {
+      "name": "Cylinder3d",
+      "description": "A cylinder in 3-space.",
+      "layout": {
+        "P0": "Aardvark.V3d",
+        "P1": "Aardvark.V3d",
+        "Radius": "Float64",
+        "DistanceScale": "Float64"
+      }
+    },
+    "8f3cbbad-9d20-4db2-9831-9644733a7bc5": {
+      "name": "Cylinder3d[]"
+    },
+
+    "c0fb8306-e4b1-43c4-9236-a7eabbdfb245": {
+      "name": "Line2d",
+      "description": "A line in 2-space with begin P0 and end P1.",
+      "layout": {
+        "P0": "Aardvark.V2d",
+        "P1": "Aardvark.V2d"
+      }
+    },
+    "01c73cac-5fe7-4ca2-9756-2e2ad33c6338": {
+      "name": "Line2d[]"
+    },
+
+    "d3c05a9b-03f9-40f0-b169-401532c5d068": {
+      "name": "Line3d",
+      "description": "A line in 3-space with begin P0 and end P1.",
+      "layout": {
+        "P0": "Aardvark.V3d",
+        "P1": "Aardvark.V3d"
+      }
+    },
+    "1ace6b08-0376-4c73-8479-3f4edcac48f1": {
+      "name": "Line3d[]"
+    },
+
+    "37d849fc-e0c9-4d9f-8516-461123362692": {
+      "name": "Triangle2d",
+      "description": "A triangle in 2-space with points defined by three points P0, P1, P2.",
+      "layout": {
+        "P0": "Aardvark.V2d",
+        "P1": "Aardvark.V2d",
+        "P2": "Aardvark.V2d"
+      }
+    },
+    "a08840e3-7c4c-4a59-8f30-45926c5e6663": {
+      "name": "Triangle2d[]"
+    },
+
+    "3a52c3ad-61b4-48a8-b402-97c654fe7f80": {
+      "name": "Triangle3d",
+      "description": "A triangle in 3-space with points defined by three points P0, P1, P2.",
+      "layout": {
+        "P0": "Aardvark.V3d",
+        "P1": "Aardvark.V3d",
+        "P2": "Aardvark.V3d"
+      }
+    },
+    "2b17cea5-e8db-4e86-b5f5-8b401088ca58": {
+      "name": "Triangle3d[]"
+    },
+
+    "40dae3a2-0791-4533-8b69-882c3bbbaa6f": {
+      "name": "Quad2d",
+      "description": "A quad in 2-space with points defined by four points P0, P1, P2, P3.",
+      "layout": {
+        "P0": "Aardvark.V2d",
+        "P1": "Aardvark.V2d",
+        "P2": "Aardvark.V2d",
+        "P3": "Aardvark.V2d"
+      }
+    },
+    "0d23983f-62a1-40d0-96e5-8864283877b9": {
+      "name": "Quad2d[]"
+    },
+
+    "e234f7f4-09af-4b00-b5cc-a2fad8447aa7": {
+      "name": "Quad3d",
+      "description": "A quad in 3-space with points defined by four points P0, P1, P2, P3.",
+      "layout": {
+        "P0": "Aardvark.V3d",
+        "P1": "Aardvark.V3d",
+        "P2": "Aardvark.V3d",
+        "P3": "Aardvark.V3d"
+      }
+    },
+    "a0bd7233-a2b7-41e0-ab3e-5a142a67ce5e": {
+      "name": "Quad3d[]"
+    },
+
+    "2da2eae2-8fa5-4fe0-8987-0aa295cbe710": {
+      "name": "Sphere3d",
+      "description": "A three dimensional sphere represented by center and radius.",
+      "layout": {
+        "Center": "Aardvark.V3d",
+        "Radius": "Float64"
+      }
+    },
+    "7c755f28-1c40-4824-9502-95caf8bda3b9": {
+      "name": "Sphere3d[]"
+    },
+
+    "d0293e58-b411-4cc4-b50f-05c6008c22af": {
+      "name": "Plane2d",
+      "description": "A line represented by a (possibly) normalized normal vector and the distance to the origin. Note that the plane does not enforce the normalized normal vector. Equation for points p on the plane: Normal dot p == Distance",
+      "layout": {
+        "Normal": "Aardvark.V2d",
+        "Distance": "Float64"
+      }
+    },
+    "c2e69c65-ea56-4052-8d0d-7fcaf31f5545": {
+      "name": "Plane2d[]"
+    },
+
+    "7f80cd19-9605-4143-8bdf-a707e0c29f3a": {
+      "name": "Plane3d",
+      "description": "A plane represented by a (possibly) normalized normal vector and the distance to the origin. Note that the plane does not enforce the normalized normal vector. Equation for points p on the plane: Normal dot p == Distance",
+      "layout": {
+        "Normal": "Aardvark.V3d",
+        "Distance": "Float64"
+      }
+    },
+    "4fa764ee-af38-4277-96b4-c9464e661d4f": {
+      "name": "Plane3d[]"
+    },
+
+    "2537391e-9afb-44d8-84c6-3ecce21e471e": {
+      "name": "Ray2d",
+      "description": "A two-dimensional ray with an origin and a direction.",
+      "layout": {
+        "Origin": "Aardvark.V2d",
+        "Direction": "Aardvark.V2d"
+      }
+    },
+    "337352c0-318a-4b23-ad44-0f77e900f488": {
+      "name": "Ray2d[]"
+    },
+
+    "48e07c48-46af-43b6-a611-78da1077e675": {
+      "name": "Ray3d",
+      "description": "A three-dimensional ray with an origin and a direction.",
+      "layout": {
+        "Origin": "Aardvark.V3d",
+        "Direction": "Aardvark.V3d"
+      }
+    },
+    "3c4cecdf-e153-4a41-9d4a-b257c70562bc": {
+      "name": "Ray3d[]"
+    },
+
+    "86b425b6-62a3-4c1a-974c-b52f716f2994": {
+      "name": "Torus3d",
+      "description": "A three-dimensional torus.",
+      "layout": {
+        "Position": "Aardvark.V3d",
+        "Direction": "Aardvark.V3d",
+        "MajorRadius": "Float64",
+        "MinorRadius": "Float64"
+      }
+    },
+    "6778dd0c-4c92-4ae9-9925-a2ca2d8f554d": {
+      "name": "Torus3d[]"
     }
 
   },

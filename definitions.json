@@ -566,6 +566,336 @@
       "name": "M44d[]"
     },
 
+
+
+    "2e90e758-ff1b-4805-84cf-2d382c8b95fc": {
+      "name": "Affine2f",
+      "description": "Struct to represent an affine transformation in 2-dimensional space. It consists of a linear tranformation (invertible 2x2 matrix) and a translational component (2d vector).",
+      "layout": {
+        "Linear": "Aardvark.M22f",
+        "Trans": "Aardvark.V2f"
+      }
+    },
+    "6e5ae9e5-ccf4-4b75-acec-9e6da550ab68": {
+      "name": "Affine2f[]"
+    },
+    "13862bf0-30fd-4ae5-9f3d-2b18f7820f18": {
+      "name": "Affine2d",
+      "description": "Struct to represent an affine transformation in 2-dimensional space. It consists of a linear tranformation (invertible 2x2 matrix) and a translational component (2d vector).",
+      "layout": {
+        "Linear": "Aardvark.M22d",
+        "Trans": "Aardvark.V2d"
+      }
+    },
+    "6781406b-c840-4633-aa65-9692722dbe12": {
+      "name": "Affine2d[]"
+    },
+    "157595e2-7c63-4aa3-87c0-25163b91778a": {
+      "name": "Affine3f",
+      "description": "Struct to represent an affine transformation in 3-dimensional space. It consists of a linear tranformation (invertible 3x3 matrix) and a translational component (3d vector).",
+      "layout": {
+        "Linear": "Aardvark.M33f",
+        "Trans": "Aardvark.V3f"
+      }
+    },
+    "6d300cd7-ef29-4dcf-80d5-71e879f7b1e9": {
+      "name": "Affine3f[]"
+    },
+    "ef0c8ace-2d14-4909-88b1-0d46d7ece477": {
+      "name": "Affine3d",
+      "description": "Struct to represent an affine transformation in 3-dimensional space. It consists of a linear tranformation (invertible 3x3 matrix) and a translational component (3d vector).",
+      "layout": {
+        "Linear": "Aardvark.M33d",
+        "Trans": "Aardvark.V3d"
+      }
+    },
+    "71cb8459-317e-46e9-b751-ae63e0ed4aef": {
+      "name": "Affine3d[]"
+    },
+
+
+    
+    
+
+
+    "d390ffc0-33e9-4465-ad08-1041aa4984f7": {
+      "name": "Rot2f",
+      "description": "Represents a 2D rotation counterclockwise around the origin.",
+      "layout": {
+        "Angle": "Float32"
+      }
+    },
+    "5a4f8839-e124-4c38-9e65-fed679bc6e9e": {
+      "name": "Rot2f[]"
+    },
+    "1a92edf5-9d85-4aec-8ee4-5bc82671680a": {
+      "name": "Rot2d",
+      "description": "Represents a 2D rotation counterclockwise around the origin.",
+      "layout": {
+        "Angle": "Float64"
+      }
+    },
+    "ebd26aa1-53ad-4d9a-ab64-2c3a7c11008b": {
+      "name": "Rot2d[]"
+    },
+    "0ab5cb52-ee7b-42e6-8d36-1b0ff024b9c5": {
+      "name": "Rot3f",
+      "description": "Represents a rotation in three dimensions using a unit quaternion (W,X,Y,Z).",
+      "layout": {
+        "W": "Float32",
+        "X": "Float32",
+        "Y": "Float32",
+        "Z": "Float32"
+      }
+    },
+    "89379679-6395-4046-8100-ce4f675aa910": {
+      "name": "Rot3f[]"
+    },
+    "fbf5aacb-ed37-4784-a756-1365df952374": {
+      "name": "Rot3d",
+      "description": "Represents a rotation in three dimensions using a unit quaternion (W,X,Y,Z).",
+      "layout": {
+        "W": "Float64",
+        "X": "Float64",
+        "Y": "Float64",
+        "Z": "Float64"
+      }
+    },
+    "23d04982-4838-4802-9405-b5e05f24d18a": {
+      "name": "Rot3d[]"
+    },
+
+
+
+    "28355b4e-63f8-45b4-8b54-97bd7c1bee7e": {
+      "name": "Euclidean2f",
+      "description": "Represents a Rigid Transformation (or Rigid Body Transformation) in 2D that is composed of a 2D rotation Rot and a subsequent translation by a 2D vector Trans. This is also called an Euclidean Transformation and is a length preserving Transformation.",
+      "layout": {
+        "Rot": "Aardvark.Rot2f",
+        "Trans": "Aardvark.V2f"
+      }
+    },
+    "128891b0-ebf6-4a86-8115-a5cb55fedeca": {
+      "name": "Euclidean2f[]"
+    },
+    "7ecf1964-cbcb-4cb5-b3df-74c5cce8b3c6": {
+      "name": "Euclidean2d",
+      "description": "Represents a Rigid Transformation (or Rigid Body Transformation) in 2D that is composed of a 2D rotation Rot and a subsequent translation by a 2D vector Trans. This is also called an Euclidean Transformation and is a length preserving Transformation.",
+      "layout": {
+        "Rot": "Aardvark.Rot2d",
+        "Trans": "Aardvark.V2d"
+      }
+    },
+    "2fe8f0eb-b782-4380-b103-b7ca1de71009": {
+      "name": "Euclidean2d[]"
+    },
+    "ff4550c6-e6ba-4b5a-9144-47ec189cf0be": {
+      "name": "Euclidean3f",
+      "description": "Represents a Rigid Transformation (or Rigid Body Transformation) in 2D that is composed of a 2D rotation Rot and a subsequent translation by a 2D vector Trans. This is also called an Euclidean Transformation and is a length preserving Transformation.",
+      "layout": {
+        "Rot": "Aardvark.Rot3f",
+        "Trans": "Aardvark.V3f"
+      }
+    },
+    "870f9f7d-981a-4b52-aacb-f1d02b276c94": {
+      "name": "Euclidean3f[]"
+    },
+    "278f920c-c165-4ad0-8cec-7b3b4c0ff9a0": {
+      "name": "Euclidean3d",
+      "description": "Represents a Rigid Transformation (or Rigid Body Transformation) in 2D that is composed of a 2D rotation Rot and a subsequent translation by a 2D vector Trans. This is also called an Euclidean Transformation and is a length preserving Transformation.",
+      "layout": {
+        "Rot": "Aardvark.Rot3d",
+        "Trans": "Aardvark.V3d"
+      }
+    },
+    "18e1c88c-580a-4a9f-a1c4-849a9f0f0a95": {
+      "name": "Euclidean3d[]"
+    },
+
+
+
+
+    "cc6813f4-ce18-4a97-8ca1-d892ce394a1d": {
+      "name": "Scale2f",
+      "description": "A 2-dimensional scaling transform with different scaling values in each dimension.",
+      "layout": {
+        "V": "Aardvark.V2f"
+      }
+    },
+    "56c296c0-1a02-4e25-848b-b4c17ef194de": {
+      "name": "Scale2f[]"
+    },
+    "f4e0a9ad-2e42-41d7-831d-21d008ed431a": {
+      "name": "Scale2d",
+      "description": "A 2-dimensional scaling transform with different scaling values in each dimension.",
+      "layout": {
+        "V": "Aardvark.V2d"
+      }
+    },
+    "a6abe320-021b-491e-89a1-72286d3c2b28": {
+      "name": "Scale2d[]"
+    },
+    "42465d9c-3f2e-4d3b-abee-2df2779157e8": {
+      "name": "Scale3f",
+      "description": "A 3-dimensional scaling transform with different scaling values in each dimension.",
+      "layout": {
+        "V": "Aardvark.V3f"
+      }
+    },
+    "20b5b745-a5a6-4eab-80a5-201953b22f1f": {
+      "name": "Scale3f[]"
+    },
+    "49d4b715-69a1-440c-88ca-13d9046d0715": {
+      "name": "Scale3d",
+      "description": "A 3-dimensional scaling transform with different scaling values in each dimension.",
+      "layout": {
+        "V": "Aardvark.V3d"
+      }
+    },
+    "77d2eba3-d7a4-4084-91af-15d18bbaa081": {
+      "name": "Scale3d[]"
+    },
+
+
+
+    "dab91ada-116a-4feb-adb5-8c6fb2bdfa09": {
+      "name": "Shift2f",
+      "description": "A 2-dimensional translational transform with different translation values in each dimension.",
+      "layout": {
+        "V": "Aardvark.V2f"
+      }
+    },
+    "fb665b60-b2be-45c0-a2ef-f5e2163d1025": {
+      "name": "Shift2f[]"
+    },
+    "1440f172-847e-4d20-9c80-3c2862b40e45": {
+      "name": "Shift2d",
+      "description": "A 2-dimensional translational transform with different translation values in each dimension.",
+      "layout": {
+        "V": "Aardvark.V2d"
+      }
+    },
+    "8888fe11-34d7-423b-952f-756921eaf234": {
+      "name": "Shift2d[]"
+    },
+    "b278f244-0717-49a8-9a0a-193b571a6fee": {
+      "name": "Shift3f",
+      "description": "A 2-dimensional translational transform with different translation values in each dimension.",
+      "layout": {
+        "V": "Aardvark.V3f"
+      }
+    },
+    "6e49c963-c3d1-4b84-8ee8-a5374b04fae5": {
+      "name": "Shift3f[]"
+    },
+    "a35e085b-5b24-46ec-9e8d-268c9b16371f": {
+      "name": "Shift3d",
+      "description": "A 2-dimensional translational transform with different translation values in each dimension.",
+      "layout": {
+        "V": "Aardvark.V3d"
+      }
+    },
+    "4fa7fb3c-bfd5-4507-ab11-0672517a870d": {
+      "name": "Shift3d[]"
+    },
+
+
+
+
+    "b2fae9eb-6237-4b4c-8e8f-87daf2a2a9ce": {
+      "name": "Similarity2f",
+      "description": "Represents a Similarity Transformation in 2D that is composed of a Uniform Scale and a subsequent Euclidean transformation (2D rotation Rot and a subsequent translation by a 2D vector Trans). This is an angle preserving Transformation.",
+      "layout": {
+        "Scale": "Float32",
+        "Euclidean": "Aardvark.Euclidean2f"
+      }
+    },
+    "1269612a-f81f-47db-993b-5182e5d735e3": {
+      "name": "Similarity2f[]"
+    },
+    "a8d1bca8-eb17-4a0a-8f05-1910bb98e3cf": {
+      "name": "Similarity2d",
+      "description": "Represents a Similarity Transformation in 2D that is composed of a Uniform Scale and a subsequent Euclidean transformation (2D rotation Rot and a subsequent translation by a 2D vector Trans). This is an angle preserving Transformation.",
+      "layout": {
+        "Scale": "Float64",
+        "Euclidean": "Aardvark.Euclidean2d"
+      }
+    },
+    "697fd675-ab04-477a-a620-00d32a986503": {
+      "name": "Similarity2d[]"
+    },
+    "c6c9f2ee-4429-4260-a086-66538d43aaad": {
+      "name": "Similarity3f",
+      "description": "Represents a Similarity Transformation in 3D that is composed of a Uniform Scale and a subsequent Euclidean transformation (3D rotation Rot and a subsequent translation by a 3D vector Trans). This is an angle preserving Transformation.",
+      "layout": {
+        "Scale": "Float32",
+        "Euclidean": "Aardvark.Euclidean3f"
+      }
+    },
+    "92c53833-8e7c-41dc-a4b5-582c848bb67b": {
+      "name": "Similarity3f[]"
+    },
+    "ede4cbad-f68b-4c8e-bd72-119025bd4e5d": {
+      "name": "Similarity3d",
+      "description": "Represents a Similarity Transformation in 3D that is composed of a Uniform Scale and a subsequent Euclidean transformation (3D rotation Rot and a subsequent translation by a 3D vector Trans). This is an angle preserving Transformation.",
+      "layout": {
+        "Scale": "Float64",
+        "Euclidean": "Aardvark.Euclidean3d"
+      }
+    },
+    "a4033261-f55f-48e9-868a-ef70e4603126": {
+      "name": "Similarity3d[]"
+    },
+
+
+
+    "8b7ac8b3-0981-48da-ac07-f372e7b5840f": {
+      "name": "Trafo2f",
+      "description": "A trafo is a container for a forward and a backward matrix.",
+      "layout": {
+        "Forward": "Aardvark.M33f",
+        "Backward": "Aardvark.M33f"
+      }
+    },
+    "9aa73160-6a95-42d6-beac-258c27023449": {
+      "name": "Trafo2f[]"
+    },
+    "d8cf8bc2-54e0-4aba-9d76-c7741824e20e": {
+      "name": "Trafo2d",
+      "description": "A trafo is a container for a forward and a backward matrix.",
+      "layout": {
+        "Forward": "Aardvark.M33d",
+        "Backward": "Aardvark.M33d"
+      }
+    },
+    "406a6e3e-e266-44dc-93fa-2d5896b49f40": {
+      "name": "Trafo2d[]"
+    },
+    "57b5db05-9ee7-4318-b533-a69890d3796e": {
+      "name": "Trafo3f",
+      "description": "A trafo is a container for a forward and a backward matrix.",
+      "layout": {
+        "Forward": "Aardvark.M44f",
+        "Backward": "Aardvark.M44f"
+      }
+    },
+    "88cf99c1-33f2-429a-826e-155f1ba85703": {
+      "name": "Trafo3f[]"
+    },
+    "fcec8029-b8b0-432d-990d-2bd3683b53c5": {
+      "name": "Trafo3d",
+      "description": "A trafo is a container for a forward and a backward matrix.",
+      "layout": {
+        "Forward": "Aardvark.M44d",
+        "Backward": "Aardvark.M44d"
+      }
+    },
+    "6400725a-1e2a-4653-a5f7-e6116157618f": {
+      "name": "Trafo3d[]"
+    },
+
+
+
     "db31d0e0-2c56-48da-a769-5a2c1abad38c": {
       "name": "Range1b",
       "description": "A 1-dim range with limits [Min, Max] of UInt8.",
@@ -1257,6 +1587,32 @@
     },
     "a0bd7233-a2b7-41e0-ab3e-5a142a67ce5e": {
       "name": "Quad3d[]"
+    },
+
+    "b82f02a5-d0a8-4804-958e-441dab5189d1": {
+      "name": "Ellipse2d",
+      "description": "A 2D ellipse is defined by its center and two half-axes. Note that in principle any two conjugate half-diameters can be used as axes, however some algorithms require that the major and minor half axes are known. By convention in this case, axis0 is the major half axis.",
+      "layout": {
+        "Center": "Aardvark.V2d",
+        "Axis0": "Aardvark.V2d",
+        "Axis1": "Aardvark.V2d"
+      }
+    },
+    "863d9c94-8594-4f47-adcf-0f2e5cbbe309": {
+      "name": "Ellipse2d[]"
+    },
+    "f8784424-7d25-4c8a-85bf-370a4452612c": {
+      "name": "Ellipse3d",
+      "description": "A 3D ellipse is defined by its center, its plane normal, and two half-axes. Note that in principle any two conjugate half-diameters can be used as axes, however some algorithms require that the major and minor half axes are known. By convention in this case, axis0 is the major half axis.",
+      "layout": {
+        "Center": "Aardvark.V3d",
+        "Normal": "Aardvark.V3d",
+        "Axis0": "Aardvark.V3d",
+        "Axis1": "Aardvark.V3d"
+      }
+    },
+    "19b7fd2b-7bc5-47cb-92fd-5c2898885499": {
+      "name": "Ellipse3d[]"
     },
 
     "2da2eae2-8fa5-4fe0-8987-0aa295cbe710": {

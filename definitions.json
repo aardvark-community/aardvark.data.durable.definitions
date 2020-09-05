@@ -1916,6 +1916,52 @@
     },
 
 
+    "c965597a-e2f8-4f1a-bef4-a0071c32e220": {
+      "name": "Octree.PositionsLocal3b",
+      "description": "Octree. Per-point positions in local cell space as uniform 8-bit subdivision, where 0 is cell.Min and 255 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt8[].",
+      "type": "UInt8[]"
+    },
+    "52aa381e-ddf2-4d77-a746-5cacaa1d10a9": {
+      "name": "Octree.PositionsLocal3b.Reference",
+      "description": "Octree. Reference to Octree.PositionsLocal3b. Guid.",
+      "type": "Guid"
+    },
+
+    "f3c29fdb-5067-42c2-9809-0f8c103fcb82": {
+      "name": "Octree.PositionsLocal3us",
+      "description": "Octree. Per-point positions in local cell space as uniform 16-bit subdivision, where 0 is cell.Min and UInt16.Max is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt16[].",
+      "type": "UInt16[]"
+    },
+    "8a2ef1f6-179d-4ddb-a342-4d7ae4a1f69f": {
+      "name": "Octree.PositionsLocal3us.Reference",
+      "description": "Octree. Reference to Octree.PositionsLocal3us. Guid.",
+      "type": "Guid"
+    },
+
+    "f251364f-d6d2-49e0-8095-45314fe2e80c": {
+      "name": "Octree.PositionsLocal3ui",
+      "description": "Octree. Per-point positions in local cell space as uniform 32-bit subdivision, where 0 is cell.Min and UInt32.Max is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt32[].",
+      "type": "UInt32[]"
+    },
+    "6cfa3f22-27bc-4b86-917c-98f92f38bc46": {
+      "name": "Octree.PositionsLocal3ui.Reference",
+      "description": "Octree. Reference to Octree.PositionsLocal3ui. Guid.",
+      "type": "Guid"
+    },
+
+    "f256c25e-f599-4135-b3a6-18e811925625": {
+      "name": "Octree.PositionsLocal3ul",
+      "description": "Octree. Per-point positions in local cell space as uniform 64-bit subdivision, where 0 is cell.Min and UInt64.Max is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt64[].",
+      "type": "UInt64[]"
+    },
+    "286b881a-6f4e-4bcf-bb90-dd6b0bd16232": {
+      "name": "Octree.PositionsLocal3ul.Reference",
+      "description": "Octree. Reference to Octree.PositionsLocal3ul. Guid.",
+      "type": "Guid"
+    },
+
+
+
     "fcb577f8-28cc-43b2-9aef-ca0569c22a03": {
       "name": "Octree.PositionsGlobal3f",
       "description": "Octree. Per-point positions in global space. V3f[].",

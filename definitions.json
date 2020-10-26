@@ -1819,28 +1819,56 @@
       "type": "DurableMap"
     },
 
-    "708b4b8e-286b-4658-82ac-dd8ea98d1b1c": {
-      "name": "Octree.Tree",
-      "description": "Octree. An octree node followed by all other nodes in depth first order. DurableMap.",
+    "e82a178b-7910-4bef-8ddb-a64668b1f4b0": {
+      "name": "Octree.MultiNode",
+      "description": "Octree. A set of octree nodes stored in a single blob in level order. DurableMap.",
       "type": "DurableMap"
     },
 
-    "7c1151c8-9d5f-406d-9c03-9778f657806b": {
-      "name": "Octree.NodeFormat",
-      "description": "Octree. Node format specifier.",
-      "type": "Guid"
+    "70c98431-3d74-4722-9a25-ae4e56dbff1d": {
+      "name": "Octree.MultiNode.Ids",
+      "description": "Octree. Node IDs stored in multi-node. StringUTF8[].",
+      "type": "StringUTF8[]"
+    },
+    "5f97cad7-a130-467f-9b76-06b395057c87": {
+      "name": "Octree.MultiNode.Offsets",
+      "description": "Octree. Node offsets (in bytes) stored in multi-node. Int32[].",
+      "type": "Int32[]"
+    },
+    "8e394a07-9bb9-4edc-870d-9f9326b9212c": {
+      "name": "Octree.MultiNode.Sizes",
+      "description": "Octree. Node sizes (in bytes) stored in multi-node. Int32[].",
+      "type": "Int32[]"
     },
 
     "1100ffd5-7789-4872-9ef2-67d45be0c489": {
       "name": "Octree.NodeId",
-      "description": "Octree. Node's unique id.",
+      "description": "Octree. Node's unique id. Guid.",
       "type": "Guid"
+    },
+
+    "c0e3a799-d15f-4e0d-b90e-6924635b3f07": {
+      "name": "Octree.NodeId.String",
+      "description": "Octree. Node's unique id. StringUTF8.",
+      "type": "StringUTF8"
     },
 
     "eb44f9b0-3247-4426-b458-1b6e9880d466": {
       "name": "Octree.Subnodes.Guids",
-      "description": "Octree. Subnodes as array of guids. Array length is 8 for inner nodes (where Guid.Empty means no subnode) and no array for leaf nodes.",
+      "description": "Octree. Subnode IDs as array of guids. Array length is 8 for inner nodes (where Guid.Empty means no subnode) and no array for leaf nodes. Guid[8]",
       "type": "Guid[]"
+    },
+
+    "72b072ac-3973-49a5-b04f-436241b2107b": {
+      "name": "Octree.Subnodes.Strings",
+      "description": "Octree. Subnode IDs as array of strings. Array length is 8 for inner nodes (where null means no subnode) and no array for leaf nodes. StringUTF8[8]",
+      "type": "StringUTF8[]"
+    },
+
+    "6d65a05b-8813-4ac0-ac78-f26bae0235b2": {
+      "name": "Octree.Subnodes.MultiNodeRefs",
+      "description": "Octree. Subnode IDs as array of multi-node references in format [nodeId]@[insideMultiNodeId] or [nodeId] if subnode is stand-alone. Array length is 8 for inner nodes (where null means no subnode) and no array for leaf nodes. StringUTF8[8]",
+      "type": "StringUTF8[]"
     },
 
     "7912c862-74b4-4f44-a8cd-d11ea1da9304": {

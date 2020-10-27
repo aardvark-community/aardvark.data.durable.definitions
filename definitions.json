@@ -31,6 +31,11 @@
       "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types. Entries are 16-byte aligned."
     },
 
+    "29de4f2f-90da-49ff-902c-3315e29457c9": {
+      "name": "DurableNamedMap",
+      "description": "A map of name/key/value entries, where names are strings, keys are durable IDs (Guid) with values of corresponding types. All names, keys, and values are 4-byte aligned."
+    },
+
     "7d8fc4c0-d727-4171-bc91-78f92f0c1aa4": {
       "name": "GZipped",
       "description": "A gzipped element."
@@ -1819,26 +1824,16 @@
       "type": "DurableMap"
     },
 
-    "e82a178b-7910-4bef-8ddb-a64668b1f4b0": {
-      "name": "Octree.MultiNode",
-      "description": "Octree. A set of octree nodes stored in a single blob in level order. DurableMap.",
-      "type": "DurableMap"
-    },
-
-    "70c98431-3d74-4722-9a25-ae4e56dbff1d": {
-      "name": "Octree.MultiNode.Ids",
-      "description": "Octree. Node IDs stored in multi-node. StringUTF8[].",
-      "type": "StringUTF8[]"
-    },
-    "5f97cad7-a130-467f-9b76-06b395057c87": {
-      "name": "Octree.MultiNode.Offsets",
-      "description": "Octree. Node offsets (in bytes) stored in multi-node. Int32[].",
-      "type": "Int32[]"
-    },
-    "8e394a07-9bb9-4edc-870d-9f9326b9212c": {
-      "name": "Octree.MultiNode.Sizes",
-      "description": "Octree. Node sizes (in bytes) stored in multi-node. Int32[].",
-      "type": "Int32[]"
+    "53efc513-d4dd-43f5-908d-6cd73e90962f": {
+      "name": "Octree.MultiNodeIndex",
+      "description": "Octree. An index for octree nodes stored in level order in a single blob. DurableMap.",
+      "type": "DurableMap",
+      "layout": {
+        "NodeDataId": "StringUTF8",
+        "Keys": "StringUTF8[]",
+        "Offsets": "Int32[]",
+        "Sizes": "Int32[]"
+      }
     },
 
     "1100ffd5-7789-4872-9ef2-67d45be0c489": {

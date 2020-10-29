@@ -1827,7 +1827,7 @@
     "53efc513-d4dd-43f5-908d-6cd73e90962f": {
       "name": "Octree.MultiNodeIndex",
       "description": "Octree. An index for octree nodes stored in level order in a single blob. DurableMap.",
-      "type": "DurableMap",
+      "type": "DurableNamedMap",
       "layout": {
         "NodeDataId": "StringUTF8",
         "Keys": "StringUTF8[]",

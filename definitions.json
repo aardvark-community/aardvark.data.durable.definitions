@@ -1757,9 +1757,14 @@
       "type": "C3b[]"
     },
     "b18a2463-a821-4ae7-a259-9a7739257286": {
+      "name": "Generic.Colors4b.Deprecated.20201117",
+      "description": "Deprecated 2020-11-17. Wrong type. Use d60b86bf-724c-4d41-ac64-040374557d72 instead. Generic colors. C4b[].",
+      "type": "C3b[]"
+    },
+    "d60b86bf-724c-4d41-ac64-040374557d72": {
       "name": "Generic.Colors4b",
       "description": "Generic colors. C4b[].",
-      "type": "C3b[]"
+      "type": "C4b[]"
     },
     "125f054f-003f-459b-8415-e6150992bb5f": {
       "name": "Generic.Colors.RGB565",
@@ -2151,9 +2156,14 @@
     },
 
     "c91dfea3-243d-4272-9dba-b572931dba23": {
+      "name": "Octree.Colors4b.Deprecated.20201117",
+      "description": "Deprecated 2020-11-17. Wrong type. Use 4f6144d1-c424-424c-9e02-915bf58087b2 instead. Octree. Per-point colors. C4b[].",
+      "type": "C3b[]"
+    },
+    "4f6144d1-c424-424c-9e02-915bf58087b2": {
       "name": "Octree.Colors4b",
       "description": "Octree. Per-point colors. C4b[].",
-      "type": "C3b[]"
+      "type": "C4b[]"
     },
     "cb2bdeae-2085-442b-90bc-990b892fdb61": {
       "name": "Octree.Colors4b.Reference",

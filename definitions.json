@@ -1254,7 +1254,7 @@
 
     "85917bcd-00e9-4402-abc7-38c973c96ecc": {
       "name": "C4us",
-      "description": "A color with channels BGRA of UInt16.",
+      "description": "A color with channels RGBA of UInt16.",
       "layout": {
         "R": "UInt16",
         "G": "UInt16",
@@ -1268,7 +1268,7 @@
 
     "7018167d-2316-4ff0-a239-0ebf95c32adf": {
       "name": "C4ui",
-      "description": "A color with channels BGRA of UInt32.",
+      "description": "A color with channels RGBA of UInt32.",
       "layout": {
         "R": "UInt32",
         "G": "UInt32",
@@ -1282,7 +1282,7 @@
 
     "e09cfff1-b186-42e8-9b3d-6a4325117ba4": {
       "name": "C4f",
-      "description": "A color with channels BGRA of Float32.",
+      "description": "A color with channels RGBA of Float32.",
       "layout": {
         "R": "Float32",
         "G": "Float32",
@@ -1296,7 +1296,7 @@
 
     "fe74ea05-4b9a-4723-a075-eec853c9cc19": {
       "name": "C4d",
-      "description": "A color with channels BGRA of Float64.",
+      "description": "A color with channels RGBA of Float64.",
       "layout": {
         "R": "Float64",
         "G": "Float64",

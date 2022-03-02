@@ -1503,8 +1503,8 @@
     },
 
     "6982d0a3-1cb4-4c9f-b479-6ebd3926bf7b": {
-      "name": "Cylinder3d",
-      "description": "A cylinder in 3-space.",
+      "name": "Aardvark.Cylinder3d.Deprecated.20220302",
+      "description": "Deprecated 2022-03-02. Obsolete field DistanceScale. Use 0b0e6173-393a-4a85-855a-a5f4d5316b36 instead. A cylinder in 3-space.",
       "layout": {
         "P0": "Aardvark.V3d",
         "P1": "Aardvark.V3d",
@@ -1513,6 +1513,20 @@
       }
     },
     "8f3cbbad-9d20-4db2-9831-9644733a7bc5": {
+      "name": "Aardvark.Cylinder3d.Deprecated.20220302[]",
+      "description": "Deprecated 2022-03-02. Obsolete field DistanceScale. Use 95ada0ae-0243-43d2-8e99-d0aaea843ae8 instead."
+    },
+
+    "0b0e6173-393a-4a85-855a-a5f4d5316b36": {
+      "name": "Cylinder3d",
+      "description": "A cylinder in 3-space.",
+      "layout": {
+        "P0": "Aardvark.V3d",
+        "P1": "Aardvark.V3d",
+        "Radius": "Float64"
+      }
+    },
+    "95ada0ae-0243-43d2-8e99-d0aaea843ae8": {
       "name": "Cylinder3d[]"
     },
 

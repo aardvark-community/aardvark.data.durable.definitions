@@ -2196,6 +2196,17 @@
       "type": "Guid"
     },
 
+    "3fa600f0-6e99-4c11-918b-810430bae0cb": {
+      "name": "Octree.Intensities1b",
+      "description": "Octree. Per-point intensities. UInt8[].",
+      "type": "UInt8[]"
+    },
+    "56c02251-b860-40b4-a1d2-3570d1b9e62f": {
+      "name": "Octree.Intensities1b.Reference",
+      "description": "Octree. Reference to per-point intensities. Guid.",
+      "type": "Guid"
+    },
+
     "361027fd-ac58-4de8-89ee-98695f8c5520": {
       "name": "Octree.Intensities1i",
       "description": "Octree. Per-point intensities. Int32[].",

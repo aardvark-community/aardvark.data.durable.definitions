@@ -5,15 +5,9 @@
       "description": "Unit (nothing, none, null, ...)."
     },
 
-    "f924fd35-ae59-4b0e-a05b-e9c85536c52c": {
-      "name": "DurableDefinition",
-      "description": "A durable definition stored inline. [Id:Guid][Name:StringUTF8][Description:StringUTF8][Type:StringUTF8].",
-      "layout": {
-        "Id": "Guid",
-        "Name": "StringUTF8",
-        "Description": "StringUTF8",
-        "Type": "StringUTF8"
-      }
+    "1aeb96fc-6f6d-4186-b9d5-987db1afbd18": {
+      "name": "DurableMap2",
+      "description": "A map of durable IDs to corresponding data, with encoding optimized for random access on read."
     },
 
     "f03716ef-6c9e-4201-bf19-e0cabc6c6a9a": {
@@ -1728,7 +1722,124 @@
     },
     "7d1c8157-c0a7-49f7-9ed7-e99e0160daad": {
       "name": "Polygon3d[]"
-    }
+    },
+
+
+
+    "30180c1c-1858-42f0-9440-004b4554db5a": {
+      "name": "Aardvark.Chunk.Positions2f",
+      "description": "Positions. V2f[].",
+      "type": "V2f[]"
+    },
+    "1257e31f-58d1-47a2-8252-74a0b9686e29": {
+      "name": "Aardvark.Chunk.Positions2d",
+      "description": "Positions. V2d[].",
+      "type": "V2d[]"
+    },
+    "1cc23a98-f387-4df6-a82f-1e73f87bd519": {
+      "name": "Aardvark.Chunk.Positions3f",
+      "description": "Positions. V3f[].",
+      "type": "V3f[]"
+    },
+    "b72e1359-6d05-4b61-8546-575f5280675a": {
+      "name": "Aardvark.Chunk.Positions3d",
+      "description": "Positions. V3d[].",
+      "type": "V3d[]"
+    },
+
+    "52fa40ae-9a54-4a37-a2e3-4b46c78392e1": {
+      "name": "Aardvark.Chunk.Colors3b",
+      "description": "Colors. C3b[].",
+      "type": "C3b[]"
+    },
+    "eda92353-7e58-4898-b67c-812cb73a7184": {
+      "name": "Aardvark.Chunk.Colors3f",
+      "description": "Colors. C3f[].",
+      "type": "C3f[]"
+    },
+    "34d162f5-6462-4dd2-a8ec-36b1c326a6db": {
+      "name": "Aardvark.Chunk.Colors4b",
+      "description": "Colors. C4b[].",
+      "type": "C4b[]"
+    },
+    "47cae42a-26a9-403f-8a5a-34f63fb08eb1": {
+      "name": "Aardvark.Chunk.Colors4f",
+      "description": "Colors. C4f[].",
+      "type": "C4f[]"
+    },
+
+    "a8ce542d-f810-4a34-8236-d39d5ceaa99c": {
+      "name": "Aardvark.Chunk.Normals3f",
+      "description": "Normals. V3f[].",
+      "type": "V3f[]"
+    },
+
+    "3b2dddb6-6d5e-4d92-877c-d046ed026b8a": {
+      "name": "Aardvark.Chunk.Intensities1b",
+      "description": "Intensities. UInt8[].",
+      "type": "UInt8[]"
+    },
+    "71f63c81-9cd4-437d-801b-d2a012ea120c": {
+      "name": "Aardvark.Chunk.Intensities1s",
+      "description": "Intensities. Int16[].",
+      "type": "Int16[]"
+    },
+    "75e9e5c3-b510-4e00-bb80-866976ef7df2": {
+      "name": "Aardvark.Chunk.Intensities1us",
+      "description": "Intensities. UInt16[].",
+      "type": "UInt16[]"
+    },
+    "d97c8f2e-8e47-4bea-a226-e655b8520dd7": {
+      "name": "Aardvark.Chunk.Intensities1i",
+      "description": "Intensities. Int32[].",
+      "type": "Int32[]"
+    },
+    "cc43d018-e67d-4d50-be74-989cb2a296c2": {
+      "name": "Aardvark.Chunk.Intensities1ui",
+      "description": "Intensities. UInt32[].",
+      "type": "UInt32[]"
+    },
+    "aee8ab41-0ae9-4987-9fd1-65ccef82f67b": {
+      "name": "Aardvark.Chunk.Intensities1f",
+      "description": "Intensities. Float32[].",
+      "type": "Float32[]"
+    },
+    "59daac88-bc42-4bc1-a76f-e777441efc21": {
+      "name": "Aardvark.Chunk.Intensities1d",
+      "description": "Intensities. Float64[].",
+      "type": "Float64[]"
+    },
+    
+    "3cf3a1b8-1000-4b2f-a674-f0718c60de72": {
+      "name": "Aardvark.Chunk.Classifications1b",
+      "description": "Classifications. UInt8[].",
+      "type": "UInt8[]"
+    },
+    "8673504a-5100-4dbc-87b6-0ca4f2382bcc": {
+      "name": "Aardvark.Chunk.Classifications1s",
+      "description": "Classifications. Int16[].",
+      "type": "Int16[]"
+    },
+    "4cae2709-c86e-4d24-bba8-086d4845c817": {
+      "name": "Aardvark.Chunk.Classifications1us",
+      "description": "Classifications. UInt16[].",
+      "type": "UInt16[]"
+    },
+    "61fea872-aa6e-4249-ae9f-ad8fe75f8638": {
+      "name": "Aardvark.Chunk.Classifications1i",
+      "description": "Classifications. Int32[].",
+      "type": "Int32[]"
+    },
+    "3434e3d8-8812-4f7f-9f35-8150de42922c": {
+      "name": "Aardvark.Chunk.Classifications1ui",
+      "description": "Classifications. UInt32[].",
+      "type": "UInt32[]"
+    },
+    "05d57d11-86a1-4bd4-bb6d-219a47fd9193": {
+      "name": "Aardvark.Chunk.ClassificationsString",
+      "description": "Classifications. StringUTF8[].",
+      "type": "StringUTF8[]"
+    },
 
   },
 
@@ -2019,10 +2130,20 @@
       "description": "Octree. Average point distance to centroid (global space). Float32.",
       "type": "Float32"
     },
+    "fcb042a2-7f58-415c-b069-a8209cf8b1d1": {
+      "name": "Octree.PositionsGlobal3f.DistToCentroid.Average3d",
+      "description": "Octree. Average point distance to centroid (global space) in each dimension. V3f.",
+      "type": "V3f"
+    },
     "d725dcde-0f50-4f36-8e23-580cd59d04e4": {
       "name": "Octree.PositionsGlobal3f.DistToCentroid.StdDev",
       "description": "Octree. Standard deviation of average point distance to centroid (global space). Float32.",
       "type": "Float32"
+    },
+    "1aa277c0-239b-4765-b8be-acad2c4ded52": {
+      "name": "Octree.PositionsGlobal3f.DistToCentroid.StdDev3d",
+      "description": "Octree. Standard deviation of average point distance to centroid (global space) in each dimension. V3f.",
+      "type": "V3f"
     },
     "03a62e0e-4a4b-4d24-b558-cf700d275edd": {
       "name": "Octree.PositionsGlobal3f.Reference",
@@ -2046,10 +2167,20 @@
       "description": "Octree. Average point distance to centroid (global space). Float64.",
       "type": "Float64"
     },
+    "74ea2eca-17e7-4481-9529-ae08f22fcd96": {
+      "name": "Octree.PositionsGlobal3d.DistToCentroid.Average3d",
+      "description": "Octree. Average point distance to centroid (global space) in each dimension. V3d.",
+      "type": "V3d"
+    },
     "61d5ad06-37d3-4df2-a999-6599efc2ae83": {
       "name": "Octree.PositionsGlobal3d.DistToCentroid.StdDev",
       "description": "Octree. Standard deviation of average point distance to centroid (global space). Float64.",
       "type": "Float64"
+    },
+    "d097de2b-1f7b-4e93-b3e5-04a82cbb42d2": {
+      "name": "Octree.PositionsGlobal3d.DistToCentroid.StdDev3d",
+      "description": "Octree. Standard deviation of average point distance to centroid (global space) in each dimension. V3d.",
+      "type": "V3d"
     },
     "839e1897-5fa3-426b-b66f-af166048ec34": {
       "name": "Octree.PositionsGlobal3d.Reference",
@@ -2168,12 +2299,12 @@
       "description": "Octree. Reference to per-point colors. Guid.",
       "type": "Guid"
     },
-
     "c91dfea3-243d-4272-9dba-b572931dba23": {
       "name": "Octree.Colors4b.Deprecated.20201117",
       "description": "Deprecated 2020-11-17. Wrong type. Use 4f6144d1-c424-424c-9e02-915bf58087b2 instead. Octree. Per-point colors. C4b[].",
       "type": "C3b[]"
     },
+
     "4f6144d1-c424-424c-9e02-915bf58087b2": {
       "name": "Octree.Colors4b",
       "description": "Octree. Per-point colors. C4b[].",
@@ -2195,6 +2326,28 @@
       "description": "Octree. Reference to per-point colors in RGB565 format, where bits 0 to 4 are the blue value, 5 to 10 are green, and 11-15 are red. Guid.",
       "type": "Guid"
     },
+
+    "6b03b792-7740-4019-8cbc-68b572338d12": {
+      "name": "Octree.Colors.Range1i.Red",
+      "description": "Octree. Range of red values. Range1i.",
+      "type": "Range1i"
+    },
+    "2701e940-22e3-4577-849f-dbe12ae54f6d": {
+      "name": "Octree.Colors.Range1i.Green",
+      "description": "Octree. Range of green values. Range1i.",
+      "type": "Range1i"
+    },
+    "5143c53a-47de-47a8-8a5b-5bc540a0bbd6": {
+      "name": "Octree.Colors.Range1i.Blue",
+      "description": "Octree. Range of blue values. Range1i.",
+      "type": "Range1i"
+    },
+    "50295570-9fa6-4e0d-9cae-90ca85802965": {
+      "name": "Octree.Colors.Range1i.Alpha",
+      "description": "Octree. Range of alpha values. Range1i.",
+      "type": "Range1i"
+    },
+
 
     "3fa600f0-6e99-4c11-918b-810430bae0cb": {
       "name": "Octree.Intensities1b",
@@ -2254,6 +2407,19 @@
       "description": "Octree. Intensities range for Octree.IntensitiesWithOffset1f[.Reference]. Range1f.",
       "type": "Range1f"
     },
+
+    "b4f1171d-ad11-40db-a5ce-2d0693145e4e": {
+      "name": "Octree.Intensities.Range1i",
+      "description": "Octree. Range of intensitity values. Range1i.",
+      "type": "Range1i"
+    },
+    "ecf32f4d-9672-420d-98da-cda01b28dedd": {
+      "name": "Octree.Intensities.Range1f",
+      "description": "Octree. Range of intensitity values. Range1f.",
+      "type": "Range1f"
+    },
+    
+
 
     "d25cff0e-ea80-445b-ab72-d0a5a1013818": {
       "name": "Octree.Classifications1b",
@@ -2319,6 +2485,11 @@
       "name": "Octree.Densities1f.Reference",
       "description": "Octree. Reference to per-point densities (Guid).",
       "type": "Guid"
+    },
+    "06eff9a9-c670-4998-ac57-5bfc3f9f022e": {
+      "name": "Octree.Densities1f.Range",
+      "description": "Octree. Range of intensitity values. Range1f.",
+      "type": "Range1f"
     },
 
     "c533bd54-9aff-40e1-a2bb-c69c9778fecb": {

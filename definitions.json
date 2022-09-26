@@ -2332,20 +2332,83 @@
       "description": "Octree. Range of red values. Range1i.",
       "type": "Range1i"
     },
+    "2f1b31ab-8fa6-4890-83c4-1933fae6740a": {
+      "name": "Octree.Colors.Range1f.Red",
+      "description": "Octree. Range of red values. Range1f.",
+      "type": "Range1f"
+    },
+    "8bcf304b-5796-454c-aa73-f81cd4a48e60": {
+      "name": "Octree.Colors.Average.Red",
+      "description": "Octree. Average of red values. Float32.",
+      "type": "Float32"
+    },
+    "a837d484-41b9-4c61-b3f6-1eb5652fe687": {
+      "name": "Octree.Colors.StdDev.Red",
+      "description": "Octree. Standard deviation of red values. Float32.",
+      "type": "Float32"
+    },
+
     "2701e940-22e3-4577-849f-dbe12ae54f6d": {
       "name": "Octree.Colors.Range1i.Green",
       "description": "Octree. Range of green values. Range1i.",
       "type": "Range1i"
     },
+    "4fa8b054-437a-446f-8673-d64a2556de6f": {
+      "name": "Octree.Colors.Range1f.Green",
+      "description": "Octree. Range of green values. Range1f.",
+      "type": "Range1f"
+    },
+    "33f8ee4c-cf66-4758-b618-1ccfedee9f72": {
+      "name": "Octree.Colors.Average.Green",
+      "description": "Octree. Average of green values. Float32.",
+      "type": "Float32"
+    },
+    "cb172ff9-2242-49c4-9280-e758d5e134e2": {
+      "name": "Octree.Colors.StdDev.Green",
+      "description": "Octree. Standard deviation of green values. Float32.",
+      "type": "Float32"
+    },
+
     "5143c53a-47de-47a8-8a5b-5bc540a0bbd6": {
       "name": "Octree.Colors.Range1i.Blue",
       "description": "Octree. Range of blue values. Range1i.",
       "type": "Range1i"
     },
+    "2dc6db38-d241-4a1a-8542-7380a30fa1f1": {
+      "name": "Octree.Colors.Range1f.Blue",
+      "description": "Octree. Range of blue values. Range1f.",
+      "type": "Range1f"
+    },
+    "cc676e85-941a-4b87-b043-2187e922c464": {
+      "name": "Octree.Colors.Average.Blue",
+      "description": "Octree. Average of blue values. Float32.",
+      "type": "Float32"
+    },
+    "6b70d9af-ad93-4126-8051-78c9296589ea": {
+      "name": "Octree.Colors.StdDev.Blue",
+      "description": "Octree. Standard deviation of blue values. Float32.",
+      "type": "Float32"
+    },
+
     "50295570-9fa6-4e0d-9cae-90ca85802965": {
       "name": "Octree.Colors.Range1i.Alpha",
       "description": "Octree. Range of alpha values. Range1i.",
       "type": "Range1i"
+    },
+    "060506f9-f528-4506-a195-aa4593ff45e7": {
+      "name": "Octree.Colors.Range1f.Alpha",
+      "description": "Octree. Range of alpha values. Range1f.",
+      "type": "Range1f"
+    },
+    "8e4e7522-b02b-46fb-be81-e92ded6bbe1d": {
+      "name": "Octree.Colors.Average.Alpha",
+      "description": "Octree. Average of alpha values. Float32.",
+      "type": "Float32"
+    },
+    "e1c0e969-3775-4940-93fd-0e14a66d775a": {
+      "name": "Octree.Colors.StdDev.Alpha",
+      "description": "Octree. Standard deviation of alpha values. Float32.",
+      "type": "Float32"
     },
 
 
@@ -2381,11 +2444,6 @@
       "description": "Octree. Reference to Octree.Intensities1f. Guid.",
       "type": "Guid"
     },
-    "2cb2501c-fc7e-450b-9926-fcb75677f08d": {
-      "name": "Octree.Intensities1f.Range",
-      "description": "Octree. Intensities range for Octree.Intensities[.Reference]. Range1f[].",
-      "type": "Range1f"
-    },
     
     "6753a6e1-9633-4997-b403-661578191f8c": {
       "name": "Octree.IntensitiesWithOffset1f",
@@ -2417,6 +2475,16 @@
       "name": "Octree.Intensities.Range1f",
       "description": "Octree. Range of intensitity values. Range1f.",
       "type": "Range1f"
+    },
+    "3e382a46-de9f-4f48-82e2-3c535687548a": {
+      "name": "Octree.Intensities.Average",
+      "description": "Octree. Average intensity value. Float32.",
+      "type": "Float32"
+    },
+    "2c693e28-08cf-4e0d-8f57-250420a2ea5c": {
+      "name": "Octree.Intensities.StdDev",
+      "description": "Octree. Standard deviation of intensity values. Float32.",
+      "type": "Float32"
     },
     
 
@@ -2476,6 +2544,7 @@
       "type": "Guid"
     },
 
+
     "040d084d-1f1b-4058-afc7-ea300bbb551d": {
       "name": "Octree.Densities1f",
       "description": "Octree. Per-point densities (float32[]).",
@@ -2488,9 +2557,20 @@
     },
     "06eff9a9-c670-4998-ac57-5bfc3f9f022e": {
       "name": "Octree.Densities1f.Range",
-      "description": "Octree. Range of intensitity values. Range1f.",
+      "description": "Octree. Range of density values. Range1f.",
       "type": "Range1f"
     },
+    "3c5e57d2-1576-4bd5-a0fb-205c4d0ef5a7": {
+      "name": "Octree.Densitites.Average",
+      "description": "Octree. Average density value. Float32.",
+      "type": "Float32"
+    },
+    "2b89a1d9-06cd-4e7f-8343-05b049b525d5": {
+      "name": "Octree.Densitites.StdDev",
+      "description": "Octree. Standard deviation of density values. Float32.",
+      "type": "Float32"
+    },
+
 
     "c533bd54-9aff-40e1-a2bb-c69c9778fecb": {
       "name": "Octree.KdTreeIndexArray",

@@ -2026,6 +2026,18 @@
       "type": "Int64"
     },
 
+    "605c7db1-80bd-4f4f-bb4b-2b4bf974bc9d": {
+          "name": "Octree.NodeBlobBytesApprox",
+          "description": "Octree. Number of bytes (approx.) of this node blob. Int32.",
+          "type": "Int32"
+        },
+
+    "acdb8562-8fe9-48a5-b92b-0a54b782616c": {
+      "name": "Octree.TreeBlobsTotalBytesApprox",
+      "description": "Octree. Total number of bytes (approx.) of all octree blobs. Int64.",
+      "type": "Int64"
+    },
+
     "172e1f20-0ffc-4d9c-9b3d-903fca41abe3": {
       "name": "Octree.PointCountCell",
       "description": "Octree. Number of points in this cell. Int32.",

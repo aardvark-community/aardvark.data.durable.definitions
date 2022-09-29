@@ -2026,18 +2026,6 @@
       "type": "Int64"
     },
 
-    "605c7db1-80bd-4f4f-bb4b-2b4bf974bc9d": {
-          "name": "Octree.NodeBlobBytesApprox",
-          "description": "Octree. Number of bytes (approx.) of this node blob. Int32.",
-          "type": "Int32"
-        },
-
-    "acdb8562-8fe9-48a5-b92b-0a54b782616c": {
-      "name": "Octree.TreeBlobsTotalBytesApprox",
-      "description": "Octree. Total number of bytes (approx.) of all octree blobs. Int64.",
-      "type": "Int64"
-    },
-
     "172e1f20-0ffc-4d9c-9b3d-903fca41abe3": {
       "name": "Octree.PointCountCell",
       "description": "Octree. Number of points in this cell. Int32.",
@@ -2054,6 +2042,18 @@
       "name": "Octree.PointCountTreeLeafs.Float64",
       "description": "Octree. Total number of points in this tree's leaf nodes. Float64. Backwards compatibility.",
       "type": "Float64"
+    },
+
+    "605c7db1-80bd-4f4f-bb4b-2b4bf974bc9d": {
+      "name": "Octree.NodeBlobBytesApprox",
+      "description": "Octree. Number of bytes (approx.) of this node blob. Int32.",
+      "type": "Int32"
+    },
+
+    "acdb8562-8fe9-48a5-b92b-0a54b782616c": {
+      "name": "Octree.TreeBlobsTotalBytesApprox",
+      "description": "Octree. Total number of bytes (approx.) of all octree blobs. Int64.",
+      "type": "Int64"
     },
 
     "39c21132-4570-4624-afae-6304851567d7": {
@@ -2125,8 +2125,6 @@
       "type": "Guid"
     },
 
-
-
     "fcb577f8-28cc-43b2-9aef-ca0569c22a03": {
       "name": "Octree.PositionsGlobal3f",
       "description": "Octree. Per-point positions in global space. V3f[].",
@@ -2142,27 +2140,16 @@
       "description": "Octree. Average point distance to centroid (global space). Float32.",
       "type": "Float32"
     },
-    "fcb042a2-7f58-415c-b069-a8209cf8b1d1": {
-      "name": "Octree.PositionsGlobal3f.DistToCentroid.Average3d",
-      "description": "Octree. Average point distance to centroid (global space) in each dimension. V3f.",
-      "type": "V3f"
-    },
     "d725dcde-0f50-4f36-8e23-580cd59d04e4": {
       "name": "Octree.PositionsGlobal3f.DistToCentroid.StdDev",
       "description": "Octree. Standard deviation of average point distance to centroid (global space). Float32.",
       "type": "Float32"
-    },
-    "1aa277c0-239b-4765-b8be-acad2c4ded52": {
-      "name": "Octree.PositionsGlobal3f.DistToCentroid.StdDev3d",
-      "description": "Octree. Standard deviation of average point distance to centroid (global space) in each dimension. V3f.",
-      "type": "V3f"
     },
     "03a62e0e-4a4b-4d24-b558-cf700d275edd": {
       "name": "Octree.PositionsGlobal3f.Reference",
       "description": "Octree. Reference to per-point positions in global space. Guid.",
       "type": "Guid"
     },
-
 
     "61ef7c1e-6aeb-45cd-85ed-ad0ed2584553": {
       "name": "Octree.PositionsGlobal3d",
@@ -2179,27 +2166,16 @@
       "description": "Octree. Average point distance to centroid (global space). Float64.",
       "type": "Float64"
     },
-    "74ea2eca-17e7-4481-9529-ae08f22fcd96": {
-      "name": "Octree.PositionsGlobal3d.DistToCentroid.Average3d",
-      "description": "Octree. Average point distance to centroid (global space) in each dimension. V3d.",
-      "type": "V3d"
-    },
     "61d5ad06-37d3-4df2-a999-6599efc2ae83": {
       "name": "Octree.PositionsGlobal3d.DistToCentroid.StdDev",
       "description": "Octree. Standard deviation of average point distance to centroid (global space). Float64.",
       "type": "Float64"
-    },
-    "d097de2b-1f7b-4e93-b3e5-04a82cbb42d2": {
-      "name": "Octree.PositionsGlobal3d.DistToCentroid.StdDev3d",
-      "description": "Octree. Standard deviation of average point distance to centroid (global space) in each dimension. V3d.",
-      "type": "V3d"
     },
     "839e1897-5fa3-426b-b66f-af166048ec34": {
       "name": "Octree.PositionsGlobal3d.Reference",
       "description": "Octree. Reference to per-point positions in global space. Guid.",
       "type": "Guid"
     },
-
 
     "05eb38fa-1b6a-4576-820b-780163199db9": {
       "name": "Octree.PositionsLocal3f",
@@ -2227,7 +2203,6 @@
       "type": "Guid"
     },
 
-
     "303bb5ba-3488-4d40-9002-c484aa4b93e1": {
       "name": "Octree.PositionsLocal3d",
       "description": "Octree. Per-point positions in local cell space (as offsets from cell's center). V3d[].",
@@ -2254,6 +2229,11 @@
       "type": "Guid"
     },
 
+    "0b326504-2496-4e21-8ec3-bfb8e7b47ac1": {
+      "name": "Octree.Positions.DistanceToCentroid.Range",
+      "description": "Octree. Positions' per-component distance centroid [min, max, avg, stddev]. V3d[].",
+      "type": "V3d[]"
+    },
 
 
     "712d0a0c-a8d0-42d1-bfc7-77eac2e4a755": {
@@ -2266,7 +2246,6 @@
       "description": "Octree. Reference to per-point normals (Guid).",
       "type": "Guid"
     },
-
     "aaf4872c-0964-4351-9530-8a3e2be94a6e": {
       "name": "Octree.Normals3sb",
       "description": "Octree. Per-point normals (X:int8, Y:int8, Z:int8), where [-128,+127] is mapped to [-1.0,+1.0].",
@@ -2277,7 +2256,6 @@
       "description": "Octree. Reference to per-point normals (X:int8, Y:int8, Z:int8), where [-128,+127] is mapped to [-1.0,+1.0].",
       "type": "Guid"
     },
-
     "144770e4-70ea-4dd2-91a5-91f48672e87e": {
       "name": "Octree.Normals.Oct16",
       "description": "Octree. Per-point normals encoded as 16bits per normal according to format oct16 decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
@@ -2288,7 +2266,6 @@
       "description": "Octree. Reference to per-point normals encoded as 16bits per normal according to format oct16 decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
       "type": "Guid"
     },
-
     "5fdf162c-bd21-4688-aa5c-91dd0a550c44": {
       "name": "Octree.Normals.Oct16P",
       "description": "Octree. Per-point normals encoded as 16bits per normal according to format oct16P decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
@@ -2316,6 +2293,11 @@
       "description": "Deprecated 2020-11-17. Wrong type. Use 4f6144d1-c424-424c-9e02-915bf58087b2 instead. Octree. Per-point colors. C4b[].",
       "type": "C3b[]"
     },
+    "74d787e9-b882-4df5-b6c6-6da02a50d35f": {
+      "name": "Octree.Colors3b.Range",
+      "description": "Octree. Per-component color [min, max, avg, stddev]. V3f[].",
+      "type": "V3f[]"
+    },
 
     "4f6144d1-c424-424c-9e02-915bf58087b2": {
       "name": "Octree.Colors4b",
@@ -2326,6 +2308,11 @@
       "name": "Octree.Colors4b.Reference",
       "description": "Octree. Reference to per-point colors. Guid.",
       "type": "Guid"
+    },
+    "a808ead8-c8f7-4269-be1c-935f25da4d09": {
+      "name": "Octree.Colors4b.Range",
+      "description": "Octree. Per-component color [min, max, avg, stddev]. V4f[].",
+      "type": "V4f[]"
     },
 
     "bf36c54b-f199-4138-a32f-c089cf527dad": {
@@ -2339,90 +2326,6 @@
       "type": "Guid"
     },
 
-    "6b03b792-7740-4019-8cbc-68b572338d12": {
-      "name": "Octree.Colors.Range1i.Red",
-      "description": "Octree. Range of red values. Range1i.",
-      "type": "Range1i"
-    },
-    "2f1b31ab-8fa6-4890-83c4-1933fae6740a": {
-      "name": "Octree.Colors.Range1f.Red",
-      "description": "Octree. Range of red values. Range1f.",
-      "type": "Range1f"
-    },
-    "8bcf304b-5796-454c-aa73-f81cd4a48e60": {
-      "name": "Octree.Colors.Average.Red",
-      "description": "Octree. Average of red values. Float32.",
-      "type": "Float32"
-    },
-    "a837d484-41b9-4c61-b3f6-1eb5652fe687": {
-      "name": "Octree.Colors.StdDev.Red",
-      "description": "Octree. Standard deviation of red values. Float32.",
-      "type": "Float32"
-    },
-
-    "2701e940-22e3-4577-849f-dbe12ae54f6d": {
-      "name": "Octree.Colors.Range1i.Green",
-      "description": "Octree. Range of green values. Range1i.",
-      "type": "Range1i"
-    },
-    "4fa8b054-437a-446f-8673-d64a2556de6f": {
-      "name": "Octree.Colors.Range1f.Green",
-      "description": "Octree. Range of green values. Range1f.",
-      "type": "Range1f"
-    },
-    "33f8ee4c-cf66-4758-b618-1ccfedee9f72": {
-      "name": "Octree.Colors.Average.Green",
-      "description": "Octree. Average of green values. Float32.",
-      "type": "Float32"
-    },
-    "cb172ff9-2242-49c4-9280-e758d5e134e2": {
-      "name": "Octree.Colors.StdDev.Green",
-      "description": "Octree. Standard deviation of green values. Float32.",
-      "type": "Float32"
-    },
-
-    "5143c53a-47de-47a8-8a5b-5bc540a0bbd6": {
-      "name": "Octree.Colors.Range1i.Blue",
-      "description": "Octree. Range of blue values. Range1i.",
-      "type": "Range1i"
-    },
-    "2dc6db38-d241-4a1a-8542-7380a30fa1f1": {
-      "name": "Octree.Colors.Range1f.Blue",
-      "description": "Octree. Range of blue values. Range1f.",
-      "type": "Range1f"
-    },
-    "cc676e85-941a-4b87-b043-2187e922c464": {
-      "name": "Octree.Colors.Average.Blue",
-      "description": "Octree. Average of blue values. Float32.",
-      "type": "Float32"
-    },
-    "6b70d9af-ad93-4126-8051-78c9296589ea": {
-      "name": "Octree.Colors.StdDev.Blue",
-      "description": "Octree. Standard deviation of blue values. Float32.",
-      "type": "Float32"
-    },
-
-    "50295570-9fa6-4e0d-9cae-90ca85802965": {
-      "name": "Octree.Colors.Range1i.Alpha",
-      "description": "Octree. Range of alpha values. Range1i.",
-      "type": "Range1i"
-    },
-    "060506f9-f528-4506-a195-aa4593ff45e7": {
-      "name": "Octree.Colors.Range1f.Alpha",
-      "description": "Octree. Range of alpha values. Range1f.",
-      "type": "Range1f"
-    },
-    "8e4e7522-b02b-46fb-be81-e92ded6bbe1d": {
-      "name": "Octree.Colors.Average.Alpha",
-      "description": "Octree. Average of alpha values. Float32.",
-      "type": "Float32"
-    },
-    "e1c0e969-3775-4940-93fd-0e14a66d775a": {
-      "name": "Octree.Colors.StdDev.Alpha",
-      "description": "Octree. Standard deviation of alpha values. Float32.",
-      "type": "Float32"
-    },
-
 
     "3fa600f0-6e99-4c11-918b-810430bae0cb": {
       "name": "Octree.Intensities1b",
@@ -2434,7 +2337,6 @@
       "description": "Octree. Reference to per-point intensities. Guid.",
       "type": "Guid"
     },
-
     "361027fd-ac58-4de8-89ee-98695f8c5520": {
       "name": "Octree.Intensities1i",
       "description": "Octree. Per-point intensities. Int32[].",
@@ -2445,7 +2347,6 @@
       "description": "Octree. Reference to per-point intensities. Guid.",
       "type": "Guid"
     },
-
     "ebe476d9-32e8-4d47-982e-35703c3a6b4c": {
       "name": "Octree.Intensities1f",
       "description": "Octree. Per-point intensities. Float32[].",
@@ -2456,7 +2357,6 @@
       "description": "Octree. Reference to Octree.Intensities1f. Guid.",
       "type": "Guid"
     },
-    
     "6753a6e1-9633-4997-b403-661578191f8c": {
       "name": "Octree.IntensitiesWithOffset1f",
       "description": "Octree. Per-point intensities with offset stored as Octree.IntensitiesWithOffset1f.Offset. Float32[].",
@@ -2477,26 +2377,10 @@
       "description": "Octree. Intensities range for Octree.IntensitiesWithOffset1f[.Reference]. Range1f.",
       "type": "Range1f"
     },
-
-    "b4f1171d-ad11-40db-a5ce-2d0693145e4e": {
-      "name": "Octree.Intensities.Range1i",
-      "description": "Octree. Range of intensitity values. Range1i.",
-      "type": "Range1i"
-    },
-    "ecf32f4d-9672-420d-98da-cda01b28dedd": {
-      "name": "Octree.Intensities.Range1f",
-      "description": "Octree. Range of intensitity values. Range1f.",
-      "type": "Range1f"
-    },
-    "3e382a46-de9f-4f48-82e2-3c535687548a": {
-      "name": "Octree.Intensities.Average",
-      "description": "Octree. Average intensity value. Float32.",
-      "type": "Float32"
-    },
-    "2c693e28-08cf-4e0d-8f57-250420a2ea5c": {
-      "name": "Octree.Intensities.StdDev",
-      "description": "Octree. Standard deviation of intensity values. Float32.",
-      "type": "Float32"
+    "eb990bdb-fc45-4129-987c-0912887375d6": {
+      "name": "Octree.Intensities.Range",
+      "description": "Octree. Range of intensitity values [min, max, avg, stddev]. Float32[].",
+      "type": "Float32[]"
     },
     
 
@@ -2511,7 +2395,6 @@
       "description": "Octree. Reference to per-point classifications (UInt8[]).",
       "type": "Guid"
     },
-
     "b1619ade-79be-4554-894e-3f7e46240119": {
       "name": "Octree.Classifications1s",
       "description": "Octree. Per-point classifications. UInt16[].",
@@ -2522,7 +2405,6 @@
       "description": "Octree. Reference to per-point classifications (UInt16[]).",
       "type": "Guid"
     },
-
     "826cc58d-ed89-4d56-b389-e4b581c71706": {
       "name": "Octree.Classifications1i",
       "description": "Octree. Per-point classifications. Int32[].",
@@ -2533,6 +2415,12 @@
       "description": "Octree. Reference to per-point classifications (Guid -> Int32[]).",
       "type": "Guid"
     },
+    "1844a484-33d5-42b6-9471-6b892d105284": {
+      "name": "Octree.Classifications.Range",
+      "description": "Octree. Range of classification values. Range1i.",
+      "type": "Range1i"
+    },
+
 
     "c8db5f0a-1ddf-47ab-8266-f8e929cf98c5": {
       "name": "Octree.Velocities3f",
@@ -2544,7 +2432,6 @@
       "description": "Octree. Reference to per-point velocities (Guid).",
       "type": "Guid"
     },
-
     "3f8a922d-3458-427f-8237-a189e338bf77": {
       "name": "Octree.Velocities3d",
       "description": "Octree. Per-point velocities (V3d[]).",
@@ -2567,20 +2454,10 @@
       "description": "Octree. Reference to per-point densities (Guid).",
       "type": "Guid"
     },
-    "06eff9a9-c670-4998-ac57-5bfc3f9f022e": {
-      "name": "Octree.Densities1f.Range",
-      "description": "Octree. Range of density values. Range1f.",
-      "type": "Range1f"
-    },
-    "3c5e57d2-1576-4bd5-a0fb-205c4d0ef5a7": {
-      "name": "Octree.Densitites.Average",
-      "description": "Octree. Average density value. Float32.",
-      "type": "Float32"
-    },
-    "2b89a1d9-06cd-4e7f-8343-05b049b525d5": {
-      "name": "Octree.Densitites.StdDev",
-      "description": "Octree. Standard deviation of density values. Float32.",
-      "type": "Float32"
+    "05c6b527-0952-424b-86b9-5be5df884c5e": {
+      "name": "Octree.Densitites.Range",
+      "description": "Octree. Range of density values [min, max, avg, stddev]. Float32[].",
+      "type": "Float32[]"
     },
 
 
@@ -2589,31 +2466,26 @@
       "description": "Octree. Kd-tree index array. Int32[], where pivot is stored at index n/2 recursively.",
       "type": "Int32[]"
     },
-
     "fc2b48cb-ab79-4579-92a3-0a421c8d9112": {
       "name": "Octree.KdTreeIndexArray.Reference",
       "description": "Octree. Reference to kd-tree index array. Guid -> Int32[].",
       "type": "Guid"
     },
-
     "c90f303c-f9be-49d1-9188-51fde1e1e75d": {
       "name": "Octree.PointRkdTreeFData",
       "description": "Octree. Aardvark.Geometry.PointRkdTreeFData.",
       "type": "PointRkdTreeFData"
     },
-
     "d48d006e-9840-433c-afdb-c5fc5b14be54": {
       "name": "Octree.PointRkdTreeFData.Reference",
       "description": "Octree. Reference to Aardvark.Geometry.PointRkdTreeFData.",
       "type": "Guid"
     },
-
     "c00e3cc0-983c-4c51-801f-8c55ff337b2d": {
       "name": "Octree.PointRkdTreeDData",
       "description": "Octree. Aardvark.Geometry.PointRkdTreeDData.",
       "type": "PointRkdTreeDData"
     },
-
     "05cf0cac-4f8f-41bc-ac50-1b291297f892": {
       "name": "Octree.PointRkdTreeDData.Reference",
       "description": "Octree. Reference to Aardvark.Geometry.PointRkdTreeDData.",

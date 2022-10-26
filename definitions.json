@@ -15,26 +15,6 @@
       "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types."
     },
 
-    "6780296f-c30a-4eba-806f-d07d84c7a5bc": {
-      "name": "DurableMapAligned8",
-      "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types. Entries are 8-byte aligned."
-    },
-
-    "0ca48518-96b9-424f-b146-046ac3c8ed10": {
-      "name": "DurableMapAligned16",
-      "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types. Entries are 16-byte aligned."
-    },
-
-    "29de4f2f-90da-49ff-902c-3315e29457c9": {
-      "name": "DurableNamedMap",
-      "description": "A map of name/key/value entries, where names are strings, keys are durable IDs (Guid) with values of corresponding types. All names, keys, and values are 4-byte aligned."
-    },
-
-    "7d8fc4c0-d727-4171-bc91-78f92f0c1aa4": {
-      "name": "GZipped",
-      "description": "A gzipped element."
-    },
-
     "a81a39b0-8f61-4efc-b0ce-27e2c5d3199d": {
       "name": "Guid",
       "description": "Globally unique identifier (GUID, 16 bytes). https://tools.ietf.org/html/rfc4122."
@@ -61,6 +41,14 @@
       "name": "UInt8[]",
       "description": "Array of unsigned 8-bit integers."
     },
+    // "d12a0177-521d-4c73-9c0d-f3e25ad6ef54": {
+    //   "name": "UInt8[].gz",
+    //   "description": "Array of unsigned 8-bit integers. Compressed (GZip)."
+    // },
+    // "d3aeedd7-1294-4dbc-a48f-98cff740995f": {
+    //   "name": "UInt8[].lz4",
+    //   "description": "Array of unsigned 8-bit integers. Compressed (LZ4)."
+    // },
 
     "4c3f7ded-2037-4f3d-baa9-3a76ef3a1fda": {
       "name": "Int16",
@@ -235,57 +223,17 @@
     },
 
 
-    "aab1d3e2-80f9-4f12-895c-81cd5fc5d096": {
-      "name": "Float32ArrayWithFloat64Offset",
-      "description": "Float64[] data stored as Int32[] plus Float64 offset."
+    
+    "29de4f2f-90da-49ff-902c-3315e29457c9": {
+      "name": "Primitives.DurableNamedMap.Deprecated.20221021",
+      "description": "Deprecated 2022-10-21. A map of name/key/value entries, where names are strings, keys are durable IDs (Guid) with values of corresponding types. All names, keys, and values are 4-byte aligned.",
+      "obsolete": "Deprecated 2022-10-21."
     },
-    "8061bb56-3076-4afd-865d-c9a7701d225a": {
-      "name": "Int32ArrayWithInt64Offset",
-      "description": "Int64[] data stored as Int32[] plus Int64 offset."
-    },
-    "f200bcb7-e462-4d42-88e8-d8bfcb10c265": {
-      "name": "Int16ArrayWithInt64Offset",
-      "description": "Int64[] data stored as Int16[] plus Int64 offset."
-    },
-    "46cc0b8e-c4e4-4626-940f-d2adc28c0c00": {
-      "name": "Int8ArrayWithInt64Offset",
-      "description": "Int64[] data stored as Int8[] plus Int64 offset."
-    },
-    "8daf811d-3d1c-4219-8f2e-22c6c49de6cd": {
-      "name": "Int16ArrayWithInt32Offset",
-      "description": "Int32[] data stored as Int16[] plus Int32 offset."
-    },
-    "fd4db85a-5b2c-4390-aeb3-9f2162034ebb": {
-      "name": "Int8ArrayWithInt32Offset",
-      "description": "Int32[] data stored as Int8[] plus Int32 offset."
-    },
-    "2a9f5350-02d3-45e7-84db-5ec55d105787": {
-      "name": "Int8ArrayWithInt16Offset",
-      "description": "Int16[] data stored as Int8[] plus Int16 offset."
-    },
-    "3f3d719a-5a3b-4a97-b9f6-a821c063374f": {
-      "name": "UInt32ArrayWithUInt64Offset",
-      "description": "UInt64[] data stored as UInt32[] plus UInt64 offset."
-    },
-    "f4387c8f-92de-4af7-96fe-5b1e0e3ff935": {
-      "name": "UInt16ArrayWithUInt64Offset",
-      "description": "UInt64[] data stored as UInt16[] plus UInt64 offset."
-    },
-    "166f9886-61a9-4d81-b072-b86bab4e3ba3": {
-      "name": "UInt8ArrayWithUInt64Offset",
-      "description": "UInt64[] data stored as UInt8[] plus UInt64 offset."
-    },
-    "2477f185-8c5b-4f5c-b3d0-21e63f361304": {
-      "name": "UInt16ArrayWithUInt32Offset",
-      "description": "UInt32[] data stored as UInt16[] plus UInt32 offset."
-    },
-    "92355e69-b783-45cd-bf6b-cd5fb978ea33": {
-      "name": "UInt8ArrayWithUInt32Offset",
-      "description": "UInt32[] data stored as UInt8[] plus UInt32 offset."
-    },
-    "625a813d-f2bd-4034-a69c-d967fef3da50": {
-      "name": "UInt8ArrayWithUInt16Offset",
-      "description": "UInt16[] data stored as UInt8[] plus UInt16 offset."
+
+    "7d8fc4c0-d727-4171-bc91-78f92f0c1aa4": {
+      "name": "Primitives.GZipped.Deprecated.20221021",
+      "description": "Deprecated 2022-10-21. A gzipped element.",
+      "obsolete": "Deprecated 2022-10-21."
     }
 
   },
@@ -1504,11 +1452,13 @@
         "P1": "Aardvark.V3d",
         "Radius": "Float64",
         "DistanceScale": "Float64"
-      }
+      },
+      "obsolete": "Deprecated 2022-03-02. Obsolete field DistanceScale. Use 0b0e6173-393a-4a85-855a-a5f4d5316b36 instead."
     },
     "8f3cbbad-9d20-4db2-9831-9644733a7bc5": {
       "name": "Aardvark.Cylinder3d.Deprecated.20220302[]",
-      "description": "Deprecated 2022-03-02. Obsolete field DistanceScale. Use 95ada0ae-0243-43d2-8e99-d0aaea843ae8 instead."
+      "description": "Deprecated 2022-03-02. Obsolete field DistanceScale. Use 95ada0ae-0243-43d2-8e99-d0aaea843ae8 instead.",
+      "obsolete": "Deprecated 2022-03-02. Obsolete field DistanceScale. Use 95ada0ae-0243-43d2-8e99-d0aaea843ae8 instead."
     },
 
     "0b0e6173-393a-4a85-855a-a5f4d5316b36": {
@@ -1884,7 +1834,8 @@
     "b18a2463-a821-4ae7-a259-9a7739257286": {
       "name": "Generic.Colors4b.Deprecated.20201117",
       "description": "Deprecated 2020-11-17. Wrong type. Use d60b86bf-724c-4d41-ac64-040374557d72 instead. Generic colors. C4b[].",
-      "type": "C3b[]"
+      "type": "C3b[]",
+      "obsolete": "Deprecated 2020-11-17. Wrong type. Use d60b86bf-724c-4d41-ac64-040374557d72 instead."
     },
     "d60b86bf-724c-4d41-ac64-040374557d72": {
       "name": "Generic.Colors4b",
@@ -1955,15 +1906,16 @@
     },
 
     "53efc513-d4dd-43f5-908d-6cd73e90962f": {
-      "name": "Octree.MultiNodeIndex",
-      "description": "Octree. An index for octree nodes stored in level order in a single blob. DurableMap.",
-      "type": "DurableNamedMap",
+      "name": "Octree.MultiNodeIndex.Deprecated.20221021",
+      "description": "Deprecated 2022-10-21. Octree. An index for octree nodes stored in level order in a single blob. DurableMap.",
+      "type": "Primitives.DurableNamedMap.Deprecated.20221021",
       "layout": {
         "NodeDataId": "StringUTF8",
         "Keys": "StringUTF8[]",
         "Offsets": "Int32[]",
         "Sizes": "Int32[]"
-      }
+      },
+      "obsolete": "Deprecated 2022-10-21."
     },
 
     "1100ffd5-7789-4872-9ef2-67d45be0c489": {
@@ -2083,7 +2035,7 @@
 
     "c965597a-e2f8-4f1a-bef4-a0071c32e220": {
       "name": "Octree.PositionsLocal3b",
-      "description": "Octree. Per-point positions in local cell space as uniform 8-bit subdivision, where 0 is cell.Min and 255 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt8[].",
+      "description": "Octree. Per-point positions in local cell space as uniform 8-bit subdivision, where 0 is cell.Min and 256 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt8[].",
       "type": "UInt8[]"
     },
     "52aa381e-ddf2-4d77-a746-5cacaa1d10a9": {
@@ -2094,7 +2046,7 @@
 
     "f3c29fdb-5067-42c2-9809-0f8c103fcb82": {
       "name": "Octree.PositionsLocal3us",
-      "description": "Octree. Per-point positions in local cell space as uniform 16-bit subdivision, where 0 is cell.Min and UInt16.Max is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt16[].",
+      "description": "Octree. Per-point positions in local cell space as uniform 16-bit subdivision, where 0 is cell.Min and UInt16.Max+1 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt16[].",
       "type": "UInt16[]"
     },
     "8a2ef1f6-179d-4ddb-a342-4d7ae4a1f69f": {
@@ -2105,7 +2057,7 @@
 
     "f251364f-d6d2-49e0-8095-45314fe2e80c": {
       "name": "Octree.PositionsLocal3ui",
-      "description": "Octree. Per-point positions in local cell space as uniform 32-bit subdivision, where 0 is cell.Min and UInt32.Max is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt32[].",
+      "description": "Octree. Per-point positions in local cell space as uniform 32-bit subdivision, where 0 is cell.Min and UInt32.Max+1 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt32[].",
       "type": "UInt32[]"
     },
     "6cfa3f22-27bc-4b86-917c-98f92f38bc46": {
@@ -2116,7 +2068,7 @@
 
     "f256c25e-f599-4135-b3a6-18e811925625": {
       "name": "Octree.PositionsLocal3ul",
-      "description": "Octree. Per-point positions in local cell space as uniform 64-bit subdivision, where 0 is cell.Min and UInt64.Max is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt64[].",
+      "description": "Octree. Per-point positions in local cell space as uniform 64-bit subdivision, where 0 is cell.Min and UInt64.Max+1 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt64[].",
       "type": "UInt64[]"
     },
     "286b881a-6f4e-4bcf-bb90-dd6b0bd16232": {
@@ -2238,7 +2190,7 @@
 
     "712d0a0c-a8d0-42d1-bfc7-77eac2e4a755": {
       "name": "Octree.Normals3f",
-      "description": "Octree. Per-point normals (V3f[]).",
+      "description": "Octree. Per-point normals. V3f[].",
       "type": "V3f[]"
     },
     "0fb38f30-08fb-402f-bc10-a7c54d92fb26": {
@@ -2246,9 +2198,10 @@
       "description": "Octree. Reference to per-point normals (Guid).",
       "type": "Guid"
     },
+
     "aaf4872c-0964-4351-9530-8a3e2be94a6e": {
       "name": "Octree.Normals3sb",
-      "description": "Octree. Per-point normals (X:int8, Y:int8, Z:int8), where [-128,+127] is mapped to [-1.0,+1.0].",
+      "description": "Octree. Per-point normals (X:int8, Y:int8, Z:int8), where [-128,+127] is mapped to [-1.0,+1.0]. Int8[].",
       "type": "Int8[]"
     },
     "eb245ac4-a207-4428-87ea-2e715b9f01ef": {
@@ -2256,9 +2209,10 @@
       "description": "Octree. Reference to per-point normals (X:int8, Y:int8, Z:int8), where [-128,+127] is mapped to [-1.0,+1.0].",
       "type": "Guid"
     },
+
     "144770e4-70ea-4dd2-91a5-91f48672e87e": {
       "name": "Octree.Normals.Oct16",
-      "description": "Octree. Per-point normals encoded as 16bits per normal according to format oct16 decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
+      "description": "Octree. Per-point normals encoded as 16bits per normal according to format oct16 decribed in http://jcgt.org/published/0003/02/01/paper.pdf. Int16[].",
       "type": "Int16[]"
     },
     "7a397f13-b0dd-4925-89a2-066ef5426be3": {
@@ -2266,9 +2220,10 @@
       "description": "Octree. Reference to per-point normals encoded as 16bits per normal according to format oct16 decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
       "type": "Guid"
     },
+
     "5fdf162c-bd21-4688-aa5c-91dd0a550c44": {
       "name": "Octree.Normals.Oct16P",
-      "description": "Octree. Per-point normals encoded as 16bits per normal according to format oct16P decribed in http://jcgt.org/published/0003/02/01/paper.pdf.",
+      "description": "Octree. Per-point normals encoded as 16bits per normal according to format oct16P decribed in http://jcgt.org/published/0003/02/01/paper.pdf. Int16[].",
       "type": "Int16[]"
     },
     "eec0ba91-bdcf-469a-b2f2-9c46009b04e6": {
@@ -2291,7 +2246,8 @@
     "c91dfea3-243d-4272-9dba-b572931dba23": {
       "name": "Octree.Colors4b.Deprecated.20201117",
       "description": "Deprecated 2020-11-17. Wrong type. Use 4f6144d1-c424-424c-9e02-915bf58087b2 instead. Octree. Per-point colors. C4b[].",
-      "type": "C3b[]"
+      "type": "C3b[]",
+      "obsolete": "Deprecated 2020-11-17. Wrong type. Use 4f6144d1-c424-424c-9e02-915bf58087b2 instead."
     },
     "74d787e9-b882-4df5-b6c6-6da02a50d35f": {
       "name": "Octree.Colors3b.Range",
@@ -2337,6 +2293,7 @@
       "description": "Octree. Reference to per-point intensities. Guid.",
       "type": "Guid"
     },
+
     "361027fd-ac58-4de8-89ee-98695f8c5520": {
       "name": "Octree.Intensities1i",
       "description": "Octree. Per-point intensities. Int32[].",
@@ -2347,6 +2304,7 @@
       "description": "Octree. Reference to per-point intensities. Guid.",
       "type": "Guid"
     },
+
     "ebe476d9-32e8-4d47-982e-35703c3a6b4c": {
       "name": "Octree.Intensities1f",
       "description": "Octree. Per-point intensities. Float32[].",
@@ -2357,6 +2315,7 @@
       "description": "Octree. Reference to Octree.Intensities1f. Guid.",
       "type": "Guid"
     },
+
     "6753a6e1-9633-4997-b403-661578191f8c": {
       "name": "Octree.IntensitiesWithOffset1f",
       "description": "Octree. Per-point intensities with offset stored as Octree.IntensitiesWithOffset1f.Offset. Float32[].",
@@ -2377,6 +2336,7 @@
       "description": "Octree. Intensities range for Octree.IntensitiesWithOffset1f[.Reference]. Range1f.",
       "type": "Range1f"
     },
+
     "eb990bdb-fc45-4129-987c-0912887375d6": {
       "name": "Octree.Intensities.Range",
       "description": "Octree. Range of intensitity values [min, max, avg, stddev]. Float32[].",
@@ -2395,6 +2355,7 @@
       "description": "Octree. Reference to per-point classifications (UInt8[]).",
       "type": "Guid"
     },
+
     "b1619ade-79be-4554-894e-3f7e46240119": {
       "name": "Octree.Classifications1s",
       "description": "Octree. Per-point classifications. UInt16[].",
@@ -2405,6 +2366,7 @@
       "description": "Octree. Reference to per-point classifications (UInt16[]).",
       "type": "Guid"
     },
+
     "826cc58d-ed89-4d56-b389-e4b581c71706": {
       "name": "Octree.Classifications1i",
       "description": "Octree. Per-point classifications. Int32[].",
@@ -2415,6 +2377,7 @@
       "description": "Octree. Reference to per-point classifications (Guid -> Int32[]).",
       "type": "Guid"
     },
+
     "1844a484-33d5-42b6-9471-6b892d105284": {
       "name": "Octree.Classifications.Range",
       "description": "Octree. Range of classification values. Range1i.",
@@ -2424,7 +2387,7 @@
 
     "c8db5f0a-1ddf-47ab-8266-f8e929cf98c5": {
       "name": "Octree.Velocities3f",
-      "description": "Octree. Per-point velocities (V3f[]).",
+      "description": "Octree. Per-point velocities. V3f[].",
       "type": "V3f[]"
     },
     "390115cc-5928-4526-8c28-37e709bf31d2": {
@@ -2432,9 +2395,10 @@
       "description": "Octree. Reference to per-point velocities (Guid).",
       "type": "Guid"
     },
+
     "3f8a922d-3458-427f-8237-a189e338bf77": {
       "name": "Octree.Velocities3d",
-      "description": "Octree. Per-point velocities (V3d[]).",
+      "description": "Octree. Per-point velocities. V3d[].",
       "type": "V3d[]"
     },
     "f7d97f68-e1e1-4b1b-9133-42689b6fb65b": {
@@ -2446,7 +2410,7 @@
 
     "040d084d-1f1b-4058-afc7-ea300bbb551d": {
       "name": "Octree.Densities1f",
-      "description": "Octree. Per-point densities (float32[]).",
+      "description": "Octree. Per-point densities. Float32[].",
       "type": "Float32[]"
     },
     "bf51bb51-7947-49ec-9f60-2d4f78a60674": {
@@ -2471,6 +2435,7 @@
       "description": "Octree. Reference to kd-tree index array. Guid -> Int32[].",
       "type": "Guid"
     },
+    
     "c90f303c-f9be-49d1-9188-51fde1e1e75d": {
       "name": "Octree.PointRkdTreeFData",
       "description": "Octree. Aardvark.Geometry.PointRkdTreeFData.",

@@ -15,6 +15,18 @@
       "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types."
     },
 
+    "6780296f-c30a-4eba-806f-d07d84c7a5bc": {
+      "name": "DurableMapAligned8",
+      "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types. Entries are 8-byte aligned.",
+      "obsolete": "Deprecated 2022-10-21."
+    },
+
+    "0ca48518-96b9-424f-b146-046ac3c8ed10": {
+      "name": "DurableMapAligned16",
+      "description": "A map of key/value pairs, where keys are durable IDs with values of corresponding types. Entries are 16-byte aligned.",
+      "obsolete": "Deprecated 2022-10-21."
+    },
+
     "a81a39b0-8f61-4efc-b0ce-27e2c5d3199d": {
       "name": "Guid",
       "description": "Globally unique identifier (GUID, 16 bytes). https://tools.ietf.org/html/rfc4122."
@@ -1948,6 +1960,24 @@
       "type": "StringUTF8[]"
     },
 
+    "8818ce56-4429-4661-bac2-14e55d4d1f41": {
+      "name": "Octree.Subnodes.ByteRanges",
+      "description": "Octree. Subnode byte ranges inside multi-node blob as array offset/size pairs. In ADDITION to Octree.Subnodes[Guids|Strings]. Array length is 16 (8x Int64 pair) for inner nodes (where (0L, 0L) means no subnode) and no array for leaf nodes. Int64[16].",
+      "type": "Int64[]"
+    },
+
+    "9814aafe-bb6c-4b28-b375-23435e879e87": {
+      "name": "Octree.NodeByteRange",
+      "description": "Octree. Byte range inside multi-node blob as offset/size pair. In ADDITION to Octree.NodeId[String]. Array length is 2 (Int64 pair) and no array for non-multi-node blob. Int64[2].",
+      "type": "Int64[]"
+    },
+
+    "ef8539ab-58c2-4982-8313-3b5bbc871d54": {
+      "name": "Octree.MultiNodeBlob",
+      "description": "Octree. Octree nodes stored in level order (multi-node blob). Uint8[].",
+      "type": "UInt8[]"
+    },
+
     "7912c862-74b4-4f44-a8cd-d11ea1da9304": {
       "name": "Octree.BoundingBoxExactGlobal",
       "description": "Octree. Exact bounding box of this tree's positions. Global space. Box3d.",
@@ -2382,6 +2412,12 @@
       "name": "Octree.Classifications.Range",
       "description": "Octree. Range of classification values. Range1i.",
       "type": "Range1i"
+    },
+
+    "ecada344-5cc2-497f-9078-3d80559ba08c": {
+      "name": "Octree.Classifications.Histogram",
+      "description": "Octree. Per-point classifications histogram. [value_0, count_0, ... value_n, count_n]. Int64[].",
+      "type": "Int64[]"
     },
 
 

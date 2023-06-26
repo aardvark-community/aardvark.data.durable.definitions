@@ -53,14 +53,6 @@
       "name": "UInt8[]",
       "description": "Array of unsigned 8-bit integers."
     },
-    // "d12a0177-521d-4c73-9c0d-f3e25ad6ef54": {
-    //   "name": "UInt8[].gz",
-    //   "description": "Array of unsigned 8-bit integers. Compressed (GZip)."
-    // },
-    // "d3aeedd7-1294-4dbc-a48f-98cff740995f": {
-    //   "name": "UInt8[].lz4",
-    //   "description": "Array of unsigned 8-bit integers. Compressed (LZ4)."
-    // },
 
     "4c3f7ded-2037-4f3d-baa9-3a76ef3a1fda": {
       "name": "Int16",
@@ -2062,6 +2054,16 @@
       "type": "Int32"
     },
 
+    "2a7c36bc-8d84-45b6-86fa-b66b562b3cc2": {
+      "name": "Octree.PositionsLocal3sb",
+      "description": "Octree. Per-point positions in local cell space as uniform 8-bit subdivision, where -128 is cell.Min and +128 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. Int8[].",
+      "type": "Int8[]"
+    },
+    "3e225a08-fe26-4038-bbce-8d43275b029e": {
+      "name": "Octree.PositionsLocal3sb.Reference",
+      "description": "Octree. Reference to Octree.PositionsLocal3sb. Guid.",
+      "type": "Guid"
+    },
 
     "c965597a-e2f8-4f1a-bef4-a0071c32e220": {
       "name": "Octree.PositionsLocal3b",
@@ -2071,6 +2073,17 @@
     "52aa381e-ddf2-4d77-a746-5cacaa1d10a9": {
       "name": "Octree.PositionsLocal3b.Reference",
       "description": "Octree. Reference to Octree.PositionsLocal3b. Guid.",
+      "type": "Guid"
+    },
+
+    "2d83f869-39c0-4b4b-9470-af97a82677a7": {
+      "name": "Octree.PositionsLocal3s",
+      "description": "Octree. Per-point positions in local cell space as uniform 16-bit subdivision, where Int16.Min is cell.Min and Int16.Max+1 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. Int16[].",
+      "type": "Int16[]"
+    },
+    "35c5b633-2a7f-4ee3-87de-3321c72ca832": {
+      "name": "Octree.PositionsLocal3s.Reference",
+      "description": "Octree. Reference to Octree.PositionsLocal3s. Guid.",
       "type": "Guid"
     },
 
@@ -2085,6 +2098,17 @@
       "type": "Guid"
     },
 
+    "c479bb05-2563-4ebb-b6c4-1a1c1d6c606d": {
+      "name": "Octree.PositionsLocal3i",
+      "description": "Octree. Per-point positions in local cell space as uniform 32-bit subdivision, where Int32.Min is cell.Min and Int32.Max+1 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. Int32[].",
+      "type": "Int32[]"
+    },
+    "6e570668-b471-4dd1-b186-9b4461ee713c": {
+      "name": "Octree.PositionsLocal3i.Reference",
+      "description": "Octree. Reference to Octree.PositionsLocal3i. Guid.",
+      "type": "Guid"
+    },
+
     "f251364f-d6d2-49e0-8095-45314fe2e80c": {
       "name": "Octree.PositionsLocal3ui",
       "description": "Octree. Per-point positions in local cell space as uniform 32-bit subdivision, where 0 is cell.Min and UInt32.Max+1 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. UInt32[].",
@@ -2093,6 +2117,17 @@
     "6cfa3f22-27bc-4b86-917c-98f92f38bc46": {
       "name": "Octree.PositionsLocal3ui.Reference",
       "description": "Octree. Reference to Octree.PositionsLocal3ui. Guid.",
+      "type": "Guid"
+    },
+
+    "89d17a79-6888-4d68-b68b-7556630c13b1": {
+      "name": "Octree.PositionsLocal3l",
+      "description": "Octree. Per-point positions in local cell space as uniform 64-bit subdivision, where Int64.Min is cell.Min and Int64.Max+1 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. Int64[].",
+      "type": "Int64[]"
+    },
+    "58a28940-8436-4796-8041-57e8ff5caccf": {
+      "name": "Octree.PositionsLocal3l.Reference",
+      "description": "Octree. Reference to Octree.PositionsLocal3l. Guid.",
       "type": "Guid"
     },
 

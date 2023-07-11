@@ -2054,6 +2054,53 @@
       "type": "Int32"
     },
 
+
+
+
+
+    "0a80f2b3-6484-4e4d-a573-3e8ff0378e93": {
+      "name": "Octree.PerCellPartIndex1ui",
+      "description": "Octree. Per-cell part index. UInt32.",
+      "type": "UInt32"
+    },
+
+    "3b393e63-85fc-4258-a79e-a16edf2cb9de": {
+      "name": "Octree.PerPointPartIndex1b",
+      "description": "Octree. Per-point part index. UInt8[].",
+      "type": "UInt8[]"
+    },
+    "050005ac-f6b4-44f0-9709-d877617a5403": {
+      "name": "Octree.PerPointPartIndex1b.Reference",
+      "description": "Octree. Reference to per-point part index. Guid.",
+      "type": "Guid"
+    },
+
+    
+    "5e13d36a-1958-4936-bad0-d0ddf6274f2e": {
+      "name": "Octree.PerPointPartIndex1s",
+      "description": "Octree. Per-point part index. UInt16[].",
+      "type": "UInt16[]"
+    },
+    "eedb807b-6e62-4ad0-989b-44b56ba88fb0": {
+      "name": "Octree.PerPointPartIndex1s.Reference",
+      "description": "Octree. Reference to per-point part index. Guid.",
+      "type": "Guid"
+    },
+
+    "987dde4b-d7a0-4eff-aecb-9447aca0afb5": {
+      "name": "Octree.PerPointPartIndex1i",
+      "description": "Octree. Per-point part index. UInt32[].",
+      "type": "UInt32[]"
+    },
+    "e04d4f9a-f361-4de3-8de6-0ded1013bded": {
+      "name": "Octree.PerPointPartIndex1i.Reference",
+      "description": "Octree. Reference to per-point part index. Guid.",
+      "type": "Guid"
+    },
+
+
+
+
     "2a7c36bc-8d84-45b6-86fa-b66b562b3cc2": {
       "name": "Octree.PositionsLocal3sb",
       "description": "Octree. Per-point positions in local cell space as uniform 8-bit subdivision, where -128 is cell.Min and +128 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. Int8[].",
@@ -2101,7 +2148,7 @@
     "c479bb05-2563-4ebb-b6c4-1a1c1d6c606d": {
       "name": "Octree.PositionsLocal3i",
       "description": "Octree. Per-point positions in local cell space as uniform 32-bit subdivision, where Int32.Min is cell.Min and Int32.Max+1 is cell.Max. Layout for n points is [x0,y0,z0,x1,y1,z1,...x(n-1),y(n-1), z(n-1)]. Int32[].",
-      "type": "Int32[]"
+      "type": "V3i[]"
     },
     "6e570668-b471-4dd1-b186-9b4461ee713c": {
       "name": "Octree.PositionsLocal3i.Reference",
@@ -2346,6 +2393,38 @@
       "description": "Octree. Reference to per-point colors in RGB565 format, where bits 0 to 4 are the blue value, 5 to 10 are green, and 11-15 are red. Guid.",
       "type": "Guid"
     },
+
+    "025da754-95fa-4a51-96c7-e775d68a44c3": {
+      "name": "Octree.Cir3b",
+      "description": "Octree. Per-point colored infrared (CIR). C3b[].",
+      "type": "C3b[]"
+    },
+    "3192a4c1-f398-4ce7-b3a4-851aacc27f68": {
+      "name": "Octree.Cir3b.Reference",
+      "description": "Octree. Reference to Per-point colored infrared (CIR). Guid.",
+      "type": "Guid"
+    },
+    "af1737d6-8732-4d27-baec-b7446403f006": {
+      "name": "Octree.Cir3b.Range",
+      "description": "Octree. Per-point colored infrared (CIR) statistics. [min, max, avg, stddev]. V4f[].",
+      "type": "V4f[]"
+    },
+    "ea719119-06a0-45cd-b40c-474b013c4827": {
+      "name": "Octree.Cir4b",
+      "description": "Octree. Per-point colored infrared (CIR). C4b[].",
+      "type": "C4b[]"
+    },
+    "54791fac-5798-43a7-87da-a1996fc18bd2": {
+      "name": "Octree.Cir4b.Reference",
+      "description": "Octree. Reference to Per-point colored infrared (CIR). Guid.",
+      "type": "Guid"
+    },
+    "06d227e7-467f-4205-af1a-1705bb5fea39": {
+      "name": "Octree.Cir4b.Range",
+      "description": "Octree. Per-point colored infrared (CIR) statistics. [min, max, avg, stddev]. V4f[].",
+      "type": "V4f[]"
+    },
+
 
 
     "3fa600f0-6e99-4c11-918b-810430bae0cb": {

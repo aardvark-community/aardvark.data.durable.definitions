@@ -2407,7 +2407,7 @@
     "af1737d6-8732-4d27-baec-b7446403f006": {
       "name": "Octree.Cir3b.Range",
       "description": "Octree. Per-point colored infrared (CIR) statistics. [min, max, avg, stddev]. V4f[].",
-      "type": "V4f[]"
+      "type": "V3f[]"
     },
     "ea719119-06a0-45cd-b40c-474b013c4827": {
       "name": "Octree.Cir4b",

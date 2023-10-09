@@ -2056,8 +2056,17 @@
 
 
 
+    "ad5baa84-26aa-481b-bf64-7861a3bb7012": {
+      "name": "Octree.PartIndexRange",
+      "description": "Octree. Min and max part index in octree. Range1i.",
+      "type": "Range1i"
+    },
 
-
+    "915e76fc-30ba-4231-bd19-ecbc1deaccdc": {
+      "name": "Octree.PerCellPartIndex1i",
+      "description": "Octree. Per-cell part index. Int32.",
+      "type": "Int32"
+    },
     "0a80f2b3-6484-4e4d-a573-3e8ff0378e93": {
       "name": "Octree.PerCellPartIndex1ui",
       "description": "Octree. Per-cell part index. UInt32.",
@@ -2406,7 +2415,7 @@
     },
     "af1737d6-8732-4d27-baec-b7446403f006": {
       "name": "Octree.Cir3b.Range",
-      "description": "Octree. Per-point colored infrared (CIR) statistics. [min, max, avg, stddev]. V4f[].",
+      "description": "Octree. Per-point colored infrared (CIR) statistics. [min, max, avg, stddev]. V3f[].",
       "type": "V3f[]"
     },
     "ea719119-06a0-45cd-b40c-474b013c4827": {

@@ -1280,6 +1280,19 @@
       "name": "CIeLuvf[]"
     },
 
+    "805bc7f1-f5d3-41c1-b9a8-958efa75ea7a": {
+      "name": "CieLuvf",
+      "description": "A color in CIELUV color space with channels L,u,v (Float32).",
+      "layout": {
+        "L": "Float32",
+        "u": "Float32",
+        "v": "Float32"
+      }
+    },
+    "617ba25a-cfad-44db-aa38-55805f9b0f65": {
+      "name": "CieLuvf[]"
+    },
+
     "055d4fae-6935-479d-9b8d-04ca1e5cf51d": {
       "name": "CieXYZf",
       "description": "A color in CIEXYZ color space with channels X,Y,Z (Float32).",
@@ -1793,7 +1806,7 @@
       "name": "Aardvark.Chunk.ClassificationsString",
       "description": "Classifications. StringUTF8[].",
       "type": "StringUTF8[]"
-    },
+    }
 
   },
 

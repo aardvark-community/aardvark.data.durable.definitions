@@ -1,6 +1,6 @@
 # Durable Semantic Data Definitions
 
-We avoid serialization and versioning hell accross applications and over time by completely decoupling data semantics from applications and file formats.
+We avoid serialization and versioning hell across applications and over time by completely decoupling data semantics from applications and file formats.
 
 The main idea is to define a standalone set of semantic data definitions on top of primitive data types. Each definition is uniquely identified by a never-changing (durable) globally unique id.
 

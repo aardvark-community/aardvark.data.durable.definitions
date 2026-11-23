@@ -2557,6 +2557,30 @@
       "type": "Guid"
     },
 
+    "3d70a06f-7e48-4b0a-a371-a4040999e98c": {
+      "name": "Octree.Intensities1s",
+      "description": "Octree. Per-point intensities. Int16[].",
+      "type": "Int16[]"
+    },
+
+    "bf58adf5-43a6-41db-90f2-54f03ba85f66": {
+      "name": "Octree.Intensities1us",
+      "description": "Octree. Per-point intensities. UInt16[].",
+      "type": "UInt16[]"
+    },
+
+    "9e64f8a0-17e7-43ac-9539-80e87f97d056": {
+      "name": "Octree.Intensities1ui",
+      "description": "Octree. Per-point intensities. UInt32[].",
+      "type": "UInt32[]"
+    },
+
+    "447fd0be-0dc0-478f-b2bf-b8b3807c5553": {
+      "name": "Octree.Intensities1d",
+      "description": "Octree. Per-point intensities. Float64[].",
+      "type": "Float64[]"
+    },
+
     "6753a6e1-9633-4997-b403-661578191f8c": {
       "name": "Octree.IntensitiesWithOffset1f",
       "description": "Octree. Per-point intensities with offset stored as Octree.IntensitiesWithOffset1f.Offset. Float32[].",

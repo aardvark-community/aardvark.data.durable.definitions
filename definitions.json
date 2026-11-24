@@ -2581,6 +2581,22 @@
       "type": "Float64[]"
     },
 
+    "f4a182f1-34dd-40b6-a268-2144a9ab2393": {
+      "name": "Octree.IntensitiesScaled1us",
+      "description": "Octree. Per-point raw intensities; intensity = raw * Octree.IntensitiesScaled1us.Scale + Octree.IntensitiesScaled1us.Offset (as E57 ScaledInteger). UInt16[].",
+      "type": "UInt16[]"
+    },
+    "cee531fd-1842-4d26-a856-a5f6e839f2e4": {
+      "name": "Octree.IntensitiesScaled1us.Scale",
+      "description": "Octree. The scale for Octree.IntensitiesScaled1us. Float64.",
+      "type": "Float64"
+    },
+    "2ce16e5e-bcef-46d7-8622-b46ae1a420db": {
+      "name": "Octree.IntensitiesScaled1us.Offset",
+      "description": "Octree. The offset for Octree.IntensitiesScaled1us. Float64.",
+      "type": "Float64"
+    },
+
     "6753a6e1-9633-4997-b403-661578191f8c": {
       "name": "Octree.IntensitiesWithOffset1f",
       "description": "Octree. Per-point intensities with offset stored as Octree.IntensitiesWithOffset1f.Offset. Float32[].",
